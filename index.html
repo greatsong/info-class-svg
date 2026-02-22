@@ -12,7 +12,8 @@
 @media(prefers-color-scheme:dark){:root{--bg:#0f172a;--card:#1e293b;--text:#f1f5f9;--sub:#94a3b8;--border:#334155;--accent:#60a5fa}}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 header{text-align:center;padding:2rem 1rem 1rem;max-width:800px;margin:0 auto}
-h1{font-size:1.5rem;font-weight:700;margin-bottom:.2rem}
+h1{font-size:1.5rem;font-weight:700;margin-bottom:.2rem;display:inline-flex;align-items:center;gap:.4rem}
+h1 svg{width:1.6rem;height:1.6rem;flex-shrink:0}
 .subtitle{color:var(--sub);font-size:.85rem;margin-bottom:1rem}
 .search-box{position:relative;max-width:500px;margin:0 auto .8rem}
 .search-box input{width:100%;padding:.65rem 1rem .65rem 2.4rem;border:1.5px solid var(--border);border-radius:var(--radius);background:var(--card);color:var(--text);font-size:.9rem;outline:none}
@@ -179,7 +180,7 @@ footer a{color:var(--accent)}
 </head>
 <body>
 <header>
-  <h1>석리송의 교육용 SVG 아이콘 라이브러리</h1>
+  <h1><svg viewBox="0 0 64 64" fill="none"><defs><linearGradient id="title-g" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs><rect x="4" y="4" width="56" height="56" rx="16" fill="#eff6ff"/><rect x="4" y="4" width="56" height="56" rx="16" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.2"/><g transform="translate(14,12) scale(1.5)" stroke="url(#title-g)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M9 10l2 2 4-4" opacity="0.7"/></g></svg>석리송의 교육용 SVG 아이콘 라이브러리</h1>
   <p class="subtitle">정보교육 · 디자인씽킹 · 프로젝트 수업 · STEAM 융합</p>
   <div class="search-box">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>

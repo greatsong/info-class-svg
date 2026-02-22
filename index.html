@@ -192,7 +192,8 @@ footer a{color:var(--accent)}
 </footer>
 <script>
 const CN={'01-devices':'컴퓨터와 디지털 기기','02-physical-computing':'피지컬컴퓨팅과 메이킹','03-programming':'소프트웨어와 프로그래밍','04-algorithm':'알고리즘과 자료구조','05-network-security':'네트워크와 정보보안','06-data-ai':'데이터와 인공지능','07-design-thinking':'디자인씽킹과 문제해결','08-steam':'STEAM 융합','09-teaching':'수업 활동과 평가','10-visual-symbols':'시각 기호와 안내 요소','11-numbers':'숫자와 번호','12-shapes':'도형과 입체'};
-let all=[],activeCat='all',view='grid',dlFormat='svg';
+let all=[],activeCat='all',view='grid';
+let dlFormats=new Set(['svg']); // 다중 포맷 선택
 let selected=new Set(); // category/filename 기준 선택 관리
 
 fetch('catalog.json').then(r=>r.json()).then(d=>{
@@ -202,13 +203,22 @@ fetch('catalog.json').then(r=>r.json()).then(d=>{
   render();
 });
 
-/* 포맷 선택 */
+/* 포맷 선택 (다중) */
 document.getElementById('formatBtns').onclick=e=>{
   if(!e.target.dataset.f)return;
-  dlFormat=e.target.dataset.f;
-  document.querySelectorAll('#formatBtns button').forEach(b=>b.classList.toggle('active',b.dataset.f===dlFormat));
+  const f=e.target.dataset.f;
+  if(dlFormats.has(f)){
+    if(dlFormats.size>1) dlFormats.delete(f); // 최소 1개는 유지
+  } else {
+    dlFormats.add(f);
+  }
+  document.querySelectorAll('#formatBtns button').forEach(b=>b.classList.toggle('active',dlFormats.has(b.dataset.f)));
   render();
 };
+
+function formatsLabel(){
+  return [...dlFormats].map(f=>formatLabel(f)).join('+');
+}
 
 function buildCats(cats){
   const n=document.getElementById('cats');
@@ -245,9 +255,9 @@ function formatLabel(fmt){
   return 'PNG '+fmt.split('-')[1]+'px';
 }
 
-/* 개별 다운로드 */
-function dlFile(ic, fmt){
-  const f=getFilePath(ic, fmt||dlFormat);
+/* 개별 다운로드 (단일 포맷) */
+function dlOne(ic, fmt){
+  const f=getFilePath(ic, fmt);
   fetch(f.path).then(r=>{
     if(!r.ok) throw new Error('파일 없음');
     return r.blob();
@@ -260,50 +270,84 @@ function dlFile(ic, fmt){
   }).catch(()=>alert('파일을 찾을 수 없습니다: '+f.path));
 }
 
-/* 전체 다운로드 (ZIP) */
-document.getElementById('dlAllBtn').onclick=async function(){
-  const icons=filter();
-  if(!icons.length){alert('다운로드할 아이콘이 없습니다.');return}
-
-  const btn=this;
-  btn.disabled=true;
-  const overlay=document.getElementById('progressOverlay');
-  const fill=document.getElementById('progressFill');
-  const text=document.getElementById('progressText');
-  const title=document.getElementById('progressTitle');
-  title.textContent=formatLabel(dlFormat)+' 전체 다운로드 준비 중...';
-  fill.style.width='0%';
-  text.textContent='0 / '+icons.length;
-  overlay.classList.add('show');
-
+/* 개별 다운로드 (선택된 포맷들) */
+async function dlFile(ic){
+  const fmts=[...dlFormats];
+  if(fmts.length===1){
+    dlOne(ic, fmts[0]);
+    return;
+  }
+  // 다중 포맷 → ZIP
   const zip=new JSZip();
-  let done=0;
-
-  for(const ic of icons){
-    const f=getFilePath(ic, dlFormat);
+  const base=ic.filename.replace('.svg','');
+  for(const fmt of fmts){
+    const f=getFilePath(ic, fmt);
     try{
       const r=await fetch(f.path);
       if(r.ok){
         const b=await r.blob();
-        zip.file(ic.category+'/'+f.name, b);
+        const folder=fmt==='svg'?'svg':'png-'+fmt.split('-')[1];
+        zip.file(folder+'/'+f.name, b);
       }
     }catch(e){}
-    done++;
-    fill.style.width=Math.round(done/icons.length*100)+'%';
-    text.textContent=done+' / '+icons.length;
+  }
+  const blob=await zip.generateAsync({type:'blob'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=base+'-multi.zip';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+/* ZIP 다운로드 공통 함수 */
+async function dlZip(icons, filePrefix){
+  if(!icons.length){alert('다운로드할 아이콘이 없습니다.');return}
+  const fmts=[...dlFormats];
+  const total=icons.length*fmts.length;
+
+  const overlay=document.getElementById('progressOverlay');
+  const fill=document.getElementById('progressFill');
+  const text=document.getElementById('progressText');
+  const title=document.getElementById('progressTitle');
+  title.textContent=formatsLabel()+' 다운로드 준비 중...';
+  fill.style.width='0%';
+  text.textContent='0 / '+total;
+  overlay.classList.add('show');
+
+  const zip=new JSZip();
+  let done=0;
+  const multiFormat=fmts.length>1;
+
+  for(const ic of icons){
+    for(const fmt of fmts){
+      const f=getFilePath(ic, fmt);
+      const folder=multiFormat?(fmt==='svg'?'svg':'png-'+fmt.split('-')[1])+'/':'';
+      try{
+        const r=await fetch(f.path);
+        if(r.ok){const b=await r.blob();zip.file(folder+ic.category+'/'+f.name,b)}
+      }catch(e){}
+      done++;
+      fill.style.width=Math.round(done/total*100)+'%';
+      text.textContent=done+' / '+total;
+    }
   }
 
   title.textContent='ZIP 파일 생성 중...';
   const blob=await zip.generateAsync({type:'blob'});
   const a=document.createElement('a');
   a.href=URL.createObjectURL(blob);
-  const label=dlFormat==='svg'?'svg':'png-'+dlFormat.split('-')[1];
-  a.download='icons-'+label+(activeCat!=='all'?'-'+activeCat:'')+'.zip';
+  a.download=filePrefix+'.zip';
   a.click();
   URL.revokeObjectURL(a.href);
-
   overlay.classList.remove('show');
-  btn.disabled=false;
+}
+
+/* 전체 다운로드 (ZIP) */
+document.getElementById('dlAllBtn').onclick=async function(){
+  this.disabled=true;
+  const catSuffix=activeCat!=='all'?'-'+activeCat:'';
+  await dlZip(filter(), 'icons-all'+catSuffix);
+  this.disabled=false;
 };
 
 const checkSvg='<svg viewBox="0 0 24 24" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>';
@@ -350,40 +394,8 @@ document.getElementById('selClearBtn').onclick=()=>{
 /* 선택 다운로드 (ZIP) */
 document.getElementById('selDlBtn').onclick=async function(){
   if(!selected.size){alert('선택된 아이콘이 없습니다.');return}
-  const icons=all.filter(ic=>selected.has(icKey(ic)));
-
   this.disabled=true;
-  const overlay=document.getElementById('progressOverlay');
-  const fill=document.getElementById('progressFill');
-  const text=document.getElementById('progressText');
-  const title=document.getElementById('progressTitle');
-  title.textContent=formatLabel(dlFormat)+' 선택 다운로드 준비 중...';
-  fill.style.width='0%';
-  text.textContent='0 / '+icons.length;
-  overlay.classList.add('show');
-
-  const zip=new JSZip();
-  let done=0;
-  for(const ic of icons){
-    const f=getFilePath(ic, dlFormat);
-    try{
-      const r=await fetch(f.path);
-      if(r.ok){const b=await r.blob();zip.file(ic.category+'/'+f.name,b)}
-    }catch(e){}
-    done++;
-    fill.style.width=Math.round(done/icons.length*100)+'%';
-    text.textContent=done+' / '+icons.length;
-  }
-  title.textContent='ZIP 파일 생성 중...';
-  const blob=await zip.generateAsync({type:'blob'});
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(blob);
-  const label=dlFormat==='svg'?'svg':'png-'+dlFormat.split('-')[1];
-  a.download='icons-selected-'+label+'.zip';
-  a.click();
-  URL.revokeObjectURL(a.href);
-
-  overlay.classList.remove('show');
+  await dlZip(all.filter(ic=>selected.has(icKey(ic))), 'icons-selected');
   this.disabled=false;
   selected.clear();
   updateSelectUI();
@@ -437,7 +449,7 @@ function render(){
         '<td><strong>'+ic.name+'</strong></td><td class="fname">'+ic.filename+'</td>'+
         '<td><span class="cat-badge">'+(CN[ic.category]||ic.category)+'</span></td>'+
         '<td>'+ic.description+'</td><td>'+ic.useCases+'</td>'+
-        '<td><button class="row-dl">'+formatLabel(dlFormat)+'</button></td></tr>';
+        '<td><button class="row-dl">'+formatsLabel()+'</button></td></tr>';
     }).join('');
     b.querySelectorAll('tr').forEach(tr=>{
       tr.onclick=e=>{
@@ -472,7 +484,7 @@ function showModal(ic){
     {fmt:'png-256', label:'PNG', sub:'256px'},
   ];
   const dlBtns=formats.map(f=>{
-    const cls=f.fmt===dlFormat?'primary':'';
+    const cls=dlFormats.has(f.fmt)?'primary':'';
     return '<button class="'+cls+'" data-fmt="'+f.fmt+'">'+f.label+'<span class="sz">'+f.sub+'</span></button>';
   }).join('');
 
@@ -491,7 +503,7 @@ function showModal(ic){
     '<div class="btns"><button onclick="copySvg(\''+svgPath+'\')">SVG 코드 복사</button></div>';
 
   document.getElementById('modalDlGrid').querySelectorAll('button').forEach(btn=>{
-    btn.onclick=()=>dlFile(ic, btn.dataset.fmt);
+    btn.onclick=()=>dlOne(ic, btn.dataset.fmt);
   });
 
   document.getElementById('modal').querySelector('.close').onclick=()=>document.getElementById('modalBg').classList.remove('show');

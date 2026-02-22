@@ -7,6 +7,7 @@
     "generate": "node scripts/generate-all.js",
     "validate": "node scripts/validate-svg.js",
     "build": "node scripts/generate-all.js && node scripts/validate-svg.js",
+    "generate:png": "node scripts/generate-png.js",
     "test": "node scripts/validate-svg.js",
     "deploy": "node scripts/generate-all.js && node scripts/validate-svg.js && git add -A && git commit -m 'update icons' && git push"
   },
@@ -16,6 +17,7 @@
   "type": "commonjs",
   "dependencies": {
     "@tabler/icons": "^3.37.1",
-    "lucide-static": "^0.575.0"
+    "lucide-static": "^0.575.0",
+    "sharp": "^0.34.5"
   }
 }

@@ -13,7 +13,7 @@
 
 ## 현재 상태
 
-- **총 880개** SVG 아이콘 (목표: 1000개)
+- **총 1,000개** SVG 아이콘
 - 12개 카테고리
 - Lucide + Tabler Icons 기반 자동 변환 + 커스텀 숫자 SVG 생성
 
@@ -21,18 +21,18 @@
 
 | # | 카테고리 | 폴더명 | 개수 | 설명 |
 |---|---------|--------|------|------|
-| 01 | 컴퓨터와 디지털 기기 | `01-devices` | 65 | PC, 모바일, 주변기기, 부품, IoT |
-| 02 | 피지컬컴퓨팅과 메이킹 | `02-physical-computing` | 58 | 센서, 액추에이터, 회로, 로봇, 논리게이트 |
-| 03 | 소프트웨어와 프로그래밍 | `03-programming` | 88 | 변수, 조건문, 반복문, 함수, 블록코딩, 언어 |
-| 04 | 알고리즘과 자료구조 | `04-algorithm` | 69 | 정렬, 탐색, 스택, 큐, 트리, 수학, 토폴로지, 그래프 알고리즘 |
-| 05 | 네트워크와 정보보안 | `05-network-security` | 67 | 인터넷, 프로토콜, 보안, 클라우드, 디지털시민성 |
-| 06 | 데이터와 인공지능 | `06-data-ai` | 83 | 데이터 수집/분석/시각화, ML, AI, 통계 |
-| 07 | 디자인씽킹과 문제해결 | `07-design-thinking` | 62 | 공감, 정의, 아이디어, 프로토타입, 검증 |
-| 08 | STEAM 융합 | `08-steam` | 113 | 과학/수학/사회/미술/음악, 2D·3D 도형, 악기 |
-| 09 | 수업 활동과 평가 | `09-teaching` | 69 | 교과서, 학습목표, 루브릭, 피드백, 학용품 |
-| 10 | 시각 기호와 안내 요소 | `10-visual-symbols` | 122 | 화살표, 체크, 경고, 도형기호, 변환, 레이어 |
-| 11 | 숫자와 번호 | `11-numbers` | 51 | 숫자 0~40, 원숫자 0~9 |
-| 12 | 도형과 입체 | `12-shapes` | 33 | 2D 기본도형, 3D 입체도형, 치수, 비율 |
+| 01 | 컴퓨터와 디지털 기기 | `01-devices` | 80 | PC, 모바일, 주변기기, 부품, IoT |
+| 02 | 피지컬컴퓨팅과 메이킹 | `02-physical-computing` | 70 | 센서, 액추에이터, 회로, 로봇, 논리게이트, 공구 |
+| 03 | 소프트웨어와 프로그래밍 | `03-programming` | 96 | 변수, 조건문, 반복문, 함수, 블록코딩, 언어, 에디터 |
+| 04 | 알고리즘과 자료구조 | `04-algorithm` | 80 | 정렬, 탐색, 스택, 큐, 트리, 수학, 그래프 알고리즘, 확률 |
+| 05 | 네트워크와 정보보안 | `05-network-security` | 80 | 인터넷, 프로토콜, 보안, 클라우드, 디지털시민성, 사이버위협 |
+| 06 | 데이터와 인공지능 | `06-data-ai` | 90 | 데이터 수집/분석/시각화, ML, AI, 통계, 다양한 차트 |
+| 07 | 디자인씽킹과 문제해결 | `07-design-thinking` | 75 | 공감, 정의, 아이디어, 프로토타입, 검증, UI 디자인 |
+| 08 | STEAM 융합 | `08-steam` | 118 | 과학/수학/사회/미술/음악, 생물, 천문, 악기 |
+| 09 | 수업 활동과 평가 | `09-teaching` | 80 | 교과서, 학습목표, 루브릭, 피드백, 학용품, 보상 |
+| 10 | 시각 기호와 안내 요소 | `10-visual-symbols` | 130 | 화살표, 체크, 경고, 도형기호, 변환, 레이어, 메뉴 |
+| 11 | 숫자와 번호 | `11-numbers` | 55 | 숫자 0~40, 50, 64, 100, 128, 원숫자 0~9 |
+| 12 | 도형과 입체 | `12-shapes` | 46 | 2D 기본/변형 도형, 3D 입체도형, 카드 문양, 치수 |
 
 ## SVG 스타일 스펙
 
@@ -76,18 +76,18 @@ info-class-svg/
 │   ├── transform.js          ← 초기 변환 스크립트 (deprecated, generate-all.js로 통합)
 │   └── icon-mapping.json     ← 초기 매핑 (deprecated)
 └── svg/
-    ├── 01-devices/           (63 SVGs)
-    ├── 02-physical-computing/(70 SVGs)
-    ├── 03-programming/       (90 SVGs)
-    ├── 04-algorithm/         (84 SVGs)
-    ├── 05-network-security/  (64 SVGs)
-    ├── 06-data-ai/           (79 SVGs)
-    ├── 07-design-thinking/   (59 SVGs)
-    ├── 08-steam/             (109 SVGs)
-    ├── 09-teaching/          (64 SVGs)
-    ├── 10-visual-symbols/    (120 SVGs)
-    ├── 11-numbers/           (51 SVGs)
-    └── 12-shapes/            (34 SVGs)
+    ├── 01-devices/            (80 SVGs)
+    ├── 02-physical-computing/ (70 SVGs)
+    ├── 03-programming/        (96 SVGs)
+    ├── 04-algorithm/          (80 SVGs)
+    ├── 05-network-security/   (80 SVGs)
+    ├── 06-data-ai/            (90 SVGs)
+    ├── 07-design-thinking/    (75 SVGs)
+    ├── 08-steam/             (118 SVGs)
+    ├── 09-teaching/           (80 SVGs)
+    ├── 10-visual-symbols/    (130 SVGs)
+    ├── 11-numbers/            (55 SVGs)
+    └── 12-shapes/             (46 SVGs)
 ```
 
 ## 핵심 스크립트: `scripts/generate-all.js`
@@ -261,9 +261,9 @@ GitHub Pages가 `master` 브랜치에서 자동 빌드되므로, push 후 1~2분
 {
   "version": "1.0.0",
   "generatedAt": "2026-02-22T...",
-  "totalCount": 510,
+  "totalCount": 1000,
   "categories": [
-    { "id": "01-devices", "name": "컴퓨터와 디지털 기기", "count": 40 }
+    { "id": "01-devices", "name": "컴퓨터와 디지털 기기", "count": 80 }
   ],
   "icons": [
     {

@@ -141,6 +141,29 @@ nav button:hover,nav button.active{background:var(--accent);color:#fff;border-co
 .png-sizes button{flex:1;padding:.3rem;border:1.5px solid var(--border);border-radius:6px;background:var(--card);color:var(--text);font-size:.65rem;cursor:pointer;transition:.15s}
 .png-sizes button:hover{border-color:var(--accent);color:var(--accent)}
 
+/* 전체 색상 변경 */
+.global-color-btn{padding:.3rem .6rem;border:1.5px solid var(--accent);border-radius:8px;background:transparent;color:var(--accent);font-size:.75rem;cursor:pointer;transition:.15s;display:inline-flex;align-items:center;gap:.3rem}
+.global-color-btn:hover{background:var(--accent);color:#fff}
+.global-color-btn.active{background:var(--accent);color:#fff}
+.global-panel-wrap{position:relative;display:inline-block}
+.global-panel{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:.5rem;background:var(--card);border:1.5px solid var(--border);border-radius:12px;padding:.8rem;z-index:50;width:320px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.global-panel.show{display:block}
+.global-panel h4{font-size:.8rem;text-align:center;margin-bottom:.5rem}
+.global-panel .gp-colors{display:flex;gap:.4rem;margin-bottom:.5rem;justify-content:center;flex-wrap:wrap}
+.global-panel .gp-color-item{display:flex;align-items:center;gap:.25rem;font-size:.65rem;color:var(--sub)}
+.global-panel .gp-color-item input[type="color"]{width:26px;height:26px;border:2px solid var(--border);border-radius:6px;cursor:pointer;padding:1px;background:var(--card);-webkit-appearance:none;appearance:none}
+.global-panel .gp-color-item input[type="color"]::-webkit-color-swatch-wrapper{padding:1px}
+.global-panel .gp-color-item input[type="color"]::-webkit-color-swatch{border-radius:4px;border:none}
+.global-panel .gp-presets{display:grid;grid-template-columns:repeat(4,1fr);gap:.25rem;margin-bottom:.5rem}
+.global-panel .gp-presets button{padding:.3rem .15rem;border:1.5px solid var(--border);border-radius:6px;background:var(--card);cursor:pointer;text-align:center;font-size:.58rem;color:var(--text);transition:.15s}
+.global-panel .gp-presets button:hover{border-color:var(--accent)}
+.global-panel .gp-actions{display:flex;gap:.3rem}
+.global-panel .gp-actions button{flex:1;padding:.35rem;border:1.5px solid var(--accent);border-radius:8px;font-size:.72rem;cursor:pointer;transition:.15s}
+.global-panel .gp-actions .gp-apply{background:var(--accent);color:#fff;border-color:var(--accent)}
+.global-panel .gp-actions .gp-reset{background:transparent;color:var(--sub);border-color:var(--border)}
+.global-color-indicator{display:inline-flex;gap:2px;margin-left:.3rem}
+.global-color-indicator span{width:8px;height:8px;border-radius:50%;border:1px solid rgba(0,0,0,.1)}
+
 footer{text-align:center;padding:1.5rem;color:var(--sub);font-size:.75rem;border-top:1px solid var(--border)}
 footer a{color:var(--accent)}
 
@@ -167,6 +190,10 @@ footer a{color:var(--accent)}
     <div class="view-btns">
       <button class="active" data-v="grid">그리드</button>
       <button data-v="table">문서</button>
+    </div>
+    <div class="global-panel-wrap">
+      <button class="global-color-btn" id="globalColorBtn">&#127912; 전체 색상 변경</button>
+      <div class="global-panel" id="globalPanel"></div>
     </div>
     <a class="doc-link" href="catalog.csv" download>CSV 다운로드</a>
     <a class="doc-link" href="catalog.json" download>JSON 다운로드</a>
@@ -228,6 +255,8 @@ const CN={'01-devices':'컴퓨터와 디지털 기기','02-physical-computing':'
 let all=[],activeCat='all',view='grid';
 let dlFormats=new Set(['svg']); // 다중 포맷 선택
 let selected=new Set(); // category/filename 기준 선택 관리
+let globalColor=null; // 전역 색상 커스텀 상태 {grad1,grad2,bg,border}
+const svgCache={}; // SVG 텍스트 캐시
 
 fetch('catalog.json').then(r=>r.json()).then(d=>{
   all=d.icons;
@@ -289,7 +318,23 @@ function formatLabel(fmt){
 }
 
 /* 개별 다운로드 (단일 포맷) */
-function dlOne(ic, fmt){
+async function dlOne(ic, fmt){
+  if(globalColor){
+    const svgText=await fetchSvgText('svg/'+ic.category+'/'+ic.filename);
+    const modified=applySvgColors(svgText,globalColor);
+    if(fmt==='svg'){
+      const a=document.createElement('a');
+      a.href=URL.createObjectURL(new Blob([modified],{type:'image/svg+xml'}));
+      a.download=ic.filename;a.click();URL.revokeObjectURL(a.href);
+    } else {
+      const size=parseInt(fmt.split('-')[1]);
+      const pngBlob=await svgToPngBlob(modified,size);
+      const a=document.createElement('a');
+      a.href=URL.createObjectURL(pngBlob);
+      a.download=ic.filename.replace('.svg','.png');a.click();URL.revokeObjectURL(a.href);
+    }
+    return;
+  }
   const f=getFilePath(ic, fmt);
   fetch(f.path).then(r=>{
     if(!r.ok) throw new Error('파일 없음');
@@ -450,6 +495,7 @@ function render(){
         '<img src="svg/'+ic.category+'/'+ic.filename+'" alt="'+ic.name+'" loading="lazy">'+
         '<span>'+ic.name+'</span></div>';
     }).join('');
+    if(globalColor) applyGlobalColorToVisible();
     g.querySelectorAll('.card').forEach(c=>{
       c.onclick=e=>{
         if(e.target.closest('.card-info')){
@@ -484,6 +530,7 @@ function render(){
         '<td>'+ic.description+'</td><td>'+ic.useCases+'</td>'+
         '<td><button class="row-dl">'+formatsLabel()+'</button></td></tr>';
     }).join('');
+    if(globalColor) applyGlobalColorToVisible();
     b.querySelectorAll('tr').forEach(tr=>{
       tr.onclick=e=>{
         if(e.target.closest('.row-chk')){
@@ -743,6 +790,197 @@ function downloadCustomPng(size){
     a.click();
   };
   img.src=url;
+}
+
+/* ===== 전체 색상 변경 기능 ===== */
+async function fetchSvgText(path){
+  if(svgCache[path]) return svgCache[path];
+  const r=await fetch(path);
+  const t=await r.text();
+  svgCache[path]=t;
+  return t;
+}
+
+function toggleGlobalPanel(){
+  const panel=document.getElementById('globalPanel');
+  const btn=document.getElementById('globalColorBtn');
+  if(panel.classList.contains('show')){
+    panel.classList.remove('show');btn.classList.remove('active');return;
+  }
+  btn.classList.add('active');
+  const gc=globalColor||{grad1:'#2563eb',grad2:'#60a5fa',bg:'#eff6ff',border:'#2563eb'};
+  const presets=COLOR_PRESETS.map((p,i)=>
+    '<button data-pi="'+i+'">'+
+    '<div class="preset-preview">'+
+    '<span class="preset-swatch" style="background:'+p.bg+'"></span>'+
+    '<span class="preset-swatch" style="background:linear-gradient(135deg,'+p.grad1+','+p.grad2+')"></span>'+
+    '</div>'+p.name+'</button>'
+  ).join('');
+  panel.innerHTML=
+    '<h4>전체 색상 변경</h4>'+
+    '<div class="gp-colors">'+
+    '<div class="gp-color-item"><input type="color" value="'+gc.grad1+'" data-key="grad1"><span>시작</span></div>'+
+    '<div class="gp-color-item"><input type="color" value="'+gc.grad2+'" data-key="grad2"><span>끝</span></div>'+
+    '<div class="gp-color-item"><input type="color" value="'+gc.bg+'" data-key="bg"><span>배경</span></div>'+
+    '<div class="gp-color-item"><input type="color" value="'+gc.border+'" data-key="border"><span>선</span></div>'+
+    '</div>'+
+    '<div class="gp-presets">'+presets+'</div>'+
+    '<div class="gp-actions">'+
+    '<button class="gp-reset" id="gpResetBtn">원래 색상</button>'+
+    '<button class="gp-apply" id="gpApplyBtn">적용</button>'+
+    '</div>';
+  panel.classList.add('show');
+
+  // 프리셋 클릭
+  panel.querySelectorAll('.gp-presets button').forEach(b=>{
+    b.onclick=()=>{
+      const p=COLOR_PRESETS[+b.dataset.pi];
+      panel.querySelector('input[data-key="grad1"]').value=p.grad1;
+      panel.querySelector('input[data-key="grad2"]').value=p.grad2;
+      panel.querySelector('input[data-key="bg"]').value=p.bg;
+      panel.querySelector('input[data-key="border"]').value=p.border;
+    };
+  });
+
+  // 적용 버튼
+  document.getElementById('gpApplyBtn').onclick=()=>{
+    globalColor={
+      grad1:panel.querySelector('input[data-key="grad1"]').value,
+      grad2:panel.querySelector('input[data-key="grad2"]').value,
+      bg:panel.querySelector('input[data-key="bg"]').value,
+      border:panel.querySelector('input[data-key="border"]').value
+    };
+    panel.classList.remove('show');
+    updateGlobalColorBtn();
+    applyGlobalColorToVisible();
+  };
+
+  // 원래 색상 복원
+  document.getElementById('gpResetBtn').onclick=()=>{
+    globalColor=null;
+    panel.classList.remove('show');
+    updateGlobalColorBtn();
+    render(); // 원본 이미지로 복원
+  };
+}
+
+function updateGlobalColorBtn(){
+  const btn=document.getElementById('globalColorBtn');
+  btn.classList.toggle('active',!!globalColor);
+  const existing=btn.querySelector('.global-color-indicator');
+  if(existing) existing.remove();
+  if(globalColor){
+    const indicator=document.createElement('span');
+    indicator.className='global-color-indicator';
+    indicator.innerHTML='<span style="background:'+globalColor.grad1+'"></span><span style="background:'+globalColor.bg+'"></span>';
+    btn.appendChild(indicator);
+  }
+}
+
+async function applyGlobalColorToVisible(){
+  if(!globalColor) return;
+  const imgs=document.querySelectorAll('#grid .card img, #docBody img');
+  const tasks=[];
+  imgs.forEach(img=>{
+    const origSrc=img.getAttribute('src');
+    // blob URL이면 data-orig에서 원본 경로 사용
+    const path=img.dataset.orig||origSrc;
+    if(!path.startsWith('svg/')) return;
+    img.dataset.orig=path;
+    tasks.push((async()=>{
+      const svgText=await fetchSvgText(path);
+      const modified=applySvgColors(svgText,globalColor);
+      if(img._blobUrl) URL.revokeObjectURL(img._blobUrl);
+      const url=URL.createObjectURL(new Blob([modified],{type:'image/svg+xml'}));
+      img.src=url;
+      img._blobUrl=url;
+    })());
+  });
+  await Promise.all(tasks);
+}
+
+// 패널 외부 클릭 시 닫기
+document.addEventListener('click',e=>{
+  const panel=document.getElementById('globalPanel');
+  const btn=document.getElementById('globalColorBtn');
+  if(panel.classList.contains('show')&&!panel.contains(e.target)&&!btn.contains(e.target)){
+    panel.classList.remove('show');
+    btn.classList.remove('active');
+  }
+});
+
+document.getElementById('globalColorBtn').onclick=e=>{
+  e.stopPropagation();
+  toggleGlobalPanel();
+};
+
+// ZIP 다운로드에 전역 색상 적용
+const origDlZip=dlZip;
+dlZip=async function(icons,filePrefix){
+  if(!globalColor) return origDlZip(icons,filePrefix);
+  const fmts=[...dlFormats];
+  // 전역 색상 적용 시 SVG만 색상 변경, PNG는 서버 파일 사용
+  if(!fmts.includes('svg')&&fmts.every(f=>f.startsWith('png'))){
+    return origDlZip(icons,filePrefix);
+  }
+  const total=icons.length*fmts.length;
+  const overlay=document.getElementById('progressOverlay');
+  const fill=document.getElementById('progressFill');
+  const text=document.getElementById('progressText');
+  const title=document.getElementById('progressTitle');
+  title.textContent='커스텀 색상 '+formatsLabel()+' 준비 중...';
+  fill.style.width='0%';text.textContent='0 / '+total;
+  overlay.classList.add('show');
+  const zip=new JSZip();
+  let done=0;
+  const multiFormat=fmts.length>1;
+  for(const ic of icons){
+    for(const fmt of fmts){
+      const f=getFilePath(ic,fmt);
+      const folder=multiFormat?(fmt==='svg'?'svg':'png-'+fmt.split('-')[1])+'/':'';
+      try{
+        if(fmt==='svg'){
+          const svgText=await fetchSvgText(f.path);
+          const modified=applySvgColors(svgText,globalColor);
+          zip.file(folder+ic.category+'/'+f.name,modified);
+        } else {
+          // PNG도 커스텀 색상 적용
+          const svgText=await fetchSvgText('svg/'+ic.category+'/'+ic.filename);
+          const modified=applySvgColors(svgText,globalColor);
+          const size=parseInt(fmt.split('-')[1]);
+          const pngBlob=await svgToPngBlob(modified,size);
+          zip.file(folder+ic.category+'/'+f.name,pngBlob);
+        }
+      }catch(e){}
+      done++;
+      fill.style.width=Math.round(done/total*100)+'%';
+      text.textContent=done+' / '+total;
+    }
+  }
+  title.textContent='ZIP 파일 생성 중...';
+  const blob=await zip.generateAsync({type:'blob'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=filePrefix+'-custom.zip';
+  a.click();URL.revokeObjectURL(a.href);
+  overlay.classList.remove('show');
+};
+
+function svgToPngBlob(svgText,size){
+  return new Promise((resolve,reject)=>{
+    const blob=new Blob([svgText],{type:'image/svg+xml'});
+    const url=URL.createObjectURL(blob);
+    const img=new Image();
+    img.onload=()=>{
+      const canvas=document.createElement('canvas');
+      canvas.width=size;canvas.height=size;
+      canvas.getContext('2d').drawImage(img,0,0,size,size);
+      URL.revokeObjectURL(url);
+      canvas.toBlob(b=>resolve(b),'image/png');
+    };
+    img.onerror=reject;
+    img.src=url;
+  });
 }
 </script>
 </body>

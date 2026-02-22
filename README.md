@@ -121,7 +121,7 @@ info-class-svg/
 ├── package.json              ← npm 의존성 (lucide-static, @tabler/icons)
 ├── .gitignore
 ├── .nojekyll                 ← GitHub Pages Jekyll 비활성화
-├── favicon.svg               ← 사이트 파비콘 (데이터 차트 + 돋보기)
+├── (파비콘은 index.html 내 인라인 SVG data URI로 포함)
 ├── illustrations/            ← 일러스트레이션 30개 (커버 12 + 개념 18)
 ├── png/                      ← PNG 변환본 (32/64/128/256px)
 ├── scripts/
@@ -344,18 +344,115 @@ monitor.svg,01-devices,모니터,컴퓨터 모니터 화면,"컴퓨터 구성요
 
 ## 갤러리 (index.html) 기능
 
-- **순수 HTML+CSS+JS** — 외부 의존성 없음
+**순수 HTML+CSS+JS** 단일 파일. 외부 의존성은 `JSZip` (CDN)뿐.
+
+### 기본 기능
 - `catalog.json`을 fetch하여 동적 렌더링
 - 실시간 검색: 이름, 설명, 사용상황, 카테고리명으로 필터
 - 두 가지 뷰: 그리드 (아이콘 카드) / 문서 (테이블)
 - 모달: 아이콘 상세 정보, 다운로드, SVG 코드 복사
-- **색상 편집 패널**: 모달 내 색상 커스터마이징 (그라데이션 시작/끝, 배경, 테두리)
-  - 16개 추천 팔레트 프리셋 (배경+메인색상 조합)
-  - 실시간 미리보기
-  - 커스텀 SVG 다운로드/코드 복사
-  - 커스텀 PNG 다운로드 (32·64·128·256px, Canvas API)
 - 다크모드: `prefers-color-scheme` 자동 감지
 - CSV/JSON 다운로드 링크
+
+### 다운로드 기능
+- SVG / PNG (32·64·128·256px) 다중 포맷 선택
+- 개별 다운로드 (카드 클릭), 전체 ZIP, 선택 ZIP
+- 전역 색상 변경 시 다운로드에도 변경된 색상 자동 적용
+
+### 색상 커스터마이징 (index.html 내 구현)
+
+원본 SVG 파일은 변경하지 않음. 브라우저에서 `DOMParser`로 SVG를 파싱하여 메모리 상에서만 색상을 변경.
+
+#### 변경 가능한 4가지 색상 요소
+
+| 요소 | SVG 내 위치 | 설명 |
+|------|------------|------|
+| 그라데이션 시작 | `<linearGradient> <stop offset="0%">` | 아이콘 선 색상의 시작점 |
+| 그라데이션 끝 | `<linearGradient> <stop offset="100%">` | 아이콘 선 색상의 끝점 |
+| 배경 | 첫 번째 `<rect>` 의 `fill` | 둥근 사각형 배경색 |
+| 테두리 | 두 번째 `<rect>` 의 `stroke` | 배경 테두리 색상 |
+
+#### 개별 아이콘 색상 편집
+
+- 아이콘 ⓘ 버튼 → 모달 → "🎨 색상 편집" 버튼 클릭
+- 4개 색상 피커 + hex 직접 입력
+- 16개 프리셋 팔레트 원클릭 적용
+- 실시간 미리보기
+- 커스텀 SVG 다운로드/코드 복사, PNG 다운로드 (32/64/128/256px)
+- "초기화" 버튼으로 원본 복원
+
+#### 전체 아이콘 색상 변경
+
+- 툴바 "🎨 전체 색상 변경" 버튼 클릭
+- 프리셋 선택 또는 자유 색상 지정 → "적용" 클릭
+- 현재 보이는 모든 아이콘이 실시간으로 색상 변경
+- 카테고리 전환/검색 시에도 색상 유지
+- 개별/전체/선택 다운로드에 변경된 색상 적용 (SVG + PNG 모두)
+- "원래 색상" 버튼으로 원본 복원
+
+#### 16개 프리셋 팔레트
+
+| 이름 | 그라데이션 | 배경 |
+|------|-----------|------|
+| 오션 블루 | `#2563eb → #60a5fa` | `#eff6ff` |
+| 에메랄드 | `#059669 → #34d399` | `#ecfdf5` |
+| 선셋 오렌지 | `#ea580c → #fb923c` | `#fff7ed` |
+| 로즈 핑크 | `#e11d48 → #fb7185` | `#fff1f2` |
+| 로열 퍼플 | `#7c3aed → #a78bfa` | `#f5f3ff` |
+| 사이버 틸 | `#0891b2 → #22d3ee` | `#ecfeff` |
+| 골든 앰버 | `#b45309 → #fbbf24` | `#fffbeb` |
+| 포레스트 | `#15803d → #86efac` | `#f0fdf4` |
+| 미드나잇 | `#60a5fa → #93c5fd` | `#1e293b` |
+| 슬레이트 | `#334155 → #94a3b8` | `#f8fafc` |
+| 체리 레드 | `#dc2626 → #f87171` | `#fef2f2` |
+| 라벤더 | `#9333ea → #d8b4fe` | `#faf5ff` |
+| 코럴 | `#f43f5e → #fda4af` | `#fff1f2` |
+| 인디고 | `#4338ca → #818cf8` | `#eef2ff` |
+| 민트 | `#0d9488 → #5eead4` | `#f0fdfa` |
+| 모노 화이트 | `#1e293b → #64748b` | `#ffffff` |
+
+#### 핵심 JS 함수 (색상 관련)
+
+| 함수 | 역할 |
+|------|------|
+| `extractColors(svgText)` | SVG 텍스트에서 4가지 색상 추출 |
+| `applySvgColors(svgText, colors)` | SVG 텍스트에 새 색상 적용, 수정된 SVG 문자열 반환 |
+| `toggleColorPanel(svgPath)` | 개별 아이콘 색상 편집 패널 토글 |
+| `toggleGlobalPanel()` | 전체 색상 변경 패널 토글 |
+| `applyGlobalColorToVisible()` | 현재 보이는 아이콘에 전역 색상 일괄 적용 |
+| `fetchSvgText(path)` | SVG 텍스트 fetch + 캐시 (`svgCache` 객체) |
+| `downloadCustomPng(size)` | 커스텀 SVG → Canvas → PNG 변환 다운로드 |
+| `svgToPngBlob(svgText, size)` | SVG 텍스트 → PNG Blob 변환 (ZIP용) |
+
+#### 전역 상태 변수 (색상 관련)
+
+| 변수 | 타입 | 설명 |
+|------|------|------|
+| `colorState` | `object \| null` | 개별 아이콘 편집 상태 (`{grad1, grad2, bg, border, svgText, path, orig}`) |
+| `globalColor` | `object \| null` | 전체 색상 상태 (`{grad1, grad2, bg, border}`). `null`이면 원본 |
+| `svgCache` | `object` | SVG 텍스트 캐시 (경로 → 텍스트). 중복 fetch 방지 |
+
+#### 새 프리셋 추가 방법
+
+`index.html`의 `COLOR_PRESETS` 배열에 객체 추가:
+
+```javascript
+{name:'프리셋이름', grad1:'#hex', grad2:'#hex', bg:'#hex', border:'#hex'}
+```
+
+개별 편집 패널과 전체 색상 변경 패널 모두 이 배열을 공유합니다.
+
+### index.html 주요 JS 함수 요약
+
+| 함수 | 역할 |
+|------|------|
+| `render()` | 그리드/테이블 뷰 렌더링 (필터 적용 + 전역 색상 적용) |
+| `filter()` | 검색어 + 카테고리 필터링 |
+| `showModal(ic)` | 아이콘 상세 모달 표시 |
+| `dlOne(ic, fmt)` | 단일 아이콘 단일 포맷 다운로드 |
+| `dlFile(ic)` | 단일 아이콘 선택된 포맷들 다운로드 |
+| `dlZip(icons, prefix)` | 다수 아이콘 ZIP 다운로드 (진행률 표시) |
+| `copySvg(path)` | SVG 코드 클립보드 복사 |
 
 ## 라이선스
 

@@ -109,6 +109,38 @@ nav button:hover,nav button.active{background:var(--accent);color:#fff;border-co
 .modal .btns button{flex:1;padding:.45rem;border:1.5px solid var(--accent);border-radius:8px;background:transparent;color:var(--accent);font-size:.78rem;cursor:pointer}
 .modal .btns button:first-child{background:var(--accent);color:#fff}
 .empty{text-align:center;color:var(--sub);padding:3rem;grid-column:1/-1}
+
+/* 색상 커스텀 */
+.color-edit-btn{width:100%;margin-top:.5rem;padding:.5rem;border:1.5px dashed var(--accent);border-radius:8px;background:transparent;color:var(--accent);font-size:.78rem;cursor:pointer;transition:.15s}
+.color-edit-btn:hover{background:rgba(37,99,235,.06)}
+.modal.color-mode{max-width:560px}
+.color-panel{display:none;margin-top:.8rem;padding:.8rem;background:var(--bg);border-radius:12px}
+.color-panel.show{display:block}
+.color-panel h3{font-size:.85rem;margin-bottom:.6rem;text-align:center}
+.color-row{display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem}
+.color-row label{font-size:.72rem;color:var(--sub);min-width:80px;flex-shrink:0}
+.color-row input[type="color"]{width:32px;height:32px;border:2px solid var(--border);border-radius:8px;cursor:pointer;padding:1px;background:var(--card);-webkit-appearance:none;appearance:none}
+.color-row input[type="color"]::-webkit-color-swatch-wrapper{padding:1px}
+.color-row input[type="color"]::-webkit-color-swatch{border-radius:5px;border:none}
+.color-row .hex-input{width:76px;font-size:.72rem;font-family:monospace;padding:.25rem .4rem;border:1.5px solid var(--border);border-radius:6px;background:var(--card);color:var(--text)}
+.preset-section{margin:.6rem 0}
+.preset-section>label{font-size:.72rem;color:var(--sub);font-weight:600;display:block;margin-bottom:.3rem}
+.preset-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.3rem}
+.preset-btn{padding:.35rem .2rem;border:1.5px solid var(--border);border-radius:8px;background:var(--card);cursor:pointer;text-align:center;font-size:.62rem;color:var(--text);transition:.15s}
+.preset-btn:hover{border-color:var(--accent)}
+.preset-preview{display:flex;gap:2px;justify-content:center;margin-bottom:2px}
+.preset-swatch{width:12px;height:12px;border-radius:3px;border:1px solid rgba(0,0,0,.1)}
+.color-preview-wrap{text-align:center;margin:.6rem 0}
+.color-preview-wrap svg{width:100px;height:100px}
+.color-actions{display:flex;gap:.35rem;margin-top:.5rem;flex-wrap:wrap}
+.color-actions button{flex:1;padding:.4rem;border:1.5px solid var(--accent);border-radius:8px;font-size:.72rem;cursor:pointer;transition:.15s;min-width:0;white-space:nowrap}
+.color-actions .cdl{background:var(--accent);color:#fff;border-color:var(--accent)}
+.color-actions .ccopy{background:transparent;color:var(--accent)}
+.color-actions .creset{background:transparent;color:var(--sub);border-color:var(--border)}
+.png-sizes{display:flex;gap:.3rem;margin-top:.35rem}
+.png-sizes button{flex:1;padding:.3rem;border:1.5px solid var(--border);border-radius:6px;background:var(--card);color:var(--text);font-size:.65rem;cursor:pointer;transition:.15s}
+.png-sizes button:hover{border-color:var(--accent);color:var(--accent)}
+
 footer{text-align:center;padding:1.5rem;color:var(--sub);font-size:.75rem;border-top:1px solid var(--border)}
 footer a{color:var(--accent)}
 
@@ -501,18 +533,217 @@ function showModal(ic){
       '<div><strong>사용 상황: </strong>'+ic.useCases+'</div>'+
     '</div>'+
     '<div class="dl-section"><label>다운로드 (포맷 선택)</label><div class="dl-grid" id="modalDlGrid">'+dlBtns+'</div></div>'+
-    '<div class="btns"><button onclick="copySvg(\''+svgPath+'\')">SVG 코드 복사</button></div>';
+    '<div class="btns"><button onclick="copySvg(\''+svgPath+'\')">SVG 코드 복사</button></div>'+
+    '<button class="color-edit-btn" id="colorEditBtn">&#127912; 색상 편집</button>'+
+    '<div class="color-panel" id="colorPanel"></div>';
 
   document.getElementById('modalDlGrid').querySelectorAll('button').forEach(btn=>{
     btn.onclick=()=>dlOne(ic, btn.dataset.fmt);
   });
+  document.getElementById('colorEditBtn').onclick=()=>toggleColorPanel(svgPath);
 
-  document.getElementById('modal').querySelector('.close').onclick=()=>document.getElementById('modalBg').classList.remove('show');
+  const closeModal=()=>{document.getElementById('modalBg').classList.remove('show');document.getElementById('modal').classList.remove('color-mode');colorState=null};
+  document.getElementById('modal').querySelector('.close').onclick=closeModal;
   document.getElementById('modalBg').classList.add('show');
 }
-document.getElementById('modalBg').onclick=e=>{if(e.target.id==='modalBg')e.target.classList.remove('show')};
+document.getElementById('modalBg').onclick=e=>{if(e.target.id==='modalBg'){e.target.classList.remove('show');document.getElementById('modal').classList.remove('color-mode');colorState=null}};
 document.getElementById('q').addEventListener('input',render);
 function copySvg(p){fetch(p).then(r=>r.text()).then(t=>{navigator.clipboard.writeText(t).then(()=>alert('SVG 코드가 복사되었습니다!'))})}
+
+/* ===== 색상 커스텀 기능 ===== */
+let colorState=null;
+const COLOR_PRESETS=[
+  {name:'오션 블루',grad1:'#2563eb',grad2:'#60a5fa',bg:'#eff6ff',border:'#2563eb'},
+  {name:'에메랄드',grad1:'#059669',grad2:'#34d399',bg:'#ecfdf5',border:'#059669'},
+  {name:'선셋 오렌지',grad1:'#ea580c',grad2:'#fb923c',bg:'#fff7ed',border:'#ea580c'},
+  {name:'로즈 핑크',grad1:'#e11d48',grad2:'#fb7185',bg:'#fff1f2',border:'#e11d48'},
+  {name:'로열 퍼플',grad1:'#7c3aed',grad2:'#a78bfa',bg:'#f5f3ff',border:'#7c3aed'},
+  {name:'사이버 틸',grad1:'#0891b2',grad2:'#22d3ee',bg:'#ecfeff',border:'#0891b2'},
+  {name:'골든 앰버',grad1:'#b45309',grad2:'#fbbf24',bg:'#fffbeb',border:'#b45309'},
+  {name:'포레스트',grad1:'#15803d',grad2:'#86efac',bg:'#f0fdf4',border:'#15803d'},
+  {name:'미드나잇',grad1:'#60a5fa',grad2:'#93c5fd',bg:'#1e293b',border:'#334155'},
+  {name:'슬레이트',grad1:'#334155',grad2:'#94a3b8',bg:'#f8fafc',border:'#334155'},
+  {name:'체리 레드',grad1:'#dc2626',grad2:'#f87171',bg:'#fef2f2',border:'#dc2626'},
+  {name:'라벤더',grad1:'#9333ea',grad2:'#d8b4fe',bg:'#faf5ff',border:'#9333ea'},
+  {name:'코럴',grad1:'#f43f5e',grad2:'#fda4af',bg:'#fff1f2',border:'#f43f5e'},
+  {name:'인디고',grad1:'#4338ca',grad2:'#818cf8',bg:'#eef2ff',border:'#4338ca'},
+  {name:'민트',grad1:'#0d9488',grad2:'#5eead4',bg:'#f0fdfa',border:'#0d9488'},
+  {name:'모노 화이트',grad1:'#1e293b',grad2:'#64748b',bg:'#ffffff',border:'#e2e8f0'},
+];
+
+function extractColors(svgText){
+  const doc=new DOMParser().parseFromString(svgText,'image/svg+xml');
+  const stops=doc.querySelectorAll('linearGradient stop');
+  const rects=doc.querySelectorAll('rect');
+  return{
+    grad1:stops[0]?.getAttribute('stop-color')||'#2563eb',
+    grad2:stops[1]?.getAttribute('stop-color')||'#60a5fa',
+    bg:rects[0]?.getAttribute('fill')||'#eff6ff',
+    border:rects[1]?.getAttribute('stroke')||'#2563eb'
+  };
+}
+
+function applySvgColors(svgText,colors){
+  const doc=new DOMParser().parseFromString(svgText,'image/svg+xml');
+  const stops=doc.querySelectorAll('linearGradient stop');
+  const rects=doc.querySelectorAll('rect');
+  if(stops[0])stops[0].setAttribute('stop-color',colors.grad1);
+  if(stops[1])stops[1].setAttribute('stop-color',colors.grad2);
+  if(rects[0])rects[0].setAttribute('fill',colors.bg);
+  if(rects[1])rects[1].setAttribute('stroke',colors.border);
+  return new XMLSerializer().serializeToString(doc.documentElement);
+}
+
+function toggleColorPanel(svgPath){
+  const panel=document.getElementById('colorPanel');
+  const modal=document.getElementById('modal');
+  if(panel.classList.contains('show')){
+    panel.classList.remove('show');modal.classList.remove('color-mode');colorState=null;return;
+  }
+  modal.classList.add('color-mode');
+  fetch(svgPath).then(r=>r.text()).then(svgText=>{
+    const orig=extractColors(svgText);
+    colorState={...orig,svgText,path:svgPath,orig:{...orig}};
+    renderColorPanel();
+  });
+}
+
+function renderColorPanel(){
+  const panel=document.getElementById('colorPanel');
+  const c=colorState;
+  const fields=[
+    {key:'grad1',label:'메인 색상 (시작)'},
+    {key:'grad2',label:'메인 색상 (끝)'},
+    {key:'bg',label:'배경 색상'},
+    {key:'border',label:'테두리 색상'}
+  ];
+  const rows=fields.map(f=>
+    '<div class="color-row"><label>'+f.label+'</label>'+
+    '<input type="color" value="'+c[f.key]+'" data-key="'+f.key+'">'+
+    '<input type="text" class="hex-input" value="'+c[f.key]+'" data-key="'+f.key+'"></div>'
+  ).join('');
+  const presets=COLOR_PRESETS.map((p,i)=>
+    '<button class="preset-btn" data-pi="'+i+'">'+
+    '<div class="preset-preview">'+
+    '<span class="preset-swatch" style="background:'+p.bg+';border-color:'+p.border+'"></span>'+
+    '<span class="preset-swatch" style="background:linear-gradient(135deg,'+p.grad1+','+p.grad2+')"></span>'+
+    '</div>'+p.name+'</button>'
+  ).join('');
+  panel.innerHTML=
+    '<h3>색상 편집</h3>'+rows+
+    '<div class="preset-section"><label>추천 색상 팔레트</label><div class="preset-grid">'+presets+'</div></div>'+
+    '<div class="color-preview-wrap" id="colorPreview"></div>'+
+    '<div class="color-actions">'+
+    '<button class="creset" id="cResetBtn">초기화</button>'+
+    '<button class="ccopy" id="cCopyBtn">SVG 복사</button>'+
+    '<button class="cdl" id="cDlBtn">SVG 다운로드</button>'+
+    '</div>'+
+    '<div class="color-actions" style="margin-top:.2rem">'+
+    '<button class="cdl" id="cPngBtn">PNG 다운로드</button>'+
+    '</div>'+
+    '<div class="png-sizes hidden" id="pngSizes">'+
+    '<button data-sz="32">32px</button><button data-sz="64">64px</button>'+
+    '<button data-sz="128">128px</button><button data-sz="256">256px</button>'+
+    '</div>';
+  panel.classList.add('show');
+  updateColorPreview();
+  bindColorEvents();
+}
+
+function getCustomSvg(){
+  return applySvgColors(colorState.svgText,colorState);
+}
+
+function updateColorPreview(){
+  const wrap=document.getElementById('colorPreview');
+  if(!wrap||!colorState)return;
+  const svg=getCustomSvg();
+  wrap.innerHTML=svg;
+  const img=document.querySelector('#modal img');
+  if(img){
+    if(img._blobUrl)URL.revokeObjectURL(img._blobUrl);
+    const url=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml'}));
+    img.src=url;img._blobUrl=url;
+  }
+}
+
+function syncInputs(){
+  ['grad1','grad2','bg','border'].forEach(k=>{
+    const picker=document.querySelector('#colorPanel input[type="color"][data-key="'+k+'"]');
+    const hex=document.querySelector('#colorPanel .hex-input[data-key="'+k+'"]');
+    if(picker)picker.value=colorState[k];
+    if(hex)hex.value=colorState[k];
+  });
+}
+
+function bindColorEvents(){
+  document.querySelectorAll('#colorPanel input[type="color"]').forEach(inp=>{
+    inp.addEventListener('input',e=>{
+      colorState[e.target.dataset.key]=e.target.value;
+      const hex=document.querySelector('#colorPanel .hex-input[data-key="'+e.target.dataset.key+'"]');
+      if(hex)hex.value=e.target.value;
+      updateColorPreview();
+    });
+  });
+  document.querySelectorAll('#colorPanel .hex-input').forEach(inp=>{
+    inp.addEventListener('input',e=>{
+      const v=e.target.value.trim();
+      if(/^#[0-9a-fA-F]{6}$/.test(v)){
+        colorState[e.target.dataset.key]=v;
+        const picker=document.querySelector('#colorPanel input[type="color"][data-key="'+e.target.dataset.key+'"]');
+        if(picker)picker.value=v;
+        updateColorPreview();
+      }
+    });
+  });
+  document.querySelectorAll('.preset-btn').forEach(btn=>{
+    btn.onclick=()=>{
+      const p=COLOR_PRESETS[+btn.dataset.pi];
+      colorState.grad1=p.grad1;colorState.grad2=p.grad2;colorState.bg=p.bg;colorState.border=p.border;
+      syncInputs();updateColorPreview();
+    };
+  });
+  document.getElementById('cResetBtn').onclick=()=>{
+    colorState.grad1=colorState.orig.grad1;colorState.grad2=colorState.orig.grad2;
+    colorState.bg=colorState.orig.bg;colorState.border=colorState.orig.border;
+    syncInputs();updateColorPreview();
+  };
+  document.getElementById('cCopyBtn').onclick=()=>{
+    navigator.clipboard.writeText(getCustomSvg()).then(()=>alert('커스텀 SVG 코드가 복사되었습니다!'));
+  };
+  document.getElementById('cDlBtn').onclick=()=>{
+    const blob=new Blob([getCustomSvg()],{type:'image/svg+xml'});
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download=colorState.path.split('/').pop().replace('.svg','-custom.svg');
+    a.click();URL.revokeObjectURL(a.href);
+  };
+  document.getElementById('cPngBtn').onclick=()=>{
+    document.getElementById('pngSizes').classList.toggle('hidden');
+  };
+  document.querySelectorAll('#pngSizes button').forEach(btn=>{
+    btn.onclick=()=>downloadCustomPng(+btn.dataset.sz);
+  });
+}
+
+function downloadCustomPng(size){
+  const svg=getCustomSvg();
+  const blob=new Blob([svg],{type:'image/svg+xml'});
+  const url=URL.createObjectURL(blob);
+  const img=new Image();
+  img.onload=()=>{
+    const canvas=document.createElement('canvas');
+    canvas.width=size;canvas.height=size;
+    const ctx=canvas.getContext('2d');
+    ctx.drawImage(img,0,0,size,size);
+    URL.revokeObjectURL(url);
+    const a=document.createElement('a');
+    a.href=canvas.toDataURL('image/png');
+    a.download=colorState.path.split('/').pop().replace('.svg','-custom-'+size+'px.png');
+    a.click();
+  };
+  img.src=url;
+}
 </script>
 </body>
 </html>

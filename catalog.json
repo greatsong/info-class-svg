@@ -59,7 +59,7 @@
     {
       "id": "10-visual-symbols",
       "name": "시각 기호와 안내 요소",
-      "count": 125,
+      "count": 122,
       "color": "#1e293b"
     },
     {
@@ -9167,42 +9167,6 @@
       "source": "lucide"
     },
     {
-      "filename": "number-1.svg",
-      "category": "10-visual-symbols",
-      "name": "1번",
-      "description": "첫 번째",
-      "tags": [
-        "첫",
-        "번째"
-      ],
-      "useCases": "순서, 단계 1",
-      "source": "lucide"
-    },
-    {
-      "filename": "number-2.svg",
-      "category": "10-visual-symbols",
-      "name": "2번",
-      "description": "두 번째",
-      "tags": [
-        "두",
-        "번째"
-      ],
-      "useCases": "순서, 단계 2",
-      "source": "lucide"
-    },
-    {
-      "filename": "number-3.svg",
-      "category": "10-visual-symbols",
-      "name": "3번",
-      "description": "세 번째",
-      "tags": [
-        "세",
-        "번째"
-      ],
-      "useCases": "순서, 단계 3",
-      "source": "lucide"
-    },
-    {
       "filename": "tip.svg",
       "category": "10-visual-symbols",
       "name": "팁",
@@ -10844,5 +10808,5 @@
       "source": "tabler"
     }
   ],
-  "totalCount": 883
+  "totalCount": 880
 }

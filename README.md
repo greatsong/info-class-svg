@@ -72,6 +72,7 @@ info-class-svg/
 ├── .nojekyll                 ← GitHub Pages Jekyll 비활성화
 ├── scripts/
 │   ├── generate-all.js       ← 핵심 생성 스크립트 (아이콘 매핑 + 변환 + 카탈로그)
+│   ├── validate-svg.js       ← SVG 검증 스크립트 (구조 무결성 + catalog 일치 검사)
 │   ├── transform.js          ← 초기 변환 스크립트 (deprecated, generate-all.js로 통합)
 │   └── icon-mapping.json     ← 초기 매핑 (deprecated)
 └── svg/
@@ -147,9 +148,19 @@ node scripts/generate-all.js
 └──────────────────────┘       └──────────────────────────────┘
 ```
 
-## 아이콘 추가 방법
+## 아이콘 추가 → 테스트 → 문서화 → 배포 프로세스
 
-### 1. 기존 카테고리에 아이콘 추가
+새 아이콘을 추가할 때 아래 순서를 따릅니다. 이상한 아이콘이 섞이지 않도록 **검증 단계를 반드시 거칩니다**.
+
+```
+┌─────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────┐
+│ 1. 아이콘    │ →  │ 2. 생성       │ →  │ 3. 검증       │ →  │ 4. 배포   │
+│    매핑 추가  │    │ npm run      │    │ npm run      │    │ git push │
+│              │    │   generate   │    │   validate   │    │          │
+└─────────────┘    └──────────────┘    └──────────────┘    └──────────┘
+```
+
+### Step 1. 아이콘 매핑 추가
 
 `scripts/generate-all.js`의 `ICONS` 객체에서 해당 카테고리 배열에 항목 추가:
 
@@ -166,19 +177,83 @@ node scripts/generate-all.js
 - `output-filename`: 출력 파일명 (확장자 없이, `.svg` 자동 추가)
 - 한국어이름, 설명, 사용상황: catalog에 들어갈 메타데이터
 
-### 2. 새 카테고리 추가
+새 카테고리를 추가하려면:
 
 1. `PALETTES` 객체에 컬러 팔레트 추가
 2. `ICONS` 객체에 카테고리 배열 추가
 3. `index.html`의 `CN` 객체에 카테고리 한국어명 추가
 
-### 3. 재생성
+### Step 2. 생성 (Generate)
 
 ```bash
-node scripts/generate-all.js
+npm run generate
 ```
 
-이 명령으로 svg/ 폴더의 SVG 파일, catalog.json, catalog.csv가 모두 재생성됩니다.
+SVG 파일, catalog.json, catalog.csv가 모두 재생성됩니다. 콘솔에 카테고리별 개수와 실패 건수가 출력됩니다.
+
+### Step 3. 검증 (Validate)
+
+```bash
+npm run validate
+```
+
+검증 스크립트(`scripts/validate-svg.js`)가 자동으로 다음 항목을 검사합니다:
+
+| 검사 항목 | 설명 |
+|-----------|------|
+| 빈 파일 / 손상 | 파일이 비어있거나 100B 미만이면 오류 |
+| viewBox | `0 0 64 64` 형식인지 확인 |
+| xmlns | SVG namespace 선언 존재 확인 |
+| linearGradient | 그래디언트 정의 존재 확인 |
+| 배경 rect | `rx="16"` 둥근사각형 배경 확인 |
+| 아이콘 콘텐츠 | `<g transform>` 또는 `<text>` 존재 확인 |
+| currentColor 잔류 | 그래디언트 미적용 아이콘 감지 |
+| 닫는 태그 | `</svg>` 존재 확인 |
+| 파일명 중복 | 같은 카테고리 내 중복 파일명 감지 |
+| catalog ↔ 파일 일치 | catalog.json 등록과 실제 파일 매칭 |
+| 메타데이터 | 한국어 이름, 설명 빈값 경고 |
+| CSV 형식 | UTF-8 BOM, 헤더 형식 확인 |
+
+**오류(✗)가 있으면 `exit 1`** 로 종료되어, CI나 배포 스크립트에서 자동으로 중단됩니다.
+
+### Step 4. 배포 (Deploy)
+
+검증 통과 후 GitHub Pages에 배포합니다:
+
+```bash
+# 방법 A: 한 번에 생성 + 검증 + 커밋 + 푸시
+npm run deploy
+
+# 방법 B: 단계별 수동
+npm run build          # generate + validate
+git add -A
+git commit -m "add: 새 아이콘 설명"
+git push
+```
+
+GitHub Pages가 `master` 브랜치에서 자동 빌드되므로, push 후 1~2분 내에 https://greatsong.github.io/info-class-svg/ 에 반영됩니다.
+
+### npm scripts 요약
+
+| 명령어 | 동작 |
+|--------|------|
+| `npm run generate` | SVG + catalog.json + catalog.csv 생성 |
+| `npm run validate` | 모든 SVG 파일 + catalog 검증 |
+| `npm run build` | generate → validate (생성 후 검증) |
+| `npm test` | validate와 동일 (CI 호환) |
+| `npm run deploy` | generate → validate → git commit → push |
+
+### 빠른 체크리스트
+
+새 아이콘을 추가할 때 이 체크리스트를 따르세요:
+
+- [ ] `scripts/generate-all.js`의 `ICONS`에 항목 추가
+- [ ] Lucide/Tabler에 해당 아이콘이 있는지 확인
+- [ ] `npm run build` 실행 (생성 + 검증)
+- [ ] 검증 결과에 오류(✗) 없는지 확인
+- [ ] 갤러리에서 새 아이콘 육안 확인 (`index.html`을 브라우저로 열기)
+- [ ] `git add`, `git commit`, `git push`
+- [ ] GitHub Pages 반영 확인
 
 ## catalog.json 구조
 

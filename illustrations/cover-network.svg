@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#fca5a5"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <!-- 네트워크 연결선 -->
+  <line x1="32" y1="16" x2="16" y2="32" stroke="#fca5a5" stroke-width="1.5"/>
+  <line x1="32" y1="16" x2="48" y2="32" stroke="#fca5a5" stroke-width="1.5"/>
+  <line x1="32" y1="16" x2="32" y2="38" stroke="#fca5a5" stroke-width="1.5"/>
+  <line x1="16" y1="32" x2="32" y2="48" stroke="#fca5a5" stroke-width="1.5"/>
+  <line x1="48" y1="32" x2="32" y2="48" stroke="#fca5a5" stroke-width="1.5"/>
+  <line x1="16" y1="32" x2="48" y2="32" stroke="#fca5a5" stroke-width="1"/>
+  <!-- 서버 (상단 중앙) -->
+  <rect x="26" y="9" width="12" height="14" rx="2" fill="url(#g1)"/>
+  <rect x="28" y="11" width="8" height="2" rx=".5" fill="#fecaca"/>
+  <rect x="28" y="14.5" width="8" height="2" rx=".5" fill="#fecaca"/>
+  <rect x="28" y="18" width="8" height="2" rx=".5" fill="#fecaca"/>
+  <circle cx="35" cy="12" r=".8" fill="#22c55e"/>
+  <circle cx="35" cy="15.5" r=".8" fill="#22c55e"/>
+  <circle cx="35" cy="19" r=".8" fill="#eab308"/>
+  <!-- 클라이언트 1 (좌) -->
+  <rect x="8" y="27" width="16" height="10" rx="2" fill="url(#g2)"/>
+  <rect x="10" y="29" width="12" height="6" rx="1" fill="#fee2e2"/>
+  <!-- 클라이언트 2 (우) -->
+  <rect x="40" y="27" width="16" height="10" rx="2" fill="url(#g2)"/>
+  <rect x="42" y="29" width="12" height="6" rx="1" fill="#fee2e2"/>
+  <!-- 클라이언트 3 (하단) -->
+  <rect x="24" y="42" width="16" height="12" rx="2" fill="url(#g2)"/>
+  <rect x="26" y="44" width="12" height="7" rx="1" fill="#fee2e2"/>
+  <rect x="29" y="52" width="6" height="1.5" rx=".75" fill="#fca5a5"/>
+  <!-- 와이파이 신호 -->
+  <path d="M28 37 Q32 33 36 37" fill="none" stroke="#dc2626" stroke-width="1" stroke-linecap="round"/>
+  <path d="M30 39 Q32 37 34 39" fill="none" stroke="#dc2626" stroke-width="1" stroke-linecap="round"/>
+</svg>

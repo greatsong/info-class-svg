@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <!-- 큰 파이 기호 -->
+  <text x="32" y="30" font-family="serif" font-size="28" fill="url(#g1)" text-anchor="middle" font-weight="bold">π</text>
+  <!-- 수학 기호들 -->
+  <text x="12" y="16" font-family="serif" font-size="10" fill="url(#g2)" opacity=".6">∑</text>
+  <text x="48" y="18" font-family="serif" font-size="8" fill="#60a5fa" opacity=".5">∞</text>
+  <text x="8" y="40" font-family="serif" font-size="8" fill="#93c5fd" opacity=".4">√</text>
+  <text x="50" y="42" font-family="serif" font-size="9" fill="url(#g2)" opacity=".5">∫</text>
+  <!-- 수식 -->
+  <text x="32" y="44" font-family="serif" font-size="5" fill="#475569" text-anchor="middle">E = mc²</text>
+  <!-- 좌표 그리드 -->
+  <line x1="12" y1="58" x2="52" y2="58" stroke="#93c5fd" stroke-width="1" opacity=".4"/>
+  <line x1="12" y1="48" x2="12" y2="58" stroke="#93c5fd" stroke-width="1" opacity=".4"/>
+  <!-- 함수 곡선 -->
+  <path d="M14 56 Q22 48 32 52 Q42 56 50 50" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" opacity=".6"/>
+  <!-- x, y 라벨 -->
+  <text x="53" y="57" font-family="serif" font-size="4" fill="#93c5fd" font-style="italic">x</text>
+  <text x="10" y="48" font-family="serif" font-size="4" fill="#93c5fd" font-style="italic">y</text>
+</svg>

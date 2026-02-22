@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#c2410c"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <!-- 비커 (Science) -->
+  <path d="M10 46 L14 26 L22 26 L26 46Z" fill="url(#g2)" opacity=".8"/>
+  <rect x="12" y="24" width="12" height="3" rx="1" fill="#60a5fa"/>
+  <ellipse cx="18" cy="40" rx="4" ry="2" fill="#93c5fd" opacity=".5"/>
+  <!-- 거품 -->
+  <circle cx="16" cy="34" r="1.5" fill="#dbeafe" opacity=".6"/>
+  <circle cx="20" cy="36" r="1" fill="#dbeafe" opacity=".6"/>
+  <!-- 기어 (Technology/Engineering) -->
+  <circle cx="38" cy="18" r="7" fill="url(#g1)"/>
+  <circle cx="38" cy="18" r="3.5" fill="#fff7ed"/>
+  <rect x="37" y="10" width="2" height="3" fill="url(#g1)"/>
+  <rect x="37" y="23" width="2" height="3" fill="url(#g1)"/>
+  <rect x="30" y="17" width="3" height="2" fill="url(#g1)"/>
+  <rect x="43" y="17" width="3" height="2" fill="url(#g1)"/>
+  <!-- 팔레트 (Art) -->
+  <ellipse cx="48" cy="40" rx="10" ry="8" fill="url(#g1)" opacity=".85"/>
+  <circle cx="44" cy="37" r="2" fill="#ef4444"/>
+  <circle cx="48" cy="34" r="2" fill="#eab308"/>
+  <circle cx="52" cy="37" r="2" fill="#3b82f6"/>
+  <circle cx="50" cy="42" r="2" fill="#22c55e"/>
+  <circle cx="44" cy="43" r="2.5" fill="#fff7ed"/>
+  <!-- 수학 기호 (Math) -->
+  <text x="32" y="56" font-family="serif" font-size="9" fill="url(#g3)" text-anchor="middle" font-weight="bold">∑π</text>
+  <!-- 나뭇잎 (Nature) -->
+  <path d="M30 28 Q26 22 32 18 Q38 22 34 28Z" fill="url(#g3)" opacity=".7"/>
+  <line x1="32" y1="19" x2="32" y2="27" stroke="#166534" stroke-width=".6"/>
+</svg>

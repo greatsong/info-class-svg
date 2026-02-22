@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#5eead4"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#99f6e4"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
+  <!-- 칠판 -->
+  <rect x="8" y="10" width="48" height="30" rx="2" fill="#134e4a"/>
+  <rect x="10" y="12" width="44" height="26" rx="1" fill="#115e59"/>
+  <!-- 칠판 내용 -->
+  <rect x="14" y="16" width="16" height="2" rx="1" fill="#5eead4" opacity=".7"/>
+  <rect x="14" y="20" width="22" height="1.5" rx=".75" fill="#99f6e4" opacity=".5"/>
+  <rect x="14" y="24" width="12" height="1.5" rx=".75" fill="#99f6e4" opacity=".5"/>
+  <!-- 체크 마크 -->
+  <path d="M40 17 L43 20 L48 14" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 칠판 밑 트레이 -->
+  <rect x="12" y="40" width="40" height="2.5" rx="1" fill="url(#g1)"/>
+  <!-- 분필 -->
+  <rect x="16" y="40.5" width="6" height="1.5" rx=".75" fill="#fff"/>
+  <rect x="24" y="40.5" width="5" height="1.5" rx=".75" fill="#fbbf24"/>
+  <!-- 책 -->
+  <g transform="translate(10,46)">
+    <rect x="0" y="0" width="14" height="10" rx="1" fill="url(#g1)"/>
+    <line x1="7" y1="0" x2="7" y2="10" stroke="#0f766e" stroke-width=".8"/>
+    <rect x="2" y="2" width="4" height="1.5" rx=".5" fill="#ccfbf1"/>
+    <rect x="2" y="5" width="3" height="1" rx=".5" fill="#ccfbf1"/>
+  </g>
+  <!-- 연필 -->
+  <rect x="30" y="47" width="3" height="12" rx="1" fill="url(#g2)"/>
+  <polygon points="30,59 31.5,63 33,59" fill="#fbbf24"/>
+  <!-- 학생 아이콘들 -->
+  <circle cx="44" cy="49" r="3" fill="url(#g2)"/>
+  <path d="M38 58 Q44 53 50 58" fill="url(#g1)"/>
+  <circle cx="54" cy="49" r="2.5" fill="url(#g2)" opacity=".6"/>
+</svg>

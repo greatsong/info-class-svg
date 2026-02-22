@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#be185d"/>
+      <stop offset="100%" stop-color="#f9a8d4"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="1.5"/>
+  <!-- 전구 -->
+  <path d="M32 8 Q22 8 20 18 Q18 26 25 30 L25 36 L39 36 L39 30 Q46 26 44 18 Q42 8 32 8Z" fill="url(#g1)"/>
+  <!-- 전구 빛 -->
+  <line x1="32" y1="3" x2="32" y2="6" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="20" y1="6" x2="22" y2="9" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="44" y1="6" x2="42" y2="9" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="14" y1="16" x2="17" y2="17" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="16" x2="47" y2="17" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- 전구 내부 필라멘트 -->
+  <path d="M28 20 Q32 16 36 20 Q32 24 28 20Z" fill="none" stroke="#fde047" stroke-width="1.2"/>
+  <!-- 전구 소켓 -->
+  <rect x="25" y="36" width="14" height="3" rx="1" fill="#f9a8d4"/>
+  <rect x="26" y="39" width="12" height="2" rx="1" fill="#ec4899"/>
+  <rect x="27" y="41" width="10" height="2" rx="1" fill="#f9a8d4"/>
+  <!-- 연필 -->
+  <g transform="translate(8,38) rotate(-30)">
+    <rect x="0" y="0" width="4" height="20" rx="1" fill="url(#g2)"/>
+    <polygon points="0,20 2,25 4,20" fill="#fbbf24"/>
+    <rect x="0" y="0" width="4" height="3" rx="1" fill="#be185d"/>
+  </g>
+  <!-- 기어 -->
+  <circle cx="50" cy="44" r="6" fill="url(#g2)"/>
+  <circle cx="50" cy="44" r="3" fill="#fdf2f8"/>
+  <rect x="49" y="37" width="2" height="3" fill="url(#g2)"/>
+  <rect x="49" y="48" width="2" height="3" fill="url(#g2)"/>
+  <rect x="43" y="43" width="3" height="2" fill="url(#g2)"/>
+  <rect x="54" y="43" width="3" height="2" fill="url(#g2)"/>
+</svg>

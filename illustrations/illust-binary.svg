@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#022c22" stroke="#065f46" stroke-width="1.5"/>
+  <!-- 매트릭스 스타일 이진수 -->
+  <text font-family="monospace" font-size="5" fill="#4ade80" opacity=".3">
+    <tspan x="4" y="10">01101</tspan>
+    <tspan x="8" y="16">10010</tspan>
+    <tspan x="2" y="22">11001</tspan>
+    <tspan x="6" y="28">01110</tspan>
+  </text>
+  <text font-family="monospace" font-size="5" fill="#4ade80" opacity=".3">
+    <tspan x="36" y="12">10110</tspan>
+    <tspan x="40" y="18">01001</tspan>
+    <tspan x="34" y="24">11010</tspan>
+    <tspan x="38" y="30">00101</tspan>
+  </text>
+  <text font-family="monospace" font-size="5" fill="#4ade80" opacity=".2">
+    <tspan x="6" y="40">10101</tspan>
+    <tspan x="10" y="46">01010</tspan>
+    <tspan x="4" y="52">11100</tspan>
+    <tspan x="8" y="58">00011</tspan>
+  </text>
+  <text font-family="monospace" font-size="5" fill="#4ade80" opacity=".2">
+    <tspan x="38" y="42">01100</tspan>
+    <tspan x="42" y="48">10011</tspan>
+    <tspan x="36" y="54">01110</tspan>
+    <tspan x="40" y="60">10001</tspan>
+  </text>
+  <!-- 강조된 중앙 이진수 -->
+  <text x="32" y="36" font-family="monospace" font-size="12" fill="#4ade80" text-anchor="middle" font-weight="bold">01</text>
+  <!-- 글로우 효과 -->
+  <circle cx="32" cy="32" r="12" fill="none" stroke="#4ade80" stroke-width=".5" opacity=".3"/>
+  <circle cx="32" cy="32" r="16" fill="none" stroke="#10b981" stroke-width=".3" opacity=".2"/>
+</svg>

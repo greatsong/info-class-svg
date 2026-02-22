@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <!-- 안테나 -->
+  <line x1="32" y1="6" x2="32" y2="12" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="32" cy="5" r="2.5" fill="#3b82f6"/>
+  <!-- 머리 -->
+  <rect x="18" y="12" width="28" height="20" rx="4" fill="url(#g1)"/>
+  <!-- 눈 -->
+  <circle cx="25" cy="22" r="4" fill="url(#g2)"/>
+  <circle cx="25" cy="22" r="2" fill="#fff"/>
+  <circle cx="39" cy="22" r="4" fill="url(#g2)"/>
+  <circle cx="39" cy="22" r="2" fill="#fff"/>
+  <!-- 입 -->
+  <rect x="26" y="28" width="12" height="2" rx="1" fill="#60a5fa"/>
+  <!-- 목 -->
+  <rect x="28" y="32" width="8" height="4" fill="#64748b"/>
+  <!-- 몸통 -->
+  <rect x="16" y="36" width="32" height="18" rx="3" fill="url(#g1)"/>
+  <!-- 가슴 패널 -->
+  <rect x="22" y="39" width="20" height="10" rx="2" fill="#334155"/>
+  <circle cx="27" cy="42" r="1.5" fill="#22c55e"/>
+  <circle cx="32" cy="42" r="1.5" fill="#fbbf24"/>
+  <circle cx="37" cy="42" r="1.5" fill="#ef4444"/>
+  <rect x="25" y="45.5" width="14" height="2" rx="1" fill="#475569"/>
+  <!-- 팔 (좌) -->
+  <rect x="8" y="38" width="8" height="4" rx="2" fill="url(#g1)"/>
+  <circle cx="8" cy="40" r="3" fill="#94a3b8"/>
+  <!-- 팔 (우) -->
+  <rect x="48" y="38" width="8" height="4" rx="2" fill="url(#g1)"/>
+  <circle cx="56" cy="40" r="3" fill="#94a3b8"/>
+  <!-- 다리 -->
+  <rect x="22" y="54" width="6" height="6" rx="1" fill="#64748b"/>
+  <rect x="36" y="54" width="6" height="6" rx="1" fill="#64748b"/>
+</svg>

@@ -1,4 +1,4 @@
-# 교육용 SVG 아이콘 라이브러리
+# 석리송의 교육용 SVG 아이콘 라이브러리
 
 출판 수준의 교육자료(중고등 정보 교과서, 초등~중등 SW교육 워크북, 교사용 수업 자료, 프로젝트 수업)에 사용할 SVG 아이콘 라이브러리입니다.
 
@@ -9,30 +9,77 @@
 - 실시간 검색, 카테고리 필터
 - 그리드 뷰 / 문서(테이블) 뷰
 - 클릭 시 다운로드 / SVG 코드 복사
+- SVG / PNG(32·64·128·256px) 다중 포맷 지원
+- 선택 다운로드 (ZIP)
 - 다크모드 지원
 
 ## 현재 상태
 
-- **총 1,000개** SVG 아이콘
-- 12개 카테고리
+- **880+개** SVG 아이콘 (12개 카테고리)
+- **30개** 일러스트레이션 (카테고리 커버 12 + 개념 일러스트 18)
 - Lucide + Tabler Icons 기반 자동 변환 + 커스텀 숫자 SVG 생성
+- PNG 자동 생성 (32·64·128·256px)
 
 ## 카테고리 구조
 
 | # | 카테고리 | 폴더명 | 개수 | 설명 |
 |---|---------|--------|------|------|
-| 01 | 컴퓨터와 디지털 기기 | `01-devices` | 80 | PC, 모바일, 주변기기, 부품, IoT |
-| 02 | 피지컬컴퓨팅과 메이킹 | `02-physical-computing` | 70 | 센서, 액추에이터, 회로, 로봇, 논리게이트, 공구 |
-| 03 | 소프트웨어와 프로그래밍 | `03-programming` | 96 | 변수, 조건문, 반복문, 함수, 블록코딩, 언어, 에디터 |
-| 04 | 알고리즘과 자료구조 | `04-algorithm` | 80 | 정렬, 탐색, 스택, 큐, 트리, 수학, 그래프 알고리즘, 확률 |
-| 05 | 네트워크와 정보보안 | `05-network-security` | 80 | 인터넷, 프로토콜, 보안, 클라우드, 디지털시민성, 사이버위협 |
-| 06 | 데이터와 인공지능 | `06-data-ai` | 90 | 데이터 수집/분석/시각화, ML, AI, 통계, 다양한 차트 |
-| 07 | 디자인씽킹과 문제해결 | `07-design-thinking` | 75 | 공감, 정의, 아이디어, 프로토타입, 검증, UI 디자인 |
-| 08 | STEAM 융합 | `08-steam` | 118 | 과학/수학/사회/미술/음악, 생물, 천문, 악기 |
-| 09 | 수업 활동과 평가 | `09-teaching` | 80 | 교과서, 학습목표, 루브릭, 피드백, 학용품, 보상 |
-| 10 | 시각 기호와 안내 요소 | `10-visual-symbols` | 130 | 화살표, 체크, 경고, 도형기호, 변환, 레이어, 메뉴 |
-| 11 | 숫자와 번호 | `11-numbers` | 55 | 숫자 0~40, 50, 64, 100, 128, 원숫자 0~9 |
-| 12 | 도형과 입체 | `12-shapes` | 46 | 2D 기본/변형 도형, 3D 입체도형, 카드 문양, 치수 |
+| 01 | 컴퓨터와 디지털 기기 | `01-devices` | 65 | PC, 모바일, 주변기기, 부품, IoT |
+| 02 | 피지컬컴퓨팅과 메이킹 | `02-physical-computing` | 58 | 센서, 액추에이터, 회로, 로봇, 논리게이트, 공구 |
+| 03 | 소프트웨어와 프로그래밍 | `03-programming` | 88 | 변수, 조건문, 반복문, 함수, 블록코딩, 언어, 에디터 |
+| 04 | 알고리즘과 자료구조 | `04-algorithm` | 69 | 정렬, 탐색, 스택, 큐, 트리, 수학, 그래프 알고리즘, 확률 |
+| 05 | 네트워크와 정보보안 | `05-network-security` | 67 | 인터넷, 프로토콜, 보안, 클라우드, 디지털시민성, 사이버위협 |
+| 06 | 데이터와 인공지능 | `06-data-ai` | 83 | 데이터 수집/분석/시각화, ML, AI, 통계, 다양한 차트 |
+| 07 | 디자인씽킹과 문제해결 | `07-design-thinking` | 62 | 공감, 정의, 아이디어, 프로토타입, 검증, UI 디자인 |
+| 08 | STEAM 융합 | `08-steam` | 113 | 과학/수학/사회/미술/음악, 생물, 천문, 악기 |
+| 09 | 수업 활동과 평가 | `09-teaching` | 69 | 교과서, 학습목표, 루브릭, 피드백, 학용품, 보상 |
+| 10 | 시각 기호와 안내 요소 | `10-visual-symbols` | 125 | 화살표, 체크, 경고, 도형기호, 변환, 레이어, 메뉴 |
+| 11 | 숫자와 번호 | `11-numbers` | 51 | 숫자 0~40, 50, 64, 100, 128, 원숫자 0~9 |
+| 12 | 도형과 입체 | `12-shapes` | 33 | 2D 기본/변형 도형, 3D 입체도형, 카드 문양, 치수 |
+
+## 일러스트레이션
+
+`illustrations/` 폴더에 favicon.svg와 같은 스타일(64x64, 원형 배경, 그라데이션, 복합 구성)의 일러스트 30개가 포함되어 있습니다.
+
+### 카테고리 커버 (12개)
+
+| 파일명 | 설명 |
+|--------|------|
+| `cover-devices.svg` | 모니터 + 키보드 + 마우스 |
+| `cover-physical.svg` | 아두이노 + 센서 + LED |
+| `cover-programming.svg` | 코드 에디터 + 구문 강조 |
+| `cover-algorithm.svg` | 플로우차트 + 결정 분기 |
+| `cover-network.svg` | 서버 + 클라이언트 네트워크 |
+| `cover-data-ai.svg` | AI 뇌 + 회로 패턴 |
+| `cover-design.svg` | 전구 + 연필 + 기어 |
+| `cover-steam.svg` | 비커 + 기어 + 팔레트 + 수식 |
+| `cover-teaching.svg` | 칠판 + 책 + 학생 |
+| `cover-symbols.svg` | 체크/X/화살표/별/하트 |
+| `cover-numbers.svg` | 숫자 콜라주 |
+| `cover-shapes.svg` | 삼각형 + 원 + 사각형 + 마름모 |
+
+### 개념 일러스트 (18개)
+
+| 파일명 | 설명 |
+|--------|------|
+| `illust-block-coding.svg` | 블록 코딩 (스크래치 스타일) |
+| `illust-robot.svg` | 로봇 캐릭터 |
+| `illust-security.svg` | 보안 방패 + 자물쇠 |
+| `illust-cloud.svg` | 클라우드 업/다운로드 |
+| `illust-iot.svg` | IoT 스마트홈 연결 |
+| `illust-vr.svg` | VR 헤드셋 |
+| `illust-3d-print.svg` | 3D 프린터 |
+| `illust-mobile-app.svg` | 스마트폰 앱 그리드 |
+| `illust-database.svg` | 데이터베이스 실린더 |
+| `illust-binary.svg` | 이진수 매트릭스 |
+| `illust-game-dev.svg` | 게임패드 + 코드 |
+| `illust-teamwork.svg` | 팀워크/협업 |
+| `illust-presentation.svg` | 프레젠테이션 |
+| `illust-earth-env.svg` | 지구 + 환경 |
+| `illust-music.svg` | 이퀄라이저 + 음표 |
+| `illust-math.svg` | 수학 기호 + 함수 곡선 |
+| `illust-portfolio.svg` | 포트폴리오 폴더 |
+| `illust-puzzle.svg` | 퍼즐 조각 (문제해결) |
 
 ## SVG 스타일 스펙
 
@@ -70,24 +117,27 @@ info-class-svg/
 ├── package.json              ← npm 의존성 (lucide-static, @tabler/icons)
 ├── .gitignore
 ├── .nojekyll                 ← GitHub Pages Jekyll 비활성화
+├── favicon.svg               ← 사이트 파비콘 (데이터 차트 + 돋보기)
+├── illustrations/            ← 일러스트레이션 30개 (커버 12 + 개념 18)
+├── png/                      ← PNG 변환본 (32/64/128/256px)
 ├── scripts/
 │   ├── generate-all.js       ← 핵심 생성 스크립트 (아이콘 매핑 + 변환 + 카탈로그)
 │   ├── validate-svg.js       ← SVG 검증 스크립트 (구조 무결성 + catalog 일치 검사)
 │   ├── transform.js          ← 초기 변환 스크립트 (deprecated, generate-all.js로 통합)
 │   └── icon-mapping.json     ← 초기 매핑 (deprecated)
 └── svg/
-    ├── 01-devices/            (80 SVGs)
-    ├── 02-physical-computing/ (70 SVGs)
-    ├── 03-programming/        (96 SVGs)
-    ├── 04-algorithm/          (80 SVGs)
-    ├── 05-network-security/   (80 SVGs)
-    ├── 06-data-ai/            (90 SVGs)
-    ├── 07-design-thinking/    (75 SVGs)
-    ├── 08-steam/             (118 SVGs)
-    ├── 09-teaching/           (80 SVGs)
-    ├── 10-visual-symbols/    (130 SVGs)
-    ├── 11-numbers/            (55 SVGs)
-    └── 12-shapes/             (46 SVGs)
+    ├── 01-devices/            (65 SVGs)
+    ├── 02-physical-computing/ (58 SVGs)
+    ├── 03-programming/        (88 SVGs)
+    ├── 04-algorithm/          (69 SVGs)
+    ├── 05-network-security/   (67 SVGs)
+    ├── 06-data-ai/            (83 SVGs)
+    ├── 07-design-thinking/    (62 SVGs)
+    ├── 08-steam/             (113 SVGs)
+    ├── 09-teaching/           (69 SVGs)
+    ├── 10-visual-symbols/    (125 SVGs)
+    ├── 11-numbers/            (51 SVGs)
+    └── 12-shapes/             (33 SVGs)
 ```
 
 ## 핵심 스크립트: `scripts/generate-all.js`

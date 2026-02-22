@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#5b21b6"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1.5"/>
+  <!-- 코드 에디터 창 -->
+  <rect x="10" y="12" width="44" height="40" rx="3" fill="url(#g1)"/>
+  <!-- 타이틀바 -->
+  <rect x="10" y="12" width="44" height="6" rx="3" fill="#4c1d95"/>
+  <circle cx="15" cy="15" r="1.5" fill="#ef4444"/>
+  <circle cx="20" cy="15" r="1.5" fill="#eab308"/>
+  <circle cx="25" cy="15" r="1.5" fill="#22c55e"/>
+  <!-- 코드 라인들 -->
+  <rect x="14" y="22" width="4" height="2" rx="1" fill="#c084fc"/>
+  <rect x="20" y="22" width="14" height="2" rx="1" fill="#e9d5ff"/>
+  <rect x="18" y="27" width="6" height="2" rx="1" fill="#fbbf24"/>
+  <rect x="26" y="27" width="10" height="2" rx="1" fill="#ddd6fe"/>
+  <rect x="18" y="32" width="8" height="2" rx="1" fill="#86efac"/>
+  <rect x="28" y="32" width="16" height="2" rx="1" fill="#e9d5ff"/>
+  <rect x="18" y="37" width="12" height="2" rx="1" fill="#fca5a5"/>
+  <rect x="14" y="42" width="4" height="2" rx="1" fill="#c084fc"/>
+  <!-- 커서 깜빡임 -->
+  <rect x="36" y="36.5" width="1.5" height="3" rx=".5" fill="#fbbf24"/>
+  <!-- 꺾쇠 괄호 장식 -->
+  <text x="46" y="30" font-family="monospace" font-size="14" fill="#e9d5ff" opacity=".5">&lt;/&gt;</text>
+</svg>

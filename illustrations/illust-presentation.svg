@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#93c5fd"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <!-- 프레젠테이션 스크린 -->
+  <rect x="8" y="8" width="48" height="32" rx="2" fill="#fff" stroke="url(#g1)" stroke-width="2"/>
+  <!-- 스크린 내용 - 차트 -->
+  <rect x="14" y="26" width="6" height="10" rx="1" fill="#fbbf24"/>
+  <rect x="22" y="20" width="6" height="16" rx="1" fill="#22c55e"/>
+  <rect x="30" y="14" width="6" height="22" rx="1" fill="url(#g2)"/>
+  <!-- 제목 텍스트 -->
+  <rect x="40" y="14" width="12" height="2" rx="1" fill="#2563eb" opacity=".6"/>
+  <rect x="40" y="18" width="10" height="1.5" rx=".75" fill="#93c5fd" opacity=".5"/>
+  <rect x="40" y="22" width="8" height="1.5" rx=".75" fill="#93c5fd" opacity=".4"/>
+  <!-- 스탠드 -->
+  <line x1="32" y1="40" x2="32" y2="48" stroke="#475569" stroke-width="2"/>
+  <line x1="22" y1="48" x2="42" y2="48" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+  <!-- 포인터 -->
+  <line x1="48" y1="50" x2="36" y2="24" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="36" cy="24" r="2" fill="none" stroke="#ef4444" stroke-width="1"/>
+  <!-- 사람 실루엣 -->
+  <circle cx="12" cy="50" r="3" fill="url(#g1)" opacity=".5"/>
+  <path d="M8 60 Q8 54 12 54 Q16 54 16 60" fill="url(#g1)" opacity=".5"/>
+</svg>

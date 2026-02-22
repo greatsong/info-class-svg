@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5"/>
+  <!-- DB 실린더 상단 -->
+  <ellipse cx="32" cy="12" rx="18" ry="6" fill="url(#g2)"/>
+  <!-- DB 실린더 몸통 -->
+  <rect x="14" y="12" width="36" height="40" fill="url(#g1)"/>
+  <!-- DB 실린더 하단 -->
+  <ellipse cx="32" cy="52" rx="18" ry="6" fill="#065f46"/>
+  <!-- 띠 1 -->
+  <ellipse cx="32" cy="22" rx="18" ry="4" fill="none" stroke="#6ee7b7" stroke-width="1" opacity=".6"/>
+  <!-- 띠 2 -->
+  <ellipse cx="32" cy="32" rx="18" ry="4" fill="none" stroke="#6ee7b7" stroke-width="1" opacity=".6"/>
+  <!-- 띠 3 -->
+  <ellipse cx="32" cy="42" rx="18" ry="4" fill="none" stroke="#6ee7b7" stroke-width="1" opacity=".6"/>
+  <!-- 데이터 행 표시 -->
+  <rect x="20" y="15" width="10" height="1.5" rx=".5" fill="#a7f3d0" opacity=".7"/>
+  <rect x="32" y="15" width="6" height="1.5" rx=".5" fill="#d1fae5" opacity=".5"/>
+  <rect x="20" y="25" width="8" height="1.5" rx=".5" fill="#a7f3d0" opacity=".7"/>
+  <rect x="30" y="25" width="12" height="1.5" rx=".5" fill="#d1fae5" opacity=".5"/>
+  <rect x="20" y="35" width="14" height="1.5" rx=".5" fill="#a7f3d0" opacity=".7"/>
+  <rect x="36" y="35" width="4" height="1.5" rx=".5" fill="#d1fae5" opacity=".5"/>
+  <rect x="20" y="45" width="6" height="1.5" rx=".5" fill="#a7f3d0" opacity=".7"/>
+  <rect x="28" y="45" width="10" height="1.5" rx=".5" fill="#d1fae5" opacity=".5"/>
+  <!-- 빛나는 상단 -->
+  <ellipse cx="32" cy="12" rx="14" ry="3" fill="#d1fae5" opacity=".3"/>
+</svg>

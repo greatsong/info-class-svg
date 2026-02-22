@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "node scripts/generate-all.js",
+    "validate": "node scripts/validate-svg.js",
+    "build": "node scripts/generate-all.js && node scripts/validate-svg.js",
+    "test": "node scripts/validate-svg.js",
+    "deploy": "node scripts/generate-all.js && node scripts/validate-svg.js && git add -A && git commit -m 'update icons' && git push"
   },
   "keywords": [],
   "author": "",

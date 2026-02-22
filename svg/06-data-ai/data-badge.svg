@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="g75" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#06b6d4"/>
-      <stop offset="100%" stop-color="#10b981"/>
+    <linearGradient id="g74" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
     </linearGradient>
   </defs>
   <rect x="4" y="4" width="56" height="56" rx="16" fill="#eff6ff"/>
-  <rect x="4" y="4" width="56" height="56" rx="16" fill="none" stroke="#8b5cf6" stroke-width="1" opacity="0.15"/>
-  <g transform="translate(14,14) scale(1.5)" stroke="url(#g75)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="none" stroke="#2563eb" stroke-width="1" opacity="0.15"/>
+  <g transform="translate(14,14) scale(1.5)" stroke="url(#g74)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
 <path d="M13 22h5a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v3.3" />
   <path d="M14 2v5a1 1 0 0 0 1 1h5" />
   <path d="m7.69 16.479 1.29 4.88a.5.5 0 0 1-.698.591l-1.843-.849a1 1 0 0 0-.879.001l-1.846.85a.5.5 0 0 1-.692-.593l1.29-4.88" />

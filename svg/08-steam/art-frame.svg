@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="g100" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#ea580c"/>
-      <stop offset="100%" stop-color="#fb923c"/>
+    <linearGradient id="g99" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
     </linearGradient>
   </defs>
   <rect x="4" y="4" width="56" height="56" rx="16" fill="#fff7ed"/>
-  <rect x="4" y="4" width="56" height="56" rx="16" fill="none" stroke="#fb923c" stroke-width="1" opacity="0.15"/>
-  <g transform="translate(14,14) scale(1.5)" stroke="url(#g100)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="none" stroke="#ea580c" stroke-width="1" opacity="0.15"/>
+  <g transform="translate(14,14) scale(1.5)" stroke="url(#g99)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
 <line x1="22" x2="2" y1="6" y2="6" />
   <line x1="22" x2="2" y1="18" y2="18" />
   <line x1="6" x2="6" y1="2" y2="22" />

@@ -5,49 +5,49 @@
     {
       "id": "01-devices",
       "name": "컴퓨터와 디지털 기기",
-      "count": 63,
+      "count": 60,
       "color": "#2563eb"
     },
     {
       "id": "02-physical-computing",
       "name": "피지컬컴퓨팅과 메이킹",
-      "count": 70,
+      "count": 53,
       "color": "#16a34a"
     },
     {
       "id": "03-programming",
       "name": "소프트웨어와 프로그래밍",
-      "count": 90,
+      "count": 83,
       "color": "#16a34a"
     },
     {
       "id": "04-algorithm",
       "name": "알고리즘과 자료구조",
-      "count": 84,
+      "count": 64,
       "color": "#0891b2"
     },
     {
       "id": "05-network-security",
       "name": "네트워크와 정보보안",
-      "count": 64,
+      "count": 62,
       "color": "#dc2626"
     },
     {
       "id": "06-data-ai",
       "name": "데이터와 인공지능",
-      "count": 79,
+      "count": 78,
       "color": "#2563eb"
     },
     {
       "id": "07-design-thinking",
       "name": "디자인씽킹과 문제해결",
-      "count": 59,
+      "count": 57,
       "color": "#ec4899"
     },
     {
       "id": "08-steam",
       "name": "STEAM 융합",
-      "count": 109,
+      "count": 108,
       "color": "#ea580c"
     },
     {
@@ -71,7 +71,7 @@
     {
       "id": "12-shapes",
       "name": "도형과 입체",
-      "count": 34,
+      "count": 33,
       "color": "#9333ea"
     }
   ],
@@ -797,30 +797,6 @@
       "source": "lucide"
     },
     {
-      "filename": "infinity-device.svg",
-      "category": "01-devices",
-      "name": "무한대",
-      "description": "무한 기호",
-      "tags": [
-        "무한",
-        "기호"
-      ],
-      "useCases": "연산, 수학 기호",
-      "source": "lucide"
-    },
-    {
-      "filename": "shapes.svg",
-      "category": "01-devices",
-      "name": "도형모음",
-      "description": "다양한 도형",
-      "tags": [
-        "다양한",
-        "도형"
-      ],
-      "useCases": "입력장치, 터치 제스처",
-      "source": "lucide"
-    },
-    {
       "filename": "fingerprint2.svg",
       "category": "01-devices",
       "name": "지문패턴",
@@ -831,18 +807,6 @@
         "패턴"
       ],
       "useCases": "생체인식, 보안 인증",
-      "source": "lucide"
-    },
-    {
-      "filename": "combine.svg",
-      "category": "01-devices",
-      "name": "결합",
-      "description": "장치 결합",
-      "tags": [
-        "장치",
-        "결합"
-      ],
-      "useCases": "모듈 결합, 복합 기기",
       "source": "lucide"
     },
     {
@@ -968,7 +932,7 @@
         "모터"
       ],
       "useCases": "모터 구동, 바퀴 제어",
-      "source": "lucide"
+      "source": "tabler"
     },
     {
       "filename": "switch.svg",
@@ -1067,42 +1031,6 @@
       "source": "lucide"
     },
     {
-      "filename": "3d-printer.svg",
-      "category": "02-physical-computing",
-      "name": "3D프린터",
-      "description": "3차원 프린터",
-      "tags": [
-        "3차원",
-        "프린터"
-      ],
-      "useCases": "메이킹, 프로토타이핑",
-      "source": "lucide"
-    },
-    {
-      "filename": "laser-cutter.svg",
-      "category": "02-physical-computing",
-      "name": "레이저커터",
-      "description": "레이저 절단기",
-      "tags": [
-        "레이저",
-        "절단기"
-      ],
-      "useCases": "메이킹, 정밀 가공",
-      "source": "lucide"
-    },
-    {
-      "filename": "soldering.svg",
-      "category": "02-physical-computing",
-      "name": "납땜",
-      "description": "납땜 작업",
-      "tags": [
-        "납땜",
-        "작업"
-      ],
-      "useCases": "회로 조립, 전자공학",
-      "source": "lucide"
-    },
-    {
       "filename": "multimeter.svg",
       "category": "02-physical-computing",
       "name": "멀티미터",
@@ -1137,42 +1065,6 @@
         "로봇"
       ],
       "useCases": "이동 로봇, 자율주행",
-      "source": "lucide"
-    },
-    {
-      "filename": "robot-arm.svg",
-      "category": "02-physical-computing",
-      "name": "로봇팔",
-      "description": "관절형 로봇팔",
-      "tags": [
-        "관절형",
-        "로봇팔"
-      ],
-      "useCases": "산업 로봇, 제어",
-      "source": "lucide"
-    },
-    {
-      "filename": "arduino.svg",
-      "category": "02-physical-computing",
-      "name": "아두이노",
-      "description": "아두이노 보드",
-      "tags": [
-        "아두이노",
-        "보드"
-      ],
-      "useCases": "피지컬컴퓨팅 플랫폼",
-      "source": "lucide"
-    },
-    {
-      "filename": "microbit.svg",
-      "category": "02-physical-computing",
-      "name": "마이크로비트",
-      "description": "마이크로비트 보드",
-      "tags": [
-        "마이크로비트",
-        "보드"
-      ],
-      "useCases": "교육용 보드, 블록코딩",
       "source": "lucide"
     },
     {
@@ -1253,43 +1145,6 @@
       "source": "lucide"
     },
     {
-      "filename": "wheel.svg",
-      "category": "02-physical-computing",
-      "name": "바퀴",
-      "description": "구동 바퀴",
-      "tags": [
-        "구동",
-        "바퀴"
-      ],
-      "useCases": "이동 로봇, 기계 요소",
-      "source": "lucide"
-    },
-    {
-      "filename": "actuator.svg",
-      "category": "02-physical-computing",
-      "name": "액추에이터",
-      "description": "동작 장치",
-      "tags": [
-        "동작",
-        "장치"
-      ],
-      "useCases": "출력, 물리적 제어",
-      "source": "lucide"
-    },
-    {
-      "filename": "ir-sensor.svg",
-      "category": "02-physical-computing",
-      "name": "적외선센서",
-      "description": "적외선 감지 센서",
-      "tags": [
-        "적외선",
-        "감지",
-        "센서"
-      ],
-      "useCases": "근접 감지, 라인트레이싱",
-      "source": "lucide"
-    },
-    {
       "filename": "humidity-sensor.svg",
       "category": "02-physical-computing",
       "name": "습도센서",
@@ -1324,18 +1179,6 @@
         "소자"
       ],
       "useCases": "소리 출력/감지, 진동",
-      "source": "lucide"
-    },
-    {
-      "filename": "breadboard.svg",
-      "category": "02-physical-computing",
-      "name": "브레드보드",
-      "description": "시제품 제작판",
-      "tags": [
-        "시제품",
-        "제작판"
-      ],
-      "useCases": "회로 시제품, 프로토타이핑",
       "source": "lucide"
     },
     {
@@ -1438,15 +1281,16 @@
       "source": "tabler"
     },
     {
-      "filename": "arduino-board.svg",
+      "filename": "microchip.svg",
       "category": "02-physical-computing",
-      "name": "아두이노보드",
-      "description": "아두이노 플랫폼",
+      "name": "마이크로칩",
+      "description": "집적 회로 칩",
       "tags": [
-        "아두이노",
-        "플랫폼"
+        "집적",
+        "회로",
+        "칩"
       ],
-      "useCases": "피지컬컴퓨팅, 코딩",
+      "useCases": "피지컬컴퓨팅, 마이크로프로세서",
       "source": "lucide"
     },
     {
@@ -1610,96 +1454,6 @@
       "source": "lucide"
     },
     {
-      "filename": "atom-pc.svg",
-      "category": "02-physical-computing",
-      "name": "원자",
-      "description": "원자 구조",
-      "tags": [
-        "원자",
-        "구조"
-      ],
-      "useCases": "전자공학 기초, 반도체",
-      "source": "lucide"
-    },
-    {
-      "filename": "flame-sensor.svg",
-      "category": "02-physical-computing",
-      "name": "화염센서",
-      "description": "불꽃 감지 센서",
-      "tags": [
-        "불꽃",
-        "감지",
-        "센서"
-      ],
-      "useCases": "화재 감지, 안전",
-      "source": "lucide"
-    },
-    {
-      "filename": "water-sensor.svg",
-      "category": "02-physical-computing",
-      "name": "수분센서",
-      "description": "수분 감지 센서",
-      "tags": [
-        "수분",
-        "감지",
-        "센서"
-      ],
-      "useCases": "수분 감지, 스마트팜",
-      "source": "lucide"
-    },
-    {
-      "filename": "cone-sensor.svg",
-      "category": "02-physical-computing",
-      "name": "콘센서",
-      "description": "원뿔형 감지 범위",
-      "tags": [
-        "원뿔형",
-        "감지",
-        "범위"
-      ],
-      "useCases": "센서 범위, 초음파 패턴",
-      "source": "lucide"
-    },
-    {
-      "filename": "hand-sensor.svg",
-      "category": "02-physical-computing",
-      "name": "터치센서",
-      "description": "접촉 감지 센서",
-      "tags": [
-        "접촉",
-        "감지",
-        "센서"
-      ],
-      "useCases": "터치 입력, 정전식",
-      "source": "lucide"
-    },
-    {
-      "filename": "module-shapes.svg",
-      "category": "02-physical-computing",
-      "name": "모듈도형",
-      "description": "센서 모듈 종류",
-      "tags": [
-        "센서",
-        "모듈",
-        "종류"
-      ],
-      "useCases": "다양한 모듈, 선택 가이드",
-      "source": "lucide"
-    },
-    {
-      "filename": "circuit-tree.svg",
-      "category": "02-physical-computing",
-      "name": "회로트리",
-      "description": "회로 분기 구조",
-      "tags": [
-        "회로",
-        "분기",
-        "구조"
-      ],
-      "useCases": "회로 설계, 전류 분기",
-      "source": "tabler"
-    },
-    {
       "filename": "barcode-sensor.svg",
       "category": "02-physical-computing",
       "name": "바코드센서",
@@ -1772,30 +1526,6 @@
         "반복문"
       ],
       "useCases": "while문, 조건 반복",
-      "source": "lucide"
-    },
-    {
-      "filename": "if-condition.svg",
-      "category": "03-programming",
-      "name": "조건문",
-      "description": "조건 분기",
-      "tags": [
-        "조건",
-        "분기"
-      ],
-      "useCases": "if문, 참/거짓 판단",
-      "source": "lucide"
-    },
-    {
-      "filename": "if-else.svg",
-      "category": "03-programming",
-      "name": "조건분기",
-      "description": "참거짓 분기",
-      "tags": [
-        "참거짓",
-        "분기"
-      ],
-      "useCases": "if-else, 양갈래 분기",
       "source": "lucide"
     },
     {
@@ -2564,18 +2294,6 @@
       "source": "lucide"
     },
     {
-      "filename": "combine-code.svg",
-      "category": "03-programming",
-      "name": "결합",
-      "description": "코드 결합",
-      "tags": [
-        "코드",
-        "결합"
-      ],
-      "useCases": "모듈 통합, 빌드",
-      "source": "lucide"
-    },
-    {
       "filename": "ungroup.svg",
       "category": "03-programming",
       "name": "분리",
@@ -2681,54 +2399,6 @@
         "자료"
       ],
       "useCases": "레퍼런스, 가이드",
-      "source": "lucide"
-    },
-    {
-      "filename": "3d-code.svg",
-      "category": "03-programming",
-      "name": "3D코드",
-      "description": "3차원 프로그래밍",
-      "tags": [
-        "3차원",
-        "프로그래밍"
-      ],
-      "useCases": "게임 개발, 3D 그래픽",
-      "source": "lucide"
-    },
-    {
-      "filename": "infinity-loop.svg",
-      "category": "03-programming",
-      "name": "무한루프",
-      "description": "끝없는 반복",
-      "tags": [
-        "끝없는",
-        "반복"
-      ],
-      "useCases": "무한루프, 종료 조건",
-      "source": "lucide"
-    },
-    {
-      "filename": "ratio.svg",
-      "category": "03-programming",
-      "name": "비율",
-      "description": "비율 계산",
-      "tags": [
-        "비율",
-        "계산"
-      ],
-      "useCases": "화면 비율, 수학 연산",
-      "source": "lucide"
-    },
-    {
-      "filename": "proportions.svg",
-      "category": "03-programming",
-      "name": "비례",
-      "description": "비례 관계",
-      "tags": [
-        "비례",
-        "관계"
-      ],
-      "useCases": "CSS 비율, 레이아웃",
       "source": "lucide"
     },
     {
@@ -2890,73 +2560,7 @@
         "정렬"
       ],
       "useCases": "정렬 알고리즘, 순서 배열",
-      "source": "lucide"
-    },
-    {
-      "filename": "bubble-sort.svg",
-      "category": "04-algorithm",
-      "name": "버블정렬",
-      "description": "인접 비교 정렬",
-      "tags": [
-        "인접",
-        "비교",
-        "정렬"
-      ],
-      "useCases": "기초 정렬, 비교 교환",
-      "source": "lucide"
-    },
-    {
-      "filename": "selection-sort.svg",
-      "category": "04-algorithm",
-      "name": "선택정렬",
-      "description": "최솟값 선택 정렬",
-      "tags": [
-        "최솟값",
-        "선택",
-        "정렬"
-      ],
-      "useCases": "기초 정렬, 선택",
-      "source": "lucide"
-    },
-    {
-      "filename": "insertion-sort.svg",
-      "category": "04-algorithm",
-      "name": "삽입정렬",
-      "description": "삽입하며 정렬",
-      "tags": [
-        "삽입하며",
-        "정렬"
-      ],
-      "useCases": "기초 정렬, 삽입",
-      "source": "lucide"
-    },
-    {
-      "filename": "merge-sort.svg",
-      "category": "04-algorithm",
-      "name": "합병정렬",
-      "description": "분할 후 병합 정렬",
-      "tags": [
-        "분할",
-        "후",
-        "병합",
-        "정렬"
-      ],
-      "useCases": "분할정복, 효율적 정렬",
-      "source": "lucide"
-    },
-    {
-      "filename": "quick-sort.svg",
-      "category": "04-algorithm",
-      "name": "퀵정렬",
-      "description": "피벗 기반 빠른 정렬",
-      "tags": [
-        "피벗",
-        "기반",
-        "빠른",
-        "정렬"
-      ],
-      "useCases": "분할정복, 고급 정렬",
-      "source": "lucide"
+      "source": "tabler"
     },
     {
       "filename": "linear-search.svg",
@@ -2971,19 +2575,6 @@
       "source": "lucide"
     },
     {
-      "filename": "binary-search.svg",
-      "category": "04-algorithm",
-      "name": "이진탐색",
-      "description": "반으로 나눠 검색",
-      "tags": [
-        "반으로",
-        "나눠",
-        "검색"
-      ],
-      "useCases": "효율적 탐색, 정렬된 데이터",
-      "source": "lucide"
-    },
-    {
       "filename": "stack.svg",
       "category": "04-algorithm",
       "name": "스택",
@@ -2993,19 +2584,7 @@
         "자료구조"
       ],
       "useCases": "LIFO, 함수 호출",
-      "source": "lucide"
-    },
-    {
-      "filename": "queue.svg",
-      "category": "04-algorithm",
-      "name": "큐",
-      "description": "선입선출 자료구조",
-      "tags": [
-        "선입선출",
-        "자료구조"
-      ],
-      "useCases": "FIFO, 대기열",
-      "source": "lucide"
+      "source": "tabler"
     },
     {
       "filename": "linked-list.svg",
@@ -3031,7 +2610,7 @@
         "구조"
       ],
       "useCases": "트리 탐색, 계층 구조",
-      "source": "lucide"
+      "source": "tabler"
     },
     {
       "filename": "graph.svg",
@@ -3044,32 +2623,7 @@
         "구조"
       ],
       "useCases": "네트워크, 관계 표현",
-      "source": "lucide"
-    },
-    {
-      "filename": "hash-table.svg",
-      "category": "04-algorithm",
-      "name": "해시테이블",
-      "description": "키-값 저장 구조",
-      "tags": [
-        "키-값",
-        "저장",
-        "구조"
-      ],
-      "useCases": "빠른 검색, 매핑",
-      "source": "lucide"
-    },
-    {
-      "filename": "heap.svg",
-      "category": "04-algorithm",
-      "name": "힙",
-      "description": "우선순위 트리",
-      "tags": [
-        "우선순위",
-        "트리"
-      ],
-      "useCases": "우선순위 큐, 정렬",
-      "source": "lucide"
+      "source": "tabler"
     },
     {
       "filename": "bfs.svg",
@@ -3081,19 +2635,7 @@
         "탐색"
       ],
       "useCases": "그래프 탐색, 최단경로",
-      "source": "lucide"
-    },
-    {
-      "filename": "dfs.svg",
-      "category": "04-algorithm",
-      "name": "깊이우선탐색",
-      "description": "DFS 탐색",
-      "tags": [
-        "DFS",
-        "탐색"
-      ],
-      "useCases": "그래프 탐색, 백트래킹",
-      "source": "lucide"
+      "source": "tabler"
     },
     {
       "filename": "shortest-path.svg",
@@ -3109,19 +2651,6 @@
       "source": "lucide"
     },
     {
-      "filename": "greedy.svg",
-      "category": "04-algorithm",
-      "name": "탐욕법",
-      "description": "최적 선택 전략",
-      "tags": [
-        "최적",
-        "선택",
-        "전략"
-      ],
-      "useCases": "그리디 알고리즘, 최적화",
-      "source": "lucide"
-    },
-    {
       "filename": "divide-conquer.svg",
       "category": "04-algorithm",
       "name": "분할정복",
@@ -3132,18 +2661,6 @@
         "해결"
       ],
       "useCases": "재귀, 큰 문제 분할",
-      "source": "lucide"
-    },
-    {
-      "filename": "dynamic-prog.svg",
-      "category": "04-algorithm",
-      "name": "동적프로그래밍",
-      "description": "메모이제이션 풀이",
-      "tags": [
-        "메모이제이션",
-        "풀이"
-      ],
-      "useCases": "DP, 최적 부분 구조",
       "source": "lucide"
     },
     {
@@ -3185,19 +2702,6 @@
       "source": "lucide"
     },
     {
-      "filename": "big-o.svg",
-      "category": "04-algorithm",
-      "name": "빅오표기법",
-      "description": "알고리즘 성능 표기",
-      "tags": [
-        "알고리즘",
-        "성능",
-        "표기"
-      ],
-      "useCases": "복잡도 분석, O(n)",
-      "source": "lucide"
-    },
-    {
       "filename": "recursion.svg",
       "category": "04-algorithm",
       "name": "재귀",
@@ -3234,19 +2738,6 @@
         "접근"
       ],
       "useCases": "인덱싱, 자료 접근",
-      "source": "lucide"
-    },
-    {
-      "filename": "compare.svg",
-      "category": "04-algorithm",
-      "name": "비교",
-      "description": "값 비교 연산",
-      "tags": [
-        "값",
-        "비교",
-        "연산"
-      ],
-      "useCases": "조건 비교, 정렬 기준",
       "source": "lucide"
     },
     {
@@ -3296,78 +2787,6 @@
         "사고력"
       ],
       "useCases": "추상화, 패턴인식",
-      "source": "lucide"
-    },
-    {
-      "filename": "pattern-recognition.svg",
-      "category": "04-algorithm",
-      "name": "패턴인식",
-      "description": "규칙 발견",
-      "tags": [
-        "규칙",
-        "발견"
-      ],
-      "useCases": "패턴 분석, 추상화",
-      "source": "lucide"
-    },
-    {
-      "filename": "abstraction.svg",
-      "category": "04-algorithm",
-      "name": "추상화",
-      "description": "핵심 추출",
-      "tags": [
-        "핵심",
-        "추출"
-      ],
-      "useCases": "복잡도 감소, 모델링",
-      "source": "lucide"
-    },
-    {
-      "filename": "scale-balance.svg",
-      "category": "04-algorithm",
-      "name": "저울",
-      "description": "균형 비교",
-      "tags": [
-        "균형",
-        "비교"
-      ],
-      "useCases": "값 비교, 가중치",
-      "source": "lucide"
-    },
-    {
-      "filename": "decomposition.svg",
-      "category": "04-algorithm",
-      "name": "분해",
-      "description": "문제 분해",
-      "tags": [
-        "문제",
-        "분해"
-      ],
-      "useCases": "분해 사고, 서브문제",
-      "source": "lucide"
-    },
-    {
-      "filename": "combine-algo.svg",
-      "category": "04-algorithm",
-      "name": "합성",
-      "description": "문제 합성",
-      "tags": [
-        "문제",
-        "합성"
-      ],
-      "useCases": "부분 결합, 통합",
-      "source": "lucide"
-    },
-    {
-      "filename": "infinity-algo.svg",
-      "category": "04-algorithm",
-      "name": "무한",
-      "description": "무한 개념",
-      "tags": [
-        "무한",
-        "개념"
-      ],
-      "useCases": "수학적 무한, 극한",
       "source": "lucide"
     },
     {
@@ -4621,19 +4040,6 @@
       "source": "lucide"
     },
     {
-      "filename": "hand-trust.svg",
-      "category": "05-network-security",
-      "name": "신뢰손",
-      "description": "신뢰 기반 연결",
-      "tags": [
-        "신뢰",
-        "기반",
-        "연결"
-      ],
-      "useCases": "디지털 신뢰, 웹 오브 트러스트",
-      "source": "lucide"
-    },
-    {
       "filename": "handshake-net.svg",
       "category": "05-network-security",
       "name": "핸드셰이크",
@@ -4643,18 +4049,6 @@
         "협상"
       ],
       "useCases": "프로토콜, TCP 핸드셰이크",
-      "source": "lucide"
-    },
-    {
-      "filename": "location.svg",
-      "category": "05-network-security",
-      "name": "위치표시",
-      "description": "위치 핀",
-      "tags": [
-        "위치",
-        "핀"
-      ],
-      "useCases": "위치 기반 서비스, GPS",
       "source": "lucide"
     },
     {
@@ -5564,18 +4958,6 @@
       "source": "lucide"
     },
     {
-      "filename": "data-ratio.svg",
-      "category": "06-data-ai",
-      "name": "데이터비율",
-      "description": "데이터 비율",
-      "tags": [
-        "데이터",
-        "비율"
-      ],
-      "useCases": "비율 분석, 파이",
-      "source": "lucide"
-    },
-    {
       "filename": "data-badge.svg",
       "category": "06-data-ai",
       "name": "데이터뱃지",
@@ -5790,18 +5172,6 @@
         "설계도"
       ],
       "useCases": "UI 설계, 구조",
-      "source": "lucide"
-    },
-    {
-      "filename": "mockup.svg",
-      "category": "07-design-thinking",
-      "name": "목업",
-      "description": "실물 모형",
-      "tags": [
-        "실물",
-        "모형"
-      ],
-      "useCases": "디자인 시안, 프레젠테이션",
       "source": "lucide"
     },
     {
@@ -6167,18 +5537,6 @@
         "조각"
       ],
       "useCases": "문제 분해, 솔루션 조합",
-      "source": "lucide"
-    },
-    {
-      "filename": "shapes-dt.svg",
-      "category": "07-design-thinking",
-      "name": "도형모음",
-      "description": "다양한 형태",
-      "tags": [
-        "다양한",
-        "형태"
-      ],
-      "useCases": "프로토타입 형태, 다양성",
       "source": "lucide"
     },
     {
@@ -7335,18 +6693,6 @@
         "도형"
       ],
       "useCases": "수학, 정다각형",
-      "source": "lucide"
-    },
-    {
-      "filename": "shapes-steam.svg",
-      "category": "08-steam",
-      "name": "도형모음",
-      "description": "여러 도형",
-      "tags": [
-        "여러",
-        "도형"
-      ],
-      "useCases": "수학, 기하학",
       "source": "lucide"
     },
     {
@@ -10612,19 +9958,6 @@
       "source": "tabler"
     },
     {
-      "filename": "shapes-all.svg",
-      "category": "12-shapes",
-      "name": "도형모음",
-      "description": "여러 도형 모음",
-      "tags": [
-        "여러",
-        "도형",
-        "모음"
-      ],
-      "useCases": "도형 분류, 기하학",
-      "source": "lucide"
-    },
-    {
       "filename": "shape-basic.svg",
       "category": "12-shapes",
       "name": "기본도형",
@@ -10876,5 +10209,5 @@
       "source": "tabler"
     }
   ],
-  "totalCount": 887
+  "totalCount": 833
 }

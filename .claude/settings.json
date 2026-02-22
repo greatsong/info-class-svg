@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(npm init:*)",
+      "Bash(node scripts/generate-all.js:*)",
+      "Bash(git status:*)",
+      "Bash(node scripts/cleanup-mappings.js:*)"
+    ],
+    "additionalDirectories": [
+      "/Users/greatsong/greatsong-project/info-class-svg/svg/01-devices"
+    ]
+  }
+}

@@ -7,9 +7,5 @@
   </defs>
   <rect x="4" y="4" width="56" height="56" rx="16" fill="#fef3c7"/>
   <rect x="4" y="4" width="56" height="56" rx="16" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.15"/>
-  <g transform="translate(14,14) scale(1.5)" stroke="url(#g0)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M16 16v-8" />
-  <path d="M12 20a4 4 0 0 0 4 -4v-8a4 4 0 1 0 -8 0v8a4 4 0 0 0 4 4" />
-  </g>
+  <text x="32" y="33" text-anchor="middle" dominant-baseline="central" font-family="system-ui,-apple-system,sans-serif" font-weight="700" font-size="30" fill="url(#g0)">0</text>
 </svg>

@@ -11102,7 +11102,7 @@
         "영"
       ],
       "useCases": "수 세기, 영의 개념",
-      "source": "tabler"
+      "source": "custom"
     },
     {
       "filename": "num-1.svg",
@@ -11114,7 +11114,7 @@
         "일"
       ],
       "useCases": "수 세기, 첫 번째",
-      "source": "tabler"
+      "source": "custom"
     },
     {
       "filename": "num-2.svg",
@@ -11126,7 +11126,7 @@
         "이"
       ],
       "useCases": "수 세기, 두 번째",
-      "source": "tabler"
+      "source": "custom"
     },
     {
       "filename": "num-3.svg",
@@ -11138,7 +11138,7 @@
         "삼"
       ],
       "useCases": "수 세기, 세 번째",
-      "source": "tabler"
+      "source": "custom"
     },
     {
       "filename": "num-4.svg",
@@ -11150,7 +11150,7 @@
         "사"
       ],
       "useCases": "수 세기, 네 번째",
-      "source": "tabler"
+      "source": "custom"
     },
     {
       "filename": "num-5.svg",
@@ -11162,7 +11162,7 @@
         "오"
       ],
       "useCases": "수 세기, 다섯 번째",
-      "source": "tabler"
+      "source": "custom"
     },
     {
       "filename": "num-6.svg",
@@ -11174,7 +11174,7 @@
         "육"
       ],
       "useCases": "수 세기, 여섯 번째",
-      "source": "tabler"
+      "source": "custom"
     },
     {
       "filename": "num-7.svg",
@@ -11186,7 +11186,7 @@
         "칠"
       ],
       "useCases": "수 세기, 일곱 번째",
-      "source": "tabler"
+      "source": "custom"
     },
     {
       "filename": "num-8.svg",
@@ -11198,7 +11198,7 @@
         "팔"
       ],
       "useCases": "수 세기, 여덟 번째",
-      "source": "tabler"
+      "source": "custom"
     },
     {
       "filename": "num-9.svg",
@@ -11210,7 +11210,7 @@
         "구"
       ],
       "useCases": "수 세기, 아홉 번째",
-      "source": "tabler"
+      "source": "custom"
     },
     {
       "filename": "num-10.svg",
@@ -11222,7 +11222,7 @@
         "십"
       ],
       "useCases": "수 세기, 열 번째",
-      "source": "tabler"
+      "source": "custom"
     },
     {
       "filename": "num-11.svg",
@@ -11234,7 +11234,7 @@
         "십일"
       ],
       "useCases": "수 세기, 열한 번째",
-      "source": "tabler"
+      "source": "custom"
     },
     {
       "filename": "num-12.svg",

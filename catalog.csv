@@ -1,0 +1,510 @@
+﻿파일명,카테고리,이미지이름,이미지설명,사용하면좋을상황
+monitor.svg,01-devices,모니터,컴퓨터 모니터 화면,컴퓨터 구성요소 설명, 출력장치 소개
+laptop.svg,01-devices,노트북,휴대용 노트북 컴퓨터,정보기기 종류, 모바일 컴퓨팅
+tablet.svg,01-devices,태블릿,태블릿 PC,터치 기반 기기, 모바일 학습
+smartphone.svg,01-devices,스마트폰,스마트폰 기기,모바일 기기, 앱 개발
+desktop.svg,01-devices,데스크톱,데스크톱 컴퓨터,컴퓨터 구성, 하드웨어 수업
+keyboard.svg,01-devices,키보드,입력 장치 키보드,입력장치, 타이핑 수업
+mouse.svg,01-devices,마우스,컴퓨터 마우스,입력장치, 인터페이스
+printer.svg,01-devices,프린터,문서 출력 프린터,출력장치, 주변기기
+webcam.svg,01-devices,웹캠,화상 카메라,영상 입력, 화상 수업
+microphone.svg,01-devices,마이크,음성 입력 마이크,입력장치, 음성 인식
+speaker.svg,01-devices,스피커,음향 출력 스피커,출력장치, 멀티미디어
+headphones.svg,01-devices,헤드폰,음향 헤드폰,출력장치, 개인 학습
+cpu.svg,01-devices,CPU,중앙처리장치,컴퓨터 구조, 프로세서 설명
+hard-drive.svg,01-devices,하드드라이브,저장장치,보조기억장치, 데이터 저장
+memory-stick.svg,01-devices,메모리,메모리 스틱,기억장치, 저장매체
+usb.svg,01-devices,USB,USB 연결단자,인터페이스, 데이터 전송
+server.svg,01-devices,서버,네트워크 서버,서버 개념, 클라이언트-서버
+router.svg,01-devices,라우터,네트워크 라우터,네트워크 장비, 인터넷 연결
+camera.svg,01-devices,카메라,디지털 카메라,영상 입력, 멀티미디어
+battery.svg,01-devices,배터리,전원 배터리,전원 공급, IoT 기기
+bluetooth.svg,01-devices,블루투스,블루투스 무선통신,무선 통신, 근거리 통신
+wifi.svg,01-devices,와이파이,무선 인터넷,무선 네트워크, 인터넷 연결
+tv.svg,01-devices,TV,텔레비전 화면,디스플레이, 출력장치
+smartphone-charging.svg,01-devices,충전,기기 충전,전원 관리, 배터리
+gamepad.svg,01-devices,게임패드,게임 컨트롤러,입력장치, 게임 개발
+radio.svg,01-devices,라디오,라디오 수신기,통신 기기, 아날로그/디지털
+disc.svg,01-devices,디스크,저장 디스크,광학 저장매체, CD/DVD
+smartwatch.svg,01-devices,스마트워치,스마트 시계,웨어러블 기기, IoT
+signal.svg,01-devices,신호,통신 신호,신호 전송, 네트워크 상태
+antenna.svg,01-devices,안테나,무선 안테나,통신 장비, 신호 수신
+plug.svg,01-devices,플러그,전원 플러그,전원 연결, 인터페이스
+cable.svg,01-devices,케이블,연결 케이블,유선 연결, 데이터 전송
+ethernet.svg,01-devices,이더넷,이더넷 포트,유선 네트워크, LAN
+hdmi.svg,01-devices,HDMI,HDMI 포트,영상 출력, 인터페이스
+projector.svg,01-devices,프로젝터,영상 프로젝터,출력장치, 프레젠테이션
+scan.svg,01-devices,스캐너,문서 스캐너,입력장치, 문서 디지털화
+drone.svg,01-devices,드론,무인 항공기,IoT, 로봇 기술
+satellite-dish.svg,01-devices,위성안테나,위성 수신 안테나,통신, 위성 기술
+gpu.svg,01-devices,GPU,그래픽처리장치,병렬처리, AI 연산
+circuit-board.svg,01-devices,회로기판,전자 회로기판,하드웨어 구조, 전자공학
+microcontroller.svg,02-physical-computing,마이크로컨트롤러,소형 제어 장치,아두이노, 피지컬컴퓨팅 기초
+circuit.svg,02-physical-computing,회로,전자 회로,회로 설계, 전자공학 기초
+led.svg,02-physical-computing,LED,발광 다이오드,출력 소자, 디지털 출력
+temp-sensor.svg,02-physical-computing,온도센서,온도 측정 센서,센서 입력, 환경 모니터링
+light-sensor.svg,02-physical-computing,빛센서,조도 센서,아날로그 입력, 환경 감지
+pulse-sensor.svg,02-physical-computing,펄스센서,심박 센서,바이오 센서, 건강 모니터링
+ultrasonic.svg,02-physical-computing,초음파센서,거리 측정 센서,거리 측정, 로봇 제어
+buzzer.svg,02-physical-computing,부저,소리 출력 부저,디지털 출력, 알림
+servo-motor.svg,02-physical-computing,서보모터,각도 제어 모터,모터 제어, 로봇 관절
+dc-motor.svg,02-physical-computing,DC모터,직류 모터,모터 구동, 바퀴 제어
+switch.svg,02-physical-computing,스위치,온오프 스위치,디지털 입력, 토글
+potentiometer.svg,02-physical-computing,가변저항,가변 저항기,아날로그 입력, 값 조절
+relay.svg,02-physical-computing,릴레이,전자 릴레이,고전압 제어, 스위칭
+lcd.svg,02-physical-computing,LCD,액정 디스플레이,출력 장치, 정보 표시
+led-matrix.svg,02-physical-computing,LED매트릭스,LED 배열판,출력, 패턴 표시
+jumper-wire.svg,02-physical-computing,점퍼와이어,연결 전선,회로 연결, 브레드보드
+battery-pack.svg,02-physical-computing,배터리팩,전원 공급,전원, 이동형 프로젝트
+solar-panel.svg,02-physical-computing,태양전지판,태양광 패널,신재생 에너지, 친환경
+3d-printer.svg,02-physical-computing,3D프린터,3차원 프린터,메이킹, 프로토타이핑
+laser-cutter.svg,02-physical-computing,레이저커터,레이저 절단기,메이킹, 정밀 가공
+soldering.svg,02-physical-computing,납땜,납땜 작업,회로 조립, 전자공학
+multimeter.svg,02-physical-computing,멀티미터,전기 측정기,전압/전류 측정, 디버깅
+robot.svg,02-physical-computing,로봇,자율 로봇,로봇공학, 자동화
+robot-car.svg,02-physical-computing,로봇카,바퀴 달린 로봇,이동 로봇, 자율주행
+robot-arm.svg,02-physical-computing,로봇팔,관절형 로봇팔,산업 로봇, 제어
+arduino.svg,02-physical-computing,아두이노,아두이노 보드,피지컬컴퓨팅 플랫폼
+microbit.svg,02-physical-computing,마이크로비트,마이크로비트 보드,교육용 보드, 블록코딩
+rf-module.svg,02-physical-computing,RF모듈,무선 통신 모듈,무선 통신, IoT
+ble-module.svg,02-physical-computing,BLE모듈,저전력 블루투스,근거리 무선, 웨어러블
+wifi-module.svg,02-physical-computing,와이파이모듈,WiFi 통신 모듈,인터넷 연결, IoT
+gps.svg,02-physical-computing,GPS모듈,위치 추적 모듈,위치 기반, 내비게이션
+rfid.svg,02-physical-computing,RFID,무선 식별 태그,식별, 출입 관리
+gear.svg,02-physical-computing,기어,동력 전달 기어,기계 요소, 로봇 구조
+wheel.svg,02-physical-computing,바퀴,구동 바퀴,이동 로봇, 기계 요소
+actuator.svg,02-physical-computing,액추에이터,동작 장치,출력, 물리적 제어
+ir-sensor.svg,02-physical-computing,적외선센서,적외선 감지 센서,근접 감지, 라인트레이싱
+humidity-sensor.svg,02-physical-computing,습도센서,습도 측정 센서,환경 모니터링, 스마트팜
+fan-module.svg,02-physical-computing,팬모듈,냉각 팬,온도 제어, 출력
+piezo.svg,02-physical-computing,피에조,피에조 소자,소리 출력/감지, 진동
+breadboard.svg,02-physical-computing,브레드보드,시제품 제작판,회로 시제품, 프로토타이핑
+ammeter.svg,02-physical-computing,전류계,전류 측정기,전류 측정, 회로 분석
+circuit-battery.svg,02-physical-computing,전지기호,회로 전원 기호,회로도, 전원 표시
+diode.svg,02-physical-computing,다이오드,단방향 소자,전자부품, 회로
+resistor.svg,02-physical-computing,저항,저항 소자,전자부품, 옴의 법칙
+capacitor.svg,02-physical-computing,축전기,에너지 저장 소자,전자부품, 충방전
+robot-tabler.svg,02-physical-computing,로봇,자율 로봇,로봇공학, 피지컬컴퓨팅
+cctv.svg,02-physical-computing,CCTV,영상 감시 카메라,IoT, 보안 시스템
+processor.svg,02-physical-computing,프로세서,연산 장치,마이크로프로세서, 연산
+arduino-board.svg,02-physical-computing,아두이노보드,아두이노 플랫폼,피지컬컴퓨팅, 코딩
+variable.svg,03-programming,변수,데이터 저장 변수,변수 개념, 데이터 타입
+function.svg,03-programming,함수,코드 함수,함수 정의, 코드 재사용
+loop.svg,03-programming,반복문,반복 실행 구조,for/while 루프, 반복
+for-loop.svg,03-programming,FOR반복,횟수 반복문,for문, 카운터 반복
+while-loop.svg,03-programming,WHILE반복,조건 반복문,while문, 조건 반복
+if-condition.svg,03-programming,조건문,조건 분기,if문, 참/거짓 판단
+if-else.svg,03-programming,조건분기,참거짓 분기,if-else, 양갈래 분기
+array.svg,03-programming,배열,순서 있는 데이터 목록,배열, 리스트 자료형
+string.svg,03-programming,문자열,텍스트 데이터,문자열 처리, 텍스트
+integer.svg,03-programming,정수,정수 데이터 타입,숫자 자료형, 연산
+boolean.svg,03-programming,불리언,참/거짓 값,논리값, 조건 판단
+code-block.svg,03-programming,코드블록,중괄호 코드 블록,코드 구조, 범위
+brackets.svg,03-programming,대괄호,배열/인덱스 접근,배열 접근, 인덱싱
+parentheses.svg,03-programming,소괄호,함수 호출 괄호,함수 호출, 연산 순서
+indent.svg,03-programming,들여쓰기,코드 들여쓰기,코드 구조, 가독성
+comment.svg,03-programming,주석,코드 설명 주석,코드 설명, 문서화
+terminal.svg,03-programming,터미널,명령줄 인터페이스,CLI, 명령어 실행
+console.svg,03-programming,콘솔,출력 콘솔,디버깅, 출력 확인
+code.svg,03-programming,코드,프로그래밍 코드,코딩, 소스코드
+html.svg,03-programming,HTML,웹 마크업 언어,웹 개발, 문서 구조
+css.svg,03-programming,CSS,웹 스타일 언어,웹 디자인, 스타일링
+json.svg,03-programming,JSON,데이터 교환 형식,데이터 형식, API
+bug.svg,03-programming,버그,프로그램 오류,디버깅, 오류 수정
+debug.svg,03-programming,디버그,오류 수정 과정,디버깅 기법, 문제해결
+breakpoint.svg,03-programming,중단점,실행 중단 지점,디버깅, 단계 실행
+error.svg,03-programming,에러,오류 발생,에러 처리, 예외
+warning.svg,03-programming,경고,경고 메시지,경고 처리, 코드 품질
+git-commit.svg,03-programming,커밋,버전 저장 단위,버전관리, 변경 기록
+git-branch.svg,03-programming,브랜치,코드 가지,버전관리, 병렬 개발
+git-merge.svg,03-programming,머지,코드 병합,버전관리, 협업
+pull-request.svg,03-programming,풀리퀘스트,코드 검토 요청,협업, 코드리뷰
+block-coding.svg,03-programming,블록코딩,블록 기반 코딩,스크래치, 엔트리
+scratch-block.svg,03-programming,스크래치블록,스크래치 코딩 블록,블록코딩, 초등 SW교육
+run.svg,03-programming,실행,프로그램 실행,코드 실행, 테스트
+stop.svg,03-programming,정지,실행 중지,프로그램 종료, 중단
+input.svg,03-programming,입력,데이터 입력,input 함수, 사용자 입력
+output.svg,03-programming,출력,데이터 출력,print 함수, 결과 출력
+operator-plus.svg,03-programming,덧셈연산,더하기 연산자,산술 연산, 수학
+operator-minus.svg,03-programming,뺄셈연산,빼기 연산자,산술 연산, 수학
+operator-multiply.svg,03-programming,곱셈연산,곱하기 연산자,산술 연산, 수학
+operator-divide.svg,03-programming,나눗셈연산,나누기 연산자,산술 연산, 수학
+comparison.svg,03-programming,비교연산,비교 연산자,조건 비교, 논리
+module.svg,03-programming,모듈,코드 모듈,모듈화, 패키지
+library.svg,03-programming,라이브러리,코드 라이브러리,외부 라이브러리, import
+class.svg,03-programming,클래스,객체지향 클래스,OOP, 객체 설계
+object.svg,03-programming,객체,프로그래밍 객체,OOP, 인스턴스
+return.svg,03-programming,반환,함수 반환값,return문, 결과값
+try-catch.svg,03-programming,예외처리,에러 처리 구문,try-catch, 안전한 코드
+source-code.svg,03-programming,소스코드,프로그램 소스,코드 작성, 파일
+deploy.svg,03-programming,배포,프로그램 배포,서비스 배포, 릴리스
+testing.svg,03-programming,테스트,코드 테스트,단위 테스트, 품질
+code-review.svg,03-programming,코드리뷰,코드 검토,협업, 품질 관리
+readme.svg,03-programming,리드미,프로젝트 설명서,문서화, 프로젝트 소개
+database.svg,03-programming,데이터베이스,데이터 저장소,DB, 데이터 관리
+sql.svg,03-programming,SQL,데이터 조회 언어,데이터베이스, 쿼리
+ide.svg,03-programming,IDE,통합개발환경,코드 에디터, 개발도구
+docker.svg,03-programming,컨테이너,가상화 컨테이너,배포, 환경 관리
+web-dev.svg,03-programming,웹개발,웹 프로그래밍,웹사이트, 풀스택
+app-dev.svg,03-programming,앱개발,모바일 앱 개발,앱 프로그래밍, 모바일
+algorithm-code.svg,03-programming,알고리즘,문제 해결 절차,알고리즘 설계, 효율성
+flowchart.svg,04-algorithm,플로차트,순서도,알고리즘 표현, 프로그램 설계
+decision.svg,04-algorithm,판단기호,조건 판단 기호,순서도, 분기
+process.svg,04-algorithm,처리기호,처리 과정 기호,순서도, 연산
+terminal-symbol.svg,04-algorithm,단말기호,시작/끝 기호,순서도, 흐름 시작과 끝
+flow-arrow.svg,04-algorithm,흐름화살표,실행 흐름 방향,순서도, 연결
+sorting.svg,04-algorithm,정렬,데이터 정렬,정렬 알고리즘, 순서 배열
+bubble-sort.svg,04-algorithm,버블정렬,인접 비교 정렬,기초 정렬, 비교 교환
+selection-sort.svg,04-algorithm,선택정렬,최솟값 선택 정렬,기초 정렬, 선택
+insertion-sort.svg,04-algorithm,삽입정렬,삽입하며 정렬,기초 정렬, 삽입
+merge-sort.svg,04-algorithm,합병정렬,분할 후 병합 정렬,분할정복, 효율적 정렬
+quick-sort.svg,04-algorithm,퀵정렬,피벗 기반 빠른 정렬,분할정복, 고급 정렬
+linear-search.svg,04-algorithm,선형탐색,순차적 검색,기초 탐색, 순서대로
+binary-search.svg,04-algorithm,이진탐색,반으로 나눠 검색,효율적 탐색, 정렬된 데이터
+stack.svg,04-algorithm,스택,후입선출 자료구조,LIFO, 함수 호출
+queue.svg,04-algorithm,큐,선입선출 자료구조,FIFO, 대기열
+linked-list.svg,04-algorithm,연결리스트,노드 연결 구조,동적 자료구조, 포인터
+binary-tree.svg,04-algorithm,이진트리,이진 트리 구조,트리 탐색, 계층 구조
+graph.svg,04-algorithm,그래프,노드와 간선 구조,네트워크, 관계 표현
+hash-table.svg,04-algorithm,해시테이블,키-값 저장 구조,빠른 검색, 매핑
+heap.svg,04-algorithm,힙,우선순위 트리,우선순위 큐, 정렬
+bfs.svg,04-algorithm,너비우선탐색,BFS 탐색,그래프 탐색, 최단경로
+dfs.svg,04-algorithm,깊이우선탐색,DFS 탐색,그래프 탐색, 백트래킹
+shortest-path.svg,04-algorithm,최단경로,최단 거리 탐색,다익스트라, 경로 찾기
+greedy.svg,04-algorithm,탐욕법,최적 선택 전략,그리디 알고리즘, 최적화
+divide-conquer.svg,04-algorithm,분할정복,분할 후 해결,재귀, 큰 문제 분할
+dynamic-prog.svg,04-algorithm,동적프로그래밍,메모이제이션 풀이,DP, 최적 부분 구조
+backtracking.svg,04-algorithm,백트래킹,되돌아가며 탐색,탐색, 조합 문제
+time-complexity.svg,04-algorithm,시간복잡도,실행 시간 분석,효율성, Big-O
+space-complexity.svg,04-algorithm,공간복잡도,메모리 사용 분석,메모리 효율, Big-O
+big-o.svg,04-algorithm,빅오표기법,알고리즘 성능 표기,복잡도 분석, O(n)
+recursion.svg,04-algorithm,재귀,자기 호출 구조,재귀 함수, 분할정복
+swap.svg,04-algorithm,교환,값 교환 연산,정렬, 자리 바꾸기
+array-index.svg,04-algorithm,배열인덱스,배열 위치 접근,인덱싱, 자료 접근
+compare.svg,04-algorithm,비교,값 비교 연산,조건 비교, 정렬 기준
+random.svg,04-algorithm,무작위,랜덤 선택,난수 생성, 확률
+optimization.svg,04-algorithm,최적화,최적 해 탐색,효율성 개선, 성능
+problem-solving.svg,04-algorithm,문제해결,알고리즘적 사고,컴퓨팅 사고력, 분석
+computational.svg,04-algorithm,컴퓨팅사고,컴퓨팅 사고력,추상화, 패턴인식
+pattern-recognition.svg,04-algorithm,패턴인식,규칙 발견,패턴 분석, 추상화
+abstraction.svg,04-algorithm,추상화,핵심 추출,복잡도 감소, 모델링
+internet.svg,05-network-security,인터넷,글로벌 네트워크,인터넷 개념, 월드와이드웹
+wifi-network.svg,05-network-security,와이파이,무선 네트워크,무선 인터넷, 접속
+ethernet.svg,05-network-security,이더넷,유선 네트워크,LAN, 유선 연결
+router-net.svg,05-network-security,라우터,패킷 경로 설정,네트워크 장비, 라우팅
+server-net.svg,05-network-security,서버,서비스 제공 컴퓨터,클라이언트-서버, 호스팅
+cloud-net.svg,05-network-security,클라우드,원격 컴퓨팅,클라우드 서비스, SaaS
+http.svg,05-network-security,HTTP,웹 통신 프로토콜,웹 통신, 요청/응답
+url.svg,05-network-security,URL,웹 주소,인터넷 주소 체계, 도메인
+email.svg,05-network-security,이메일,전자 우편,통신, 디지털 소통
+packet.svg,05-network-security,패킷,데이터 전송 단위,네트워크 통신, 분할 전송
+bandwidth.svg,05-network-security,대역폭,전송 용량,네트워크 속도, 성능
+latency.svg,05-network-security,지연시간,응답 지연,네트워크 성능, 속도
+browser.svg,05-network-security,브라우저,웹 브라우저,인터넷 접속, 웹 탐색
+webpage.svg,05-network-security,웹페이지,웹 문서,웹사이트, HTML
+cookie.svg,05-network-security,쿠키,웹 쿠키 데이터,개인정보, 웹 추적
+cache.svg,05-network-security,캐시,임시 저장소,성능 최적화, 저장
+firewall.svg,05-network-security,방화벽,네트워크 보안 장벽,보안, 접근 차단
+encryption.svg,05-network-security,암호화,데이터 암호화,정보 보호, 보안
+decryption.svg,05-network-security,복호화,암호 해독,암호 해제, 키
+crypto-key.svg,05-network-security,암호키,암호화 키,공개키/비밀키, 인증
+ssl.svg,05-network-security,SSL인증서,보안 인증서,HTTPS, 안전한 연결
+password.svg,05-network-security,비밀번호,접근 비밀번호,인증, 보안 관리
+biometric.svg,05-network-security,생체인증,생체 정보 인증,지문/얼굴 인식, 보안
+two-factor.svg,05-network-security,2단계인증,추가 인증 단계,보안 강화, OTP
+phishing.svg,05-network-security,피싱,사기 공격,사이버 보안, 예방
+malware.svg,05-network-security,악성코드,유해 프로그램,바이러스, 보안 위협
+ransomware.svg,05-network-security,랜섬웨어,파일 암호화 공격,사이버 위협, 예방
+spam.svg,05-network-security,스팸,원치 않는 메시지,이메일 보안, 필터링
+privacy.svg,05-network-security,개인정보보호,개인정보 관리,디지털 시민, 프라이버시
+digital-footprint.svg,05-network-security,디지털발자국,온라인 활동 흔적,디지털 시민, 온라인 윤리
+cyber-attack.svg,05-network-security,사이버공격,해킹 시도,보안 위협, 방어
+update.svg,05-network-security,보안업데이트,소프트웨어 갱신,보안 패치, 유지보수
+backup.svg,05-network-security,백업,데이터 복사본,데이터 보호, 복구
+authentication.svg,05-network-security,인증,사용자 확인,로그인, 신원 확인
+access-control.svg,05-network-security,접근제어,권한 관리,역할 기반, 보안 정책
+audit-log.svg,05-network-security,감사로그,활동 기록,모니터링, 보안 감사
+alert.svg,05-network-security,보안알림,위협 알림,모니터링, 사고 대응
+block.svg,05-network-security,차단,접근 차단,보안, 필터링
+qr-code.svg,05-network-security,QR코드,2차원 바코드,정보 인코딩, 인증
+network-topology.svg,05-network-security,네트워크구조,네트워크 토폴로지,네트워크 설계, 구조
+database-ai.svg,06-data-ai,데이터베이스,데이터 저장소,데이터 관리, 구조화
+spreadsheet.svg,06-data-ai,스프레드시트,표 형식 데이터,엑셀, 데이터 정리
+csv.svg,06-data-ai,CSV파일,쉼표 구분 파일,데이터 교환, 표 형식
+bar-chart.svg,06-data-ai,막대그래프,수직 막대 차트,데이터 비교, 시각화
+line-chart.svg,06-data-ai,꺾은선그래프,시계열 차트,추세 분석, 시각화
+pie-chart.svg,06-data-ai,원그래프,비율 차트,구성비, 시각화
+scatter-plot.svg,06-data-ai,산점도,상관 관계 차트,상관분석, 시각화
+histogram.svg,06-data-ai,히스토그램,도수 분포도,분포 분석, 통계
+area-chart.svg,06-data-ai,영역그래프,누적 차트,추세, 시각화
+dashboard.svg,06-data-ai,대시보드,데이터 요약판,KPI, 모니터링
+data-filter.svg,06-data-ai,데이터필터,조건별 추출,데이터 정제, 선별
+data-search.svg,06-data-ai,데이터검색,데이터 탐색,쿼리, 조건 검색
+data-cleaning.svg,06-data-ai,데이터정제,오류 데이터 제거,전처리, 품질 향상
+outlier.svg,06-data-ai,이상치,비정상 데이터,이상 탐지, 통계
+normalization.svg,06-data-ai,정규화,데이터 스케일링,전처리, 표준화
+data-pipeline.svg,06-data-ai,데이터파이프라인,데이터 처리 흐름,ETL, 자동화
+data-collection.svg,06-data-ai,데이터수집,데이터 모으기,설문, 관측, 크롤링
+survey.svg,06-data-ai,설문조사,데이터 수집 설문,1차 데이터, 조사
+web-scraping.svg,06-data-ai,웹스크래핑,웹 데이터 수집,크롤링, 자동 수집
+api-data.svg,06-data-ai,API데이터,API 통한 수집,데이터 연동, REST
+neural-network.svg,06-data-ai,신경망,인공 신경망,딥러닝, AI 모델
+deep-learning.svg,06-data-ai,딥러닝,심층 학습,CNN, RNN, 고급 AI
+machine-learning.svg,06-data-ai,머신러닝,기계 학습,지도학습, 비지도학습
+classification.svg,06-data-ai,분류,범주 예측,지도학습, 카테고리
+regression.svg,06-data-ai,회귀,수치 예측,지도학습, 추세
+clustering.svg,06-data-ai,군집화,그룹 나누기,비지도학습, K-means
+decision-tree.svg,06-data-ai,의사결정트리,트리 기반 분류,분류, 예측 모델
+random-forest.svg,06-data-ai,랜덤포레스트,앙상블 학습,다수결, 정확도
+overfitting.svg,06-data-ai,과적합,과도한 학습,모델 일반화, 검증
+accuracy.svg,06-data-ai,정확도,예측 정확도,모델 평가, 성능
+confusion-matrix.svg,06-data-ai,혼동행렬,예측 결과표,분류 평가, TP/FP
+loss-function.svg,06-data-ai,손실함수,오차 측정,모델 학습, 최적화
+gradient-descent.svg,06-data-ai,경사하강법,최적값 탐색,학습 알고리즘, 최적화
+chatbot.svg,06-data-ai,챗봇,대화형 AI,NLP, 고객 서비스
+nlp.svg,06-data-ai,자연어처리,텍스트 AI,NLP, 언어 분석
+sentiment.svg,06-data-ai,감성분석,감정 판별,텍스트 분석, 여론
+image-recognition.svg,06-data-ai,이미지인식,영상 분류,컴퓨터비전, CNN
+object-detection.svg,06-data-ai,객체탐지,물체 인식,컴퓨터비전, YOLO
+recommendation.svg,06-data-ai,추천시스템,맞춤 추천,협업 필터링, 개인화
+prompt.svg,06-data-ai,프롬프트,AI 지시문,프롬프트 엔지니어링, LLM
+llm.svg,06-data-ai,대규모언어모델,LLM AI,GPT, 생성형 AI
+embedding.svg,06-data-ai,임베딩,벡터 표현,텍스트 벡터화, 의미
+tokenizer.svg,06-data-ai,토크나이저,텍스트 분할,텍스트 전처리, NLP
+transfer-learning.svg,06-data-ai,전이학습,사전 학습 활용,파인튜닝, 효율
+reinforcement.svg,06-data-ai,강화학습,보상 기반 학습,에이전트, 게임 AI
+computer-vision.svg,06-data-ai,컴퓨터비전,영상 처리 AI,이미지, 영상 분석
+speech-recognition.svg,06-data-ai,음성인식,말소리 인식,STT, 음성 AI
+text-to-speech.svg,06-data-ai,음성합성,텍스트 읽기,TTS, 접근성
+data-viz.svg,06-data-ai,데이터시각화,그래프 표현,차트, 인포그래픽
+correlation.svg,06-data-ai,상관관계,변수 간 관계,통계, 분석
+distribution.svg,06-data-ai,분포,데이터 분포,정규분포, 통계
+statistics.svg,06-data-ai,통계,데이터 통계,평균, 중앙값, 표준편차
+hypothesis.svg,06-data-ai,가설검증,통계적 검증,p값, 유의성 검정
+sample.svg,06-data-ai,표본,데이터 표본,표본추출, 모집단
+bias-fairness.svg,06-data-ai,공정성,AI 편향 방지,윤리, 공정한 AI
+ai-ethics.svg,06-data-ai,AI윤리,인공지능 윤리,책임감 있는 AI
+explainable-ai.svg,06-data-ai,설명가능AI,AI 판단 해석,XAI, 투명성
+model-deploy.svg,06-data-ai,모델배포,AI 서비스화,서빙, API 배포
+edge-ai.svg,06-data-ai,엣지AI,기기 내 AI,TinyML, 경량화
+generative-ai.svg,06-data-ai,생성형AI,콘텐츠 생성 AI,이미지/텍스트 생성, GPT
+empathize.svg,07-design-thinking,공감,사용자 이해,공감 단계, 사용자 중심
+define.svg,07-design-thinking,정의,문제 정의,핵심 문제 도출, HMW
+ideate.svg,07-design-thinking,아이디어,발산적 사고,아이디어 생성, 브레인스토밍
+prototype.svg,07-design-thinking,프로토타입,시제품 제작,빠른 제작, 검증용
+test.svg,07-design-thinking,테스트,사용자 검증,피드백, 반복 개선
+iterate.svg,07-design-thinking,반복개선,지속적 개선,피드백 반영, 발전
+sticky-note.svg,07-design-thinking,포스트잇,메모 포스트잇,아이디어 기록, 분류
+interview.svg,07-design-thinking,인터뷰,사용자 면담,사용자 조사, 공감
+persona.svg,07-design-thinking,페르소나,대표 사용자,사용자 모델링, 대상 정의
+journey-map.svg,07-design-thinking,여정지도,사용자 경험 흐름,고객 여정, 접점 분석
+brainstorm.svg,07-design-thinking,브레인스토밍,자유 발상,아이디어 발산, 그룹 활동
+mind-map.svg,07-design-thinking,마인드맵,방사형 사고 지도,사고 정리, 연결
+sketch.svg,07-design-thinking,스케치,빠른 그림,아이디어 시각화, 초안
+wireframe.svg,07-design-thinking,와이어프레임,화면 설계도,UI 설계, 구조
+mockup.svg,07-design-thinking,목업,실물 모형,디자인 시안, 프레젠테이션
+user-flow.svg,07-design-thinking,사용자흐름,이용 과정도,화면 전환, UX 설계
+storyboard.svg,07-design-thinking,스토리보드,장면 구성표,서비스 시나리오, 영상
+scenario.svg,07-design-thinking,시나리오,사용 상황 서술,맥락 설계, 상황 묘사
+observation.svg,07-design-thinking,관찰,현장 관찰,필드리서치, 발견
+insight.svg,07-design-thinking,인사이트,핵심 발견,통찰, 핵심 파악
+affinity.svg,07-design-thinking,친화도분류,데이터 그룹화,유사성 분류, 패턴
+feedback.svg,07-design-thinking,피드백,반응 수집,사용자 의견, 개선점
+vote.svg,07-design-thinking,투표,의사 결정,우선순위, 합의
+prioritize.svg,07-design-thinking,우선순위,중요도 결정,영향도-노력도, 선택
+sprint.svg,07-design-thinking,스프린트,집중 작업 기간,디자인 스프린트, 시간제한
+workshop.svg,07-design-thinking,워크숍,참여형 활동,그룹 활동, 퍼실리테이션
+timeboxing.svg,07-design-thinking,타임박싱,시간 제한 활동,집중, 효율적 진행
+icebreaker.svg,07-design-thinking,아이스브레이커,분위기 조성,팀빌딩, 긴장 완화
+co-creation.svg,07-design-thinking,공동창작,함께 만들기,협업, 참여 디자인
+diverge-converge.svg,07-design-thinking,발산수렴,확장과 집중,더블다이아몬드, 사고
+constraint.svg,07-design-thinking,제약조건,디자인 제약,한계, 창의적 도전
+mvp.svg,07-design-thinking,MVP,최소 기능 제품,핵심 기능, 빠른 검증
+pivot.svg,07-design-thinking,피벗,방향 전환,전략 수정, 적응
+service-blueprint.svg,07-design-thinking,서비스설계,서비스 청사진,프론트/백스테이지
+value-proposition.svg,07-design-thinking,가치제안,핵심 가치 제시,사용자 가치, 차별화
+pain-point.svg,07-design-thinking,불편사항,사용자 고충,문제 발견, 개선 기회
+solution-fit.svg,07-design-thinking,해결적합성,문제-해결 매칭,솔루션 검증, 적합도
+design-challenge.svg,07-design-thinking,디자인챌린지,설계 과제,프로젝트 주제, 미션
+hmw.svg,07-design-thinking,HMW질문,어떻게 하면 좋을까,문제 재정의, 기회 발견
+creative.svg,07-design-thinking,창의적사고,창의적 발상,창의성, 혁신
+microscope.svg,08-steam,현미경,미세 관찰 도구,과학 실험, 생물 관찰
+test-tube.svg,08-steam,시험관,화학 실험 용기,과학 실험, 화학
+beaker.svg,08-steam,비커,실험용 비커,과학 실험, 측정
+atom.svg,08-steam,원자,물질의 기본 단위,화학, 원자 구조
+dna.svg,08-steam,DNA,유전 정보 구조,생물, 유전학
+flask.svg,08-steam,플라스크,실험용 플라스크,화학 실험, 반응
+thermometer.svg,08-steam,온도계,온도 측정기,과학 실험, 열
+magnet.svg,08-steam,자석,자기력 도구,물리, 전자기
+electricity.svg,08-steam,전기,전기 에너지,물리, 전자공학
+wave.svg,08-steam,파동,에너지 전달,물리, 소리/빛
+solar.svg,08-steam,태양,태양 에너지,태양계, 에너지
+telescope.svg,08-steam,망원경,천체 관측,천문학, 우주 탐구
+ecosystem.svg,08-steam,생태계,생물 환경 시스템,생물, 환경 과학
+plant-growth.svg,08-steam,식물성장,식물 생장,생물, 생명 과학
+water-cycle.svg,08-steam,물순환,물의 순환,지구과학, 환경
+weather.svg,08-steam,기상,날씨 현상,지구과학, 기상 관측
+calculator.svg,08-steam,계산기,수학 연산 도구,수학, 계산
+sigma.svg,08-steam,시그마,합계 기호,수학, 통계
+pi.svg,08-steam,파이,원주율 기호,수학, 기하
+triangle.svg,08-steam,삼각형,기하학 도형,수학, 도형
+circle-shape.svg,08-steam,원,원형 도형,수학, 기하
+square-shape.svg,08-steam,정사각형,사각형 도형,수학, 도형
+hexagon.svg,08-steam,육각형,6각형 도형,수학, 테셀레이션
+ruler.svg,08-steam,자,길이 측정 도구,수학, 측정
+compass-draw.svg,08-steam,컴퍼스,원 그리기 도구,수학, 작도
+percentage.svg,08-steam,백분율,비율 표현,수학, 통계
+probability.svg,08-steam,확률,사건의 가능성,수학, 확률통계
+statistics-chart.svg,08-steam,통계그래프,통계 시각화,수학, 데이터 분석
+coordinate.svg,08-steam,좌표,좌표계,수학, 공간
+function-graph.svg,08-steam,함수그래프,함수 시각화,수학, 함수
+geography.svg,08-steam,지리,지리 정보,사회, 세계 탐구
+map.svg,08-steam,지도,위치 정보,사회, 지리
+landmark.svg,08-steam,랜드마크,역사적 건축물,사회, 문화유산
+history.svg,08-steam,역사,역사 기록,사회, 역사 탐구
+community.svg,08-steam,공동체,사회 공동체,사회, 시민 의식
+economy.svg,08-steam,경제,경제 활동,사회, 경제 교육
+justice.svg,08-steam,정의,공정한 판단,사회, 윤리
+art-palette.svg,08-steam,팔레트,미술 도구,미술, 색채
+paintbrush.svg,08-steam,붓,그림 도구,미술, 표현 활동
+artwork.svg,08-steam,작품,예술 작품,미술, 감상
+drawing.svg,08-steam,드로잉,그리기,미술, 소묘
+color-mixing.svg,08-steam,색혼합,색 섞기,미술, 색채 이론
+music-note.svg,08-steam,음표,음악 기호,음악, 음악 수업
+melody.svg,08-steam,멜로디,음악 선율,음악, 작곡
+listening.svg,08-steam,감상,음악 감상,음악, 감상 활동
+film-making.svg,08-steam,영상제작,영상 콘텐츠,미디어, 영상 편집
+photography.svg,08-steam,사진,사진 촬영,미술, 사진 표현
+theater.svg,08-steam,연극,공연 예술,예술, 표현 활동
+craft.svg,08-steam,공예,만들기 활동,미술, 수공예
+origami.svg,08-steam,종이접기,종이 조형,미술, 조형 활동
+typography.svg,08-steam,타이포그래피,글자 디자인,디자인, 글꼴
+color-theory.svg,08-steam,색채이론,색의 원리,미술, 색 조합
+composition.svg,08-steam,구성,화면 구성,미술, 디자인 원리
+perspective.svg,08-steam,원근법,깊이 표현,미술, 공간 표현
+pattern.svg,08-steam,패턴,반복 무늬,수학+미술, 테셀레이션
+symmetry.svg,08-steam,대칭,좌우 대칭,수학+미술, 기하
+sustainability.svg,08-steam,지속가능성,지속가능한 발전,환경, 에코디자인
+environment.svg,08-steam,환경,자연 환경,과학, 환경 보호
+renewable.svg,08-steam,신재생에너지,친환경 에너지,과학+사회, 에너지
+earth-science.svg,08-steam,지구과학,지구 탐구,과학, 지질/기상
+textbook.svg,09-teaching,교과서,수업 교재,교과 학습, 교재 활용
+notebook.svg,09-teaching,공책,필기 노트,학습 기록, 필기
+pencil.svg,09-teaching,연필,필기 도구,학습, 필기
+whiteboard.svg,09-teaching,화이트보드,수업 판서,강의, 설명
+school.svg,09-teaching,학교,교육 기관,학교 생활, 교육
+school-bell.svg,09-teaching,학교종,수업 시작/종료,학교 일과, 시간 관리
+schedule.svg,09-teaching,시간표,수업 일정,학사 일정, 계획
+assignment.svg,09-teaching,과제,학습 과제,과제 제출, 평가
+exam.svg,09-teaching,시험,평가 시험지,중간/기말, 평가
+report-card.svg,09-teaching,성적표,학업 성적,성적 평가, 피드백
+grade-star.svg,09-teaching,등급별,학업 등급,성취도, 평가 결과
+rubric.svg,09-teaching,루브릭,평가 기준표,수행평가, 채점 기준
+checklist.svg,09-teaching,체크리스트,점검 목록,자기 점검, 평가
+self-assessment.svg,09-teaching,자기평가,스스로 평가,메타인지, 성찰
+peer-review.svg,09-teaching,동료평가,상호 평가,협력 학습, 피드백
+portfolio.svg,09-teaching,포트폴리오,학습 성과물,종합 평가, 성장 기록
+learning-goal.svg,09-teaching,학습목표,수업 목표,성취기준, 수업 설계
+curriculum.svg,09-teaching,교육과정,교과 체계,교육과정, 핵심역량
+lesson-plan.svg,09-teaching,수업안,수업 지도안,수업 설계, 교수법
+scaffolding.svg,09-teaching,비계,학습 지원 단계,단계적 지원, 수준별
+bloom.svg,09-teaching,블룸분류,사고력 위계,인지 수준, 평가 설계
+group-work.svg,09-teaching,모둠활동,소그룹 협업,협력 학습, 토의
+individual.svg,09-teaching,개별활동,개인 학습,자기주도, 개별화
+discussion.svg,09-teaching,토론,의견 교환,토의토론, 비판적 사고
+presentation-teach.svg,09-teaching,발표,학습 발표,표현력, 의사소통
+inquiry.svg,09-teaching,탐구,질문과 조사,탐구 학습, 호기심
+project-based.svg,09-teaching,프로젝트학습,프로젝트 수업,PBL, 실생활 문제
+flipped.svg,09-teaching,거꾸로수업,사전학습 후 활동,플립드 러닝, 자기주도
+online-class.svg,09-teaching,온라인수업,원격 학습,이러닝, 디지털 수업
+video-lesson.svg,09-teaching,영상수업,교육 영상,동영상 강의, 콘텐츠
+lms.svg,09-teaching,LMS,학습관리시스템,구글클래스룸, 온라인 관리
+certificate.svg,09-teaching,수료증,이수 인증서,인증, 수료
+trophy.svg,09-teaching,트로피,수상 트로피,시상, 동기부여
+medal.svg,09-teaching,메달,성취 메달,포상, 인정
+progress.svg,09-teaching,학습진도,학습 진행률,진도 관리, 성장
+achievement.svg,09-teaching,성취도,학습 달성률,평가, 성취 수준
+engagement.svg,09-teaching,참여도,학습 참여,동기부여, 적극성
+metacognition.svg,09-teaching,메타인지,학습 자각,자기 점검, 사고력
+guidance.svg,09-teaching,진로지도,진로 안내,진로 탐색, 상담
+graduation.svg,09-teaching,졸업,학업 완료,졸업, 성장
+arrow-right.svg,10-visual-symbols,오른쪽화살표,진행 방향,다음 단계, 흐름 표시
+arrow-left.svg,10-visual-symbols,왼쪽화살표,이전 방향,되돌아가기, 이전 단계
+arrow-up.svg,10-visual-symbols,위쪽화살표,상승 방향,증가, 향상
+arrow-down.svg,10-visual-symbols,아래쪽화살표,하강 방향,감소, 다운로드
+arrow-bidirectional.svg,10-visual-symbols,양방향화살표,상호 교환,비교, 상호작용
+arrow-curved.svg,10-visual-symbols,곡선화살표,방향 전환,전환, 이동
+expand.svg,10-visual-symbols,확장,크기 확장,확대, 펼치기
+collapse.svg,10-visual-symbols,축소,크기 축소,줄이기, 접기
+checkmark.svg,10-visual-symbols,체크,완료 표시,완료, 정답
+cross.svg,10-visual-symbols,엑스,취소/오답 표시,오답, 취소, 삭제
+plus-sign.svg,10-visual-symbols,더하기,추가 기호,추가, 새로 만들기
+minus-sign.svg,10-visual-symbols,빼기,제거 기호,제거, 축소
+question.svg,10-visual-symbols,물음표,의문 표시,질문, 도움말
+exclamation.svg,10-visual-symbols,느낌표,주의 표시,강조, 중요
+info.svg,10-visual-symbols,정보,안내 표시,참고, 정보 제공
+warning.svg,10-visual-symbols,경고삼각,위험 경고,주의, 경고
+error-sign.svg,10-visual-symbols,에러표시,오류 발생,에러, 문제 발생
+success.svg,10-visual-symbols,성공뱃지,완료 인증,성공, 달성
+star.svg,10-visual-symbols,별표,중요/평점 표시,즐겨찾기, 평가
+heart.svg,10-visual-symbols,하트,좋아요/관심,좋아요, 감정 표현
+bookmark.svg,10-visual-symbols,북마크,페이지 표시,저장, 중요 표시
+flag.svg,10-visual-symbols,깃발,표시/신고,신고, 마일스톤
+clock.svg,10-visual-symbols,시계,시간 표시,시간, 마감
+calendar.svg,10-visual-symbols,달력,날짜 표시,일정, 날짜
+search.svg,10-visual-symbols,검색,찾기 기능,검색, 탐색
+filter.svg,10-visual-symbols,필터,조건 걸기,분류, 조건 선택
+sort.svg,10-visual-symbols,정렬,순서 정리,오름차순/내림차순
+refresh.svg,10-visual-symbols,새로고침,다시 불러오기,갱신, 재시도
+link.svg,10-visual-symbols,링크,연결 표시,하이퍼링크, 참조
+unlink.svg,10-visual-symbols,링크해제,연결 끊기,연결 해제
+lock.svg,10-visual-symbols,잠금,보안 잠금,보안, 접근 제한
+unlock.svg,10-visual-symbols,잠금해제,보안 해제,해제, 접근 허용
+visible.svg,10-visual-symbols,보이기,표시 상태,공개, 확인
+hidden.svg,10-visual-symbols,숨기기,비표시 상태,비공개, 숨김
+notification.svg,10-visual-symbols,알림,알림 표시,알림, 공지
+volume.svg,10-visual-symbols,소리,음량 표시,소리, 볼륨
+mute.svg,10-visual-symbols,음소거,소리 끄기,음소거, 무음
+play.svg,10-visual-symbols,재생,시작 버튼,재생, 시작
+pause.svg,10-visual-symbols,일시정지,멈춤 버튼,일시정지, 대기
+stop-btn.svg,10-visual-symbols,정지,중지 버튼,정지, 종료
+forward.svg,10-visual-symbols,다음,앞으로 이동,다음, 건너뛰기
+backward.svg,10-visual-symbols,이전,뒤로 이동,이전, 되감기
+download.svg,10-visual-symbols,다운로드,파일 받기,저장, 내려받기
+upload.svg,10-visual-symbols,업로드,파일 올리기,제출, 올려보내기
+share.svg,10-visual-symbols,공유,나눔 표시,공유, 배포
+copy.svg,10-visual-symbols,복사,복제 기능,복사, 붙여넣기
+paste.svg,10-visual-symbols,붙여넣기,붙이기 기능,붙여넣기
+delete.svg,10-visual-symbols,삭제,지우기,삭제, 제거
+edit.svg,10-visual-symbols,편집,수정 기능,수정, 편집
+settings.svg,10-visual-symbols,설정,환경 설정,설정, 옵션
+home.svg,10-visual-symbols,홈,첫 화면,메인, 시작점
+user.svg,10-visual-symbols,사용자,개인 프로필,프로필, 계정
+group.svg,10-visual-symbols,그룹,다수 사용자,팀, 그룹
+mail.svg,10-visual-symbols,메일,전자 우편,이메일, 연락
+chat.svg,10-visual-symbols,채팅,대화창,메시지, 소통
+phone.svg,10-visual-symbols,전화,전화 연결,통화, 연락
+image.svg,10-visual-symbols,이미지,사진/그림,이미지, 시각자료
+file.svg,10-visual-symbols,파일,문서 파일,문서, 자료
+folder.svg,10-visual-symbols,폴더,파일 묶음,분류, 정리
+folder-open.svg,10-visual-symbols,열린폴더,폴더 열기,파일 탐색, 열기
+code.svg,10-visual-symbols,코드,프로그래밍 코드,코드, 기술
+terminal-sym.svg,10-visual-symbols,터미널,명령줄,CLI, 개발
+database-sym.svg,10-visual-symbols,데이터베이스,DB 기호,데이터, 저장
+cloud-sym.svg,10-visual-symbols,클라우드,클라우드 기호,온라인, 저장
+wifi-sym.svg,10-visual-symbols,와이파이,무선 기호,인터넷, 연결
+battery-sym.svg,10-visual-symbols,배터리,전원 기호,충전, 전원 상태
+bright.svg,10-visual-symbols,밝기,밝기 조절,화면, 밝기
+dark-mode.svg,10-visual-symbols,다크모드,어두운 화면,다크모드, 테마
+accessibility.svg,10-visual-symbols,접근성,누구나 사용,유니버설 디자인, 배리어프리
+language.svg,10-visual-symbols,언어,다국어 표시,번역, 다국어
+number-1.svg,10-visual-symbols,1번,첫 번째,순서, 단계 1
+number-2.svg,10-visual-symbols,2번,두 번째,순서, 단계 2
+number-3.svg,10-visual-symbols,3번,세 번째,순서, 단계 3
+tip.svg,10-visual-symbols,팁,유용한 조언,도움말, 팁 박스
+note.svg,10-visual-symbols,메모,기록 표시,주석, 참고사항
+important.svg,10-visual-symbols,중요,중요 표시,강조, 필수
+new-badge.svg,10-visual-symbols,신규,새로운 항목,NEW, 최신
+hot.svg,10-visual-symbols,인기,인기 항목,HOT, 추천
+trending-up.svg,10-visual-symbols,상승추세,증가 경향,성장, 개선
+trending-down.svg,10-visual-symbols,하락추세,감소 경향,감소, 주의

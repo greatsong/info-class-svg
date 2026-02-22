@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>교육용 SVG 아이콘 라이브러리</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#f8fafc;--card:#fff;--text:#1e293b;--sub:#64748b;--border:#e2e8f0;--accent:#2563eb;--radius:12px}
+@media(prefers-color-scheme:dark){:root{--bg:#0f172a;--card:#1e293b;--text:#f1f5f9;--sub:#94a3b8;--border:#334155;--accent:#60a5fa}}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{text-align:center;padding:2rem 1rem 1rem;max-width:800px;margin:0 auto}
+h1{font-size:1.5rem;font-weight:700;margin-bottom:.2rem}
+.subtitle{color:var(--sub);font-size:.85rem;margin-bottom:1rem}
+.search-box{position:relative;max-width:500px;margin:0 auto .8rem}
+.search-box input{width:100%;padding:.65rem 1rem .65rem 2.4rem;border:1.5px solid var(--border);border-radius:var(--radius);background:var(--card);color:var(--text);font-size:.9rem;outline:none}
+.search-box input:focus{border-color:var(--accent)}
+.search-box svg{position:absolute;left:.7rem;top:50%;transform:translateY(-50%);width:16px;height:16px;stroke:var(--sub)}
+.toolbar{display:flex;justify-content:center;align-items:center;gap:.8rem;margin-bottom:.5rem;flex-wrap:wrap}
+.stats{color:var(--sub);font-size:.8rem}
+.view-btns{display:flex;gap:2px;border:1.5px solid var(--border);border-radius:8px;overflow:hidden}
+.view-btns button{padding:.3rem .6rem;border:none;background:var(--card);color:var(--sub);font-size:.75rem;cursor:pointer}
+.view-btns button.active{background:var(--accent);color:#fff}
+.doc-link{font-size:.75rem;color:var(--accent);text-decoration:none;border:1px solid var(--accent);padding:.25rem .5rem;border-radius:6px}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.35rem;padding:0 1rem;margin-bottom:1.2rem;max-width:1100px;margin-left:auto;margin-right:auto}
+nav button{padding:.3rem .6rem;border:1.5px solid var(--border);border-radius:8px;background:var(--card);color:var(--sub);font-size:.72rem;cursor:pointer;transition:.15s}
+nav button:hover,nav button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* 그리드 뷰 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:.7rem;padding:0 1rem 2rem;max-width:1200px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:.5rem;text-align:center;cursor:pointer;transition:.15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.card img{width:52px;height:52px;display:block;margin:0 auto .2rem}
+.card span{font-size:.6rem;color:var(--sub);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* 테이블(문서) 뷰 */
+.doc-table{width:100%;max-width:1100px;margin:0 auto 2rem;border-collapse:collapse;padding:0 1rem}
+.doc-table th{background:var(--accent);color:#fff;padding:.5rem .7rem;font-size:.75rem;text-align:left;position:sticky;top:0}
+.doc-table td{padding:.45rem .7rem;border-bottom:1px solid var(--border);font-size:.78rem;vertical-align:middle}
+.doc-table tr:hover td{background:color-mix(in srgb,var(--accent) 5%,var(--card))}
+.doc-table img{width:36px;height:36px;vertical-align:middle}
+.doc-table .fname{font-family:monospace;font-size:.7rem;color:var(--sub)}
+.doc-table .cat-badge{display:inline-block;padding:1px 6px;border-radius:4px;font-size:.65rem;background:color-mix(in srgb,var(--accent) 12%,var(--card));color:var(--accent)}
+
+.hidden{display:none!important}
+
+/* 모달 */
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:100;justify-content:center;align-items:center}
+.modal-bg.show{display:flex}
+.modal{background:var(--card);border-radius:16px;padding:1.5rem;max-width:400px;width:92%;max-height:85vh;overflow-y:auto;position:relative}
+.modal .close{position:absolute;top:.7rem;right:.7rem;background:none;border:none;font-size:1.2rem;cursor:pointer;color:var(--sub)}
+.modal img{width:100px;height:100px;display:block;margin:0 auto .8rem}
+.modal h2{font-size:1rem;text-align:center;margin-bottom:.2rem}
+.modal .cat{text-align:center;color:var(--accent);font-size:.78rem;margin-bottom:.6rem}
+.modal .desc{color:var(--sub);font-size:.82rem;margin-bottom:.4rem}
+.modal .meta{font-size:.75rem;margin-bottom:.8rem;padding:.5rem;background:var(--bg);border-radius:8px}
+.modal .meta div{margin-bottom:.3rem}
+.modal .meta strong{color:var(--sub);font-size:.7rem}
+.modal .btns{display:flex;gap:.5rem}
+.modal .btns button{flex:1;padding:.45rem;border:1.5px solid var(--accent);border-radius:8px;background:transparent;color:var(--accent);font-size:.78rem;cursor:pointer}
+.modal .btns button:first-child{background:var(--accent);color:#fff}
+.empty{text-align:center;color:var(--sub);padding:3rem;grid-column:1/-1}
+footer{text-align:center;padding:1.5rem;color:var(--sub);font-size:.75rem;border-top:1px solid var(--border)}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+  <h1>교육용 SVG 아이콘 라이브러리</h1>
+  <p class="subtitle">정보교육 · 디자인씽킹 · 프로젝트 수업 · STEAM 융합</p>
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <input type="search" id="q" placeholder="아이콘 검색 (예: 변수, 프로토타입, 루브릭, 모둠활동...)">
+  </div>
+  <div class="toolbar">
+    <span class="stats" id="stats"></span>
+    <div class="view-btns">
+      <button class="active" data-v="grid">그리드</button>
+      <button data-v="table">문서</button>
+    </div>
+    <a class="doc-link" href="catalog.csv" download>CSV 다운로드</a>
+    <a class="doc-link" href="catalog.json" download>JSON 다운로드</a>
+  </div>
+</header>
+<nav id="cats"></nav>
+<div class="grid" id="grid"></div>
+<table class="doc-table hidden" id="docTable">
+  <thead><tr><th>이미지</th><th>이름</th><th>파일명</th><th>카테고리</th><th>설명</th><th>사용 상황</th></tr></thead>
+  <tbody id="docBody"></tbody>
+</table>
+<div class="modal-bg" id="modalBg">
+  <div class="modal" id="modal"></div>
+</div>
+<footer>
+  교육용 SVG 아이콘 라이브러리 · 기반: <a href="https://lucide.dev" target="_blank">Lucide</a> + <a href="https://tabler.io/icons" target="_blank">Tabler Icons</a> (MIT License)
+</footer>
+<script>
+const CN={'01-devices':'컴퓨터와 디지털 기기','02-physical-computing':'피지컬컴퓨팅과 메이킹','03-programming':'소프트웨어와 프로그래밍','04-algorithm':'알고리즘과 자료구조','05-network-security':'네트워크와 정보보안','06-data-ai':'데이터와 인공지능','07-design-thinking':'디자인씽킹과 문제해결','08-steam':'STEAM 융합','09-teaching':'수업 활동과 평가','10-visual-symbols':'시각 기호와 안내 요소'};
+let all=[],activeCat='all',view='grid';
+
+fetch('catalog.json').then(r=>r.json()).then(d=>{
+  all=d.icons;
+  document.getElementById('stats').textContent=`총 ${d.totalCount}개`;
+  buildCats(d.categories);
+  render();
+});
+
+function buildCats(cats){
+  const n=document.getElementById('cats');
+  n.innerHTML='<button class="active" data-c="all">전체</button>'+cats.map(c=>'<button data-c="'+c.id+'">'+c.name+' ('+c.count+')</button>').join('');
+  n.onclick=e=>{if(!e.target.dataset.c)return;activeCat=e.target.dataset.c;n.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.c===activeCat));render()};
+}
+
+document.querySelector('.view-btns').onclick=e=>{
+  if(!e.target.dataset.v)return;
+  view=e.target.dataset.v;
+  document.querySelectorAll('.view-btns button').forEach(b=>b.classList.toggle('active',b.dataset.v===view));
+  render();
+};
+
+function filter(){
+  const q=(document.getElementById('q').value||'').toLowerCase();
+  return all.filter(i=>{
+    if(activeCat!=='all'&&i.category!==activeCat)return false;
+    if(!q)return true;
+    return i.name.includes(q)||i.description.includes(q)||i.useCases.includes(q)||(CN[i.category]||'').includes(q);
+  });
+}
+
+function render(){
+  const f=filter();
+  document.getElementById('stats').textContent=f.length===all.length?`총 ${all.length}개`:`${f.length} / ${all.length}개`;
+  const g=document.getElementById('grid'),t=document.getElementById('docTable');
+  if(view==='grid'){
+    g.classList.remove('hidden');t.classList.add('hidden');
+    if(!f.length){g.innerHTML='<p class="empty">검색 결과가 없습니다</p>';return}
+    g.innerHTML=f.map((ic,i)=>'<div class="card" data-i="'+i+'"><img src="svg/'+ic.category+'/'+ic.filename+'" alt="'+ic.name+'" loading="lazy"><span>'+ic.name+'</span></div>').join('');
+    g.querySelectorAll('.card').forEach(c=>c.onclick=()=>showModal(f[+c.dataset.i]));
+  } else {
+    g.classList.add('hidden');t.classList.remove('hidden');
+    const b=document.getElementById('docBody');
+    if(!f.length){b.innerHTML='<tr><td colspan="6" style="text-align:center;padding:2rem;color:var(--sub)">검색 결과가 없습니다</td></tr>';return}
+    b.innerHTML=f.map(ic=>'<tr style="cursor:pointer" onclick="showModalByFile(\''+ic.category+'\',\''+ic.filename+'\')"><td><img src="svg/'+ic.category+'/'+ic.filename+'" alt="'+ic.name+'"></td><td><strong>'+ic.name+'</strong></td><td class="fname">'+ic.filename+'</td><td><span class="cat-badge">'+( CN[ic.category]||ic.category)+'</span></td><td>'+ic.description+'</td><td>'+ic.useCases+'</td></tr>').join('');
+  }
+}
+
+function showModalByFile(cat,fn){const ic=all.find(i=>i.category===cat&&i.filename===fn);if(ic)showModal(ic)}
+
+function showModal(ic){
+  const p='svg/'+ic.category+'/'+ic.filename;
+  document.getElementById('modal').innerHTML='<button class="close">&times;</button><img src="'+p+'" alt="'+ic.name+'"><h2>'+ic.name+'</h2><p class="cat">'+(CN[ic.category]||ic.category)+'</p><p class="desc">'+ic.description+'</p><div class="meta"><div><strong>파일명: </strong>'+ic.filename+'</div><div><strong>경로: </strong>svg/'+ic.category+'/'+ic.filename+'</div><div><strong>사용 상황: </strong>'+ic.useCases+'</div></div><div class="btns"><button onclick="dlSvg(\''+p+'\',\''+ic.filename+'\')">다운로드</button><button onclick="copySvg(\''+p+'\')">SVG 코드 복사</button></div>';
+  document.getElementById('modal').querySelector('.close').onclick=()=>document.getElementById('modalBg').classList.remove('show');
+  document.getElementById('modalBg').classList.add('show');
+}
+document.getElementById('modalBg').onclick=e=>{if(e.target.id==='modalBg')e.target.classList.remove('show')};
+document.getElementById('q').addEventListener('input',render);
+function dlSvg(p,n){fetch(p).then(r=>r.blob()).then(b=>{const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=n;a.click()})}
+function copySvg(p){fetch(p).then(r=>r.text()).then(t=>{navigator.clipboard.writeText(t).then(()=>alert('SVG 코드가 복사되었습니다!'))})}
+</script>
+</body>
+</html>

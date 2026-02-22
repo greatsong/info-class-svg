@@ -5,62 +5,74 @@
     {
       "id": "01-devices",
       "name": "컴퓨터와 디지털 기기",
-      "count": 40,
+      "count": 63,
       "color": "#2563eb"
     },
     {
       "id": "02-physical-computing",
       "name": "피지컬컴퓨팅과 메이킹",
-      "count": 49,
+      "count": 70,
       "color": "#16a34a"
     },
     {
       "id": "03-programming",
       "name": "소프트웨어와 프로그래밍",
-      "count": 60,
+      "count": 90,
       "color": "#16a34a"
     },
     {
       "id": "04-algorithm",
       "name": "알고리즘과 자료구조",
-      "count": 40,
+      "count": 84,
       "color": "#0891b2"
     },
     {
       "id": "05-network-security",
       "name": "네트워크와 정보보안",
-      "count": 40,
+      "count": 64,
       "color": "#dc2626"
     },
     {
       "id": "06-data-ai",
       "name": "데이터와 인공지능",
-      "count": 60,
+      "count": 79,
       "color": "#2563eb"
     },
     {
       "id": "07-design-thinking",
       "name": "디자인씽킹과 문제해결",
-      "count": 40,
+      "count": 59,
       "color": "#ec4899"
     },
     {
       "id": "08-steam",
       "name": "STEAM 융합",
-      "count": 60,
+      "count": 109,
       "color": "#ea580c"
     },
     {
       "id": "09-teaching",
       "name": "수업 활동과 평가",
-      "count": 40,
+      "count": 64,
       "color": "#0891b2"
     },
     {
       "id": "10-visual-symbols",
       "name": "시각 기호와 안내 요소",
-      "count": 80,
+      "count": 120,
       "color": "#1e293b"
+    },
+    {
+      "id": "11-numbers",
+      "name": "숫자와 번호",
+      "count": 51,
+      "color": "#d97706"
+    },
+    {
+      "id": "12-shapes",
+      "name": "도형과 입체",
+      "count": 34,
+      "color": "#9333ea"
     }
   ],
   "icons": [
@@ -546,6 +558,291 @@
         "회로기판"
       ],
       "useCases": "하드웨어 구조, 전자공학",
+      "source": "lucide"
+    },
+    {
+      "filename": "nfc.svg",
+      "category": "01-devices",
+      "name": "NFC",
+      "description": "근거리 무선통신",
+      "tags": [
+        "근거리",
+        "무선통신"
+      ],
+      "useCases": "모바일 결제, 태그 인식",
+      "source": "lucide"
+    },
+    {
+      "filename": "laptop-mini.svg",
+      "category": "01-devices",
+      "name": "미니노트북",
+      "description": "경량 노트북",
+      "tags": [
+        "경량",
+        "노트북"
+      ],
+      "useCases": "모바일 컴퓨팅, 크롬북",
+      "source": "lucide"
+    },
+    {
+      "filename": "monitor-phone.svg",
+      "category": "01-devices",
+      "name": "모니터+폰",
+      "description": "모니터와 스마트폰 연결",
+      "tags": [
+        "모니터와",
+        "스마트폰",
+        "연결"
+      ],
+      "useCases": "반응형 디자인, 미러링",
+      "source": "lucide"
+    },
+    {
+      "filename": "power-on.svg",
+      "category": "01-devices",
+      "name": "전원켜기",
+      "description": "전원 버튼",
+      "tags": [
+        "전원",
+        "버튼"
+      ],
+      "useCases": "시스템 시작, 전원 관리",
+      "source": "lucide"
+    },
+    {
+      "filename": "power-off.svg",
+      "category": "01-devices",
+      "name": "전원끄기",
+      "description": "전원 종료 버튼",
+      "tags": [
+        "전원",
+        "종료",
+        "버튼"
+      ],
+      "useCases": "시스템 종료, 절전",
+      "source": "lucide"
+    },
+    {
+      "filename": "screen-share.svg",
+      "category": "01-devices",
+      "name": "화면공유",
+      "description": "화면 공유 기능",
+      "tags": [
+        "화면",
+        "공유",
+        "기능"
+      ],
+      "useCases": "원격 수업, 화면 미러링",
+      "source": "lucide"
+    },
+    {
+      "filename": "headset.svg",
+      "category": "01-devices",
+      "name": "헤드셋",
+      "description": "마이크 헤드셋",
+      "tags": [
+        "마이크",
+        "헤드셋"
+      ],
+      "useCases": "화상 수업, 음성 통화",
+      "source": "lucide"
+    },
+    {
+      "filename": "face-scan.svg",
+      "category": "01-devices",
+      "name": "얼굴인식",
+      "description": "얼굴 스캔 인식",
+      "tags": [
+        "얼굴",
+        "스캔",
+        "인식"
+      ],
+      "useCases": "생체인증, AI 인식",
+      "source": "lucide"
+    },
+    {
+      "filename": "barcode-scan.svg",
+      "category": "01-devices",
+      "name": "바코드스캔",
+      "description": "바코드 읽기",
+      "tags": [
+        "바코드",
+        "읽기"
+      ],
+      "useCases": "자동 인식, 물류 관리",
+      "source": "lucide"
+    },
+    {
+      "filename": "tablet-phone.svg",
+      "category": "01-devices",
+      "name": "태블릿+폰",
+      "description": "태블릿과 스마트폰",
+      "tags": [
+        "태블릿과",
+        "스마트폰"
+      ],
+      "useCases": "모바일 기기 비교, 크기",
+      "source": "lucide"
+    },
+    {
+      "filename": "joystick.svg",
+      "category": "01-devices",
+      "name": "조이스틱",
+      "description": "게임 조이스틱",
+      "tags": [
+        "게임",
+        "조이스틱"
+      ],
+      "useCases": "입력장치, 로봇 제어",
+      "source": "lucide"
+    },
+    {
+      "filename": "navigation.svg",
+      "category": "01-devices",
+      "name": "내비게이션",
+      "description": "길 안내 장치",
+      "tags": [
+        "길",
+        "안내",
+        "장치"
+      ],
+      "useCases": "GPS, 위치 서비스",
+      "source": "lucide"
+    },
+    {
+      "filename": "vibrate.svg",
+      "category": "01-devices",
+      "name": "진동",
+      "description": "진동 알림",
+      "tags": [
+        "진동",
+        "알림"
+      ],
+      "useCases": "햅틱 피드백, 모바일 알림",
+      "source": "lucide"
+    },
+    {
+      "filename": "control-tower.svg",
+      "category": "01-devices",
+      "name": "관제탑",
+      "description": "통신 관제탑",
+      "tags": [
+        "통신",
+        "관제탑"
+      ],
+      "useCases": "통신 관제, IoT 허브",
+      "source": "lucide"
+    },
+    {
+      "filename": "radio-receiver.svg",
+      "category": "01-devices",
+      "name": "수신기",
+      "description": "라디오 수신 장치",
+      "tags": [
+        "라디오",
+        "수신",
+        "장치"
+      ],
+      "useCases": "방송 수신, 아날로그 통신",
+      "source": "lucide"
+    },
+    {
+      "filename": "desk-lamp.svg",
+      "category": "01-devices",
+      "name": "탁상등",
+      "description": "책상 조명",
+      "tags": [
+        "책상",
+        "조명"
+      ],
+      "useCases": "스마트 조명, IoT 기기",
+      "source": "lucide"
+    },
+    {
+      "filename": "monitor-play.svg",
+      "category": "01-devices",
+      "name": "미디어모니터",
+      "description": "영상 재생 모니터",
+      "tags": [
+        "영상",
+        "재생",
+        "모니터"
+      ],
+      "useCases": "미디어 재생, 디지털 사이니지",
+      "source": "lucide"
+    },
+    {
+      "filename": "app-window.svg",
+      "category": "01-devices",
+      "name": "앱화면",
+      "description": "응용프로그램 창",
+      "tags": [
+        "응용프로그램",
+        "창"
+      ],
+      "useCases": "소프트웨어, 앱 인터페이스",
+      "source": "lucide"
+    },
+    {
+      "filename": "clapperboard.svg",
+      "category": "01-devices",
+      "name": "클래퍼보드",
+      "description": "영상 촬영 도구",
+      "tags": [
+        "영상",
+        "촬영",
+        "도구"
+      ],
+      "useCases": "영상 제작, 미디어",
+      "source": "lucide"
+    },
+    {
+      "filename": "infinity-device.svg",
+      "category": "01-devices",
+      "name": "무한대",
+      "description": "무한 기호",
+      "tags": [
+        "무한",
+        "기호"
+      ],
+      "useCases": "연산, 수학 기호",
+      "source": "lucide"
+    },
+    {
+      "filename": "shapes.svg",
+      "category": "01-devices",
+      "name": "도형모음",
+      "description": "다양한 도형",
+      "tags": [
+        "다양한",
+        "도형"
+      ],
+      "useCases": "입력장치, 터치 제스처",
+      "source": "lucide"
+    },
+    {
+      "filename": "fingerprint2.svg",
+      "category": "01-devices",
+      "name": "지문패턴",
+      "description": "지문 인식 패턴",
+      "tags": [
+        "지문",
+        "인식",
+        "패턴"
+      ],
+      "useCases": "생체인식, 보안 인증",
+      "source": "lucide"
+    },
+    {
+      "filename": "combine.svg",
+      "category": "01-devices",
+      "name": "결합",
+      "description": "장치 결합",
+      "tags": [
+        "장치",
+        "결합"
+      ],
+      "useCases": "모듈 결합, 복합 기기",
       "source": "lucide"
     },
     {
@@ -1153,6 +1450,269 @@
       "source": "lucide"
     },
     {
+      "filename": "logic-and.svg",
+      "category": "02-physical-computing",
+      "name": "AND게이트",
+      "description": "논리곱 게이트",
+      "tags": [
+        "논리곱",
+        "게이트"
+      ],
+      "useCases": "논리회로, 디지털 논리",
+      "source": "tabler"
+    },
+    {
+      "filename": "logic-or.svg",
+      "category": "02-physical-computing",
+      "name": "OR게이트",
+      "description": "논리합 게이트",
+      "tags": [
+        "논리합",
+        "게이트"
+      ],
+      "useCases": "논리회로, 디지털 논리",
+      "source": "tabler"
+    },
+    {
+      "filename": "logic-not.svg",
+      "category": "02-physical-computing",
+      "name": "NOT게이트",
+      "description": "부정 게이트",
+      "tags": [
+        "부정",
+        "게이트"
+      ],
+      "useCases": "논리회로, 반전",
+      "source": "tabler"
+    },
+    {
+      "filename": "logic-xor.svg",
+      "category": "02-physical-computing",
+      "name": "XOR게이트",
+      "description": "배타적 논리합",
+      "tags": [
+        "배타적",
+        "논리합"
+      ],
+      "useCases": "논리회로, 암호화",
+      "source": "tabler"
+    },
+    {
+      "filename": "logic-nand.svg",
+      "category": "02-physical-computing",
+      "name": "NAND게이트",
+      "description": "부정 논리곱",
+      "tags": [
+        "부정",
+        "논리곱"
+      ],
+      "useCases": "범용 게이트, 논리회로",
+      "source": "tabler"
+    },
+    {
+      "filename": "logic-nor.svg",
+      "category": "02-physical-computing",
+      "name": "NOR게이트",
+      "description": "부정 논리합",
+      "tags": [
+        "부정",
+        "논리합"
+      ],
+      "useCases": "범용 게이트, 논리회로",
+      "source": "tabler"
+    },
+    {
+      "filename": "logic-buffer.svg",
+      "category": "02-physical-computing",
+      "name": "버퍼게이트",
+      "description": "신호 증폭 버퍼",
+      "tags": [
+        "신호",
+        "증폭",
+        "버퍼"
+      ],
+      "useCases": "신호 처리, 논리회로",
+      "source": "tabler"
+    },
+    {
+      "filename": "propeller.svg",
+      "category": "02-physical-computing",
+      "name": "프로펠러",
+      "description": "회전 프로펠러",
+      "tags": [
+        "회전",
+        "프로펠러"
+      ],
+      "useCases": "드론, 팬 모듈",
+      "source": "tabler"
+    },
+    {
+      "filename": "magnet-sensor.svg",
+      "category": "02-physical-computing",
+      "name": "자석",
+      "description": "자기력 센서",
+      "tags": [
+        "자기력",
+        "센서"
+      ],
+      "useCases": "홀센서, 자기장 감지",
+      "source": "lucide"
+    },
+    {
+      "filename": "orbit.svg",
+      "category": "02-physical-computing",
+      "name": "궤도",
+      "description": "회전 궤도",
+      "tags": [
+        "회전",
+        "궤도"
+      ],
+      "useCases": "모터 회전, 자이로스코프",
+      "source": "lucide"
+    },
+    {
+      "filename": "signal-high.svg",
+      "category": "02-physical-computing",
+      "name": "강한신호",
+      "description": "높은 신호 세기",
+      "tags": [
+        "높은",
+        "신호",
+        "세기"
+      ],
+      "useCases": "센서 출력, 통신 품질",
+      "source": "lucide"
+    },
+    {
+      "filename": "signal-low.svg",
+      "category": "02-physical-computing",
+      "name": "약한신호",
+      "description": "낮은 신호 세기",
+      "tags": [
+        "낮은",
+        "신호",
+        "세기"
+      ],
+      "useCases": "센서 민감도, 통신 거���",
+      "source": "lucide"
+    },
+    {
+      "filename": "scale-3d.svg",
+      "category": "02-physical-computing",
+      "name": "3축센서",
+      "description": "3축 측정 센서",
+      "tags": [
+        "3축",
+        "측정",
+        "센서"
+      ],
+      "useCases": "가속도센서, 자이로",
+      "source": "lucide"
+    },
+    {
+      "filename": "atom-pc.svg",
+      "category": "02-physical-computing",
+      "name": "원자",
+      "description": "원자 구조",
+      "tags": [
+        "원자",
+        "구조"
+      ],
+      "useCases": "전자공학 기초, 반도체",
+      "source": "lucide"
+    },
+    {
+      "filename": "flame-sensor.svg",
+      "category": "02-physical-computing",
+      "name": "화염센서",
+      "description": "불꽃 감지 센서",
+      "tags": [
+        "불꽃",
+        "감지",
+        "센서"
+      ],
+      "useCases": "화재 감지, 안전",
+      "source": "lucide"
+    },
+    {
+      "filename": "water-sensor.svg",
+      "category": "02-physical-computing",
+      "name": "수분센서",
+      "description": "수분 감지 센서",
+      "tags": [
+        "수분",
+        "감지",
+        "센서"
+      ],
+      "useCases": "수분 감지, 스마트팜",
+      "source": "lucide"
+    },
+    {
+      "filename": "cone-sensor.svg",
+      "category": "02-physical-computing",
+      "name": "콘센서",
+      "description": "원뿔형 감지 범위",
+      "tags": [
+        "원뿔형",
+        "감지",
+        "범위"
+      ],
+      "useCases": "센서 범위, 초음파 패턴",
+      "source": "lucide"
+    },
+    {
+      "filename": "hand-sensor.svg",
+      "category": "02-physical-computing",
+      "name": "터치센서",
+      "description": "접촉 감지 센서",
+      "tags": [
+        "접촉",
+        "감지",
+        "센서"
+      ],
+      "useCases": "터치 입력, 정전식",
+      "source": "lucide"
+    },
+    {
+      "filename": "module-shapes.svg",
+      "category": "02-physical-computing",
+      "name": "모듈도형",
+      "description": "센서 모듈 종류",
+      "tags": [
+        "센서",
+        "모듈",
+        "종류"
+      ],
+      "useCases": "다양한 모듈, 선택 가이드",
+      "source": "lucide"
+    },
+    {
+      "filename": "circuit-tree.svg",
+      "category": "02-physical-computing",
+      "name": "회로트리",
+      "description": "회로 분기 구조",
+      "tags": [
+        "회로",
+        "분기",
+        "구조"
+      ],
+      "useCases": "회로 설계, 전류 분기",
+      "source": "tabler"
+    },
+    {
+      "filename": "barcode-sensor.svg",
+      "category": "02-physical-computing",
+      "name": "바코드센서",
+      "description": "바코드 읽기 모듈",
+      "tags": [
+        "바코드",
+        "읽기",
+        "모듈"
+      ],
+      "useCases": "자동 인식, 재고 관리",
+      "source": "lucide"
+    },
+    {
       "filename": "variable.svg",
       "category": "03-programming",
       "name": "변수",
@@ -1629,10 +2189,10 @@
       "filename": "operator-minus.svg",
       "category": "03-programming",
       "name": "뺄셈연산",
-      "description": "빼기 연산자",
+      "description": "빼기 연산���",
       "tags": [
         "빼기",
-        "연산자"
+        "연산���"
       ],
       "useCases": "산술 연산, 수학",
       "source": "lucide"
@@ -1891,6 +2451,372 @@
       ],
       "useCases": "알고리즘 설계, 효율성",
       "source": "lucide"
+    },
+    {
+      "filename": "app-window.svg",
+      "category": "03-programming",
+      "name": "앱창",
+      "description": "응용프로그램 창",
+      "tags": [
+        "응용프로그램",
+        "창"
+      ],
+      "useCases": "GUI, 윈도우 프로그래밍",
+      "source": "lucide"
+    },
+    {
+      "filename": "square-code.svg",
+      "category": "03-programming",
+      "name": "코드박스",
+      "description": "코드 입력 영역",
+      "tags": [
+        "코드",
+        "입력",
+        "영역"
+      ],
+      "useCases": "코드 에디터, 입력 영역",
+      "source": "lucide"
+    },
+    {
+      "filename": "square-func.svg",
+      "category": "03-programming",
+      "name": "함수박스",
+      "description": "함수 표현 상자",
+      "tags": [
+        "함수",
+        "표현",
+        "상자"
+      ],
+      "useCases": "함수 정의, 수학 함수",
+      "source": "lucide"
+    },
+    {
+      "filename": "stack-code.svg",
+      "category": "03-programming",
+      "name": "스택코드",
+      "description": "코드 스택",
+      "tags": [
+        "코드",
+        "스택"
+      ],
+      "useCases": "호출 스택, 실행 컨텍스트",
+      "source": "lucide"
+    },
+    {
+      "filename": "notebook-code.svg",
+      "category": "03-programming",
+      "name": "코딩노트",
+      "description": "코딩 학습 노트",
+      "tags": [
+        "코딩",
+        "학습",
+        "노트"
+      ],
+      "useCases": "학습 기록, 코딩 일지",
+      "source": "lucide"
+    },
+    {
+      "filename": "pencil-ruler.svg",
+      "category": "03-programming",
+      "name": "연필+자",
+      "description": "설계 도구",
+      "tags": [
+        "설계",
+        "도구"
+      ],
+      "useCases": "코드 설계, 구조 기획",
+      "source": "lucide"
+    },
+    {
+      "filename": "milestone.svg",
+      "category": "03-programming",
+      "name": "마일스톤",
+      "description": "프로젝트 이정표",
+      "tags": [
+        "프로젝트",
+        "이정표"
+      ],
+      "useCases": "개발 진행, 릴리스",
+      "source": "lucide"
+    },
+    {
+      "filename": "kanban.svg",
+      "category": "03-programming",
+      "name": "칸반보드",
+      "description": "작업 관리판",
+      "tags": [
+        "작업",
+        "관리판"
+      ],
+      "useCases": "애자일, 프로젝트 관리",
+      "source": "lucide"
+    },
+    {
+      "filename": "gantt-chart.svg",
+      "category": "03-programming",
+      "name": "간트차트",
+      "description": "일정 차트",
+      "tags": [
+        "일정",
+        "차트"
+      ],
+      "useCases": "프로젝트 일정, 계획",
+      "source": "lucide"
+    },
+    {
+      "filename": "combine-code.svg",
+      "category": "03-programming",
+      "name": "결합",
+      "description": "코드 결합",
+      "tags": [
+        "코드",
+        "결합"
+      ],
+      "useCases": "모듈 통합, 빌드",
+      "source": "lucide"
+    },
+    {
+      "filename": "ungroup.svg",
+      "category": "03-programming",
+      "name": "분리",
+      "description": "코드 분리",
+      "tags": [
+        "코드",
+        "분리"
+      ],
+      "useCases": "모듈 분리, 리팩토링",
+      "source": "lucide"
+    },
+    {
+      "filename": "group-code.svg",
+      "category": "03-programming",
+      "name": "그룹화",
+      "description": "코드 그룹화",
+      "tags": [
+        "코드",
+        "그룹화"
+      ],
+      "useCases": "모듈화, 네임스페이스",
+      "source": "lucide"
+    },
+    {
+      "filename": "file-code-2.svg",
+      "category": "03-programming",
+      "name": "코드파일2",
+      "description": "프로그래밍 파일",
+      "tags": [
+        "프로그래밍",
+        "파일"
+      ],
+      "useCases": "소스코드, 스크립트",
+      "source": "lucide"
+    },
+    {
+      "filename": "file-search.svg",
+      "category": "03-programming",
+      "name": "파일검색",
+      "description": "파일 찾기",
+      "tags": [
+        "파일",
+        "찾기"
+      ],
+      "useCases": "코드 검색, IDE 기능",
+      "source": "lucide"
+    },
+    {
+      "filename": "folder-tree.svg",
+      "category": "03-programming",
+      "name": "폴더트리",
+      "description": "폴더 구조",
+      "tags": [
+        "폴더",
+        "구조"
+      ],
+      "useCases": "프로젝트 구조, 디렉토리",
+      "source": "lucide"
+    },
+    {
+      "filename": "file-type.svg",
+      "category": "03-programming",
+      "name": "파일타입",
+      "description": "파일 형식",
+      "tags": [
+        "파일",
+        "형식"
+      ],
+      "useCases": "확장자, 파일 종류",
+      "source": "lucide"
+    },
+    {
+      "filename": "binary-code.svg",
+      "category": "03-programming",
+      "name": "이진코드",
+      "description": "2진법 코드",
+      "tags": [
+        "2진법",
+        "코드"
+      ],
+      "useCases": "비트, 디지털 표현",
+      "source": "lucide"
+    },
+    {
+      "filename": "book-docs.svg",
+      "category": "03-programming",
+      "name": "문서",
+      "description": "개발 문서",
+      "tags": [
+        "개발",
+        "문서"
+      ],
+      "useCases": "API 문서, 매뉴얼",
+      "source": "lucide"
+    },
+    {
+      "filename": "book-ref.svg",
+      "category": "03-programming",
+      "name": "참조문서",
+      "description": "참고 자료",
+      "tags": [
+        "참고",
+        "자료"
+      ],
+      "useCases": "레퍼런스, 가이드",
+      "source": "lucide"
+    },
+    {
+      "filename": "3d-code.svg",
+      "category": "03-programming",
+      "name": "3D코드",
+      "description": "3차원 프로그래밍",
+      "tags": [
+        "3차원",
+        "프로그래밍"
+      ],
+      "useCases": "게임 개발, 3D 그래픽",
+      "source": "lucide"
+    },
+    {
+      "filename": "infinity-loop.svg",
+      "category": "03-programming",
+      "name": "무한루프",
+      "description": "끝없는 반복",
+      "tags": [
+        "끝없는",
+        "반복"
+      ],
+      "useCases": "무한루프, 종료 조건",
+      "source": "lucide"
+    },
+    {
+      "filename": "ratio.svg",
+      "category": "03-programming",
+      "name": "비율",
+      "description": "비율 계산",
+      "tags": [
+        "비율",
+        "계산"
+      ],
+      "useCases": "화면 비율, 수학 연산",
+      "source": "lucide"
+    },
+    {
+      "filename": "proportions.svg",
+      "category": "03-programming",
+      "name": "비례",
+      "description": "비례 관계",
+      "tags": [
+        "비례",
+        "관계"
+      ],
+      "useCases": "CSS 비율, 레이아웃",
+      "source": "lucide"
+    },
+    {
+      "filename": "python.svg",
+      "category": "03-programming",
+      "name": "파이썬",
+      "description": "파이썬 언어",
+      "tags": [
+        "파이썬",
+        "언어"
+      ],
+      "useCases": "파이썬 프로그래밍, AI",
+      "source": "tabler"
+    },
+    {
+      "filename": "javascript.svg",
+      "category": "03-programming",
+      "name": "자바스크립트",
+      "description": "JS 언어",
+      "tags": [
+        "JS",
+        "언어"
+      ],
+      "useCases": "웹 프로그래밍, 프론트엔드",
+      "source": "tabler"
+    },
+    {
+      "filename": "html5.svg",
+      "category": "03-programming",
+      "name": "HTML5",
+      "description": "웹 마크업 5",
+      "tags": [
+        "웹",
+        "마크업",
+        "5"
+      ],
+      "useCases": "웹 표준, 시맨틱 태그",
+      "source": "tabler"
+    },
+    {
+      "filename": "css3.svg",
+      "category": "03-programming",
+      "name": "CSS3",
+      "description": "웹 스타일 3",
+      "tags": [
+        "웹",
+        "스타일",
+        "3"
+      ],
+      "useCases": "웹 디자인, 애니메이션",
+      "source": "tabler"
+    },
+    {
+      "filename": "react.svg",
+      "category": "03-programming",
+      "name": "리액트",
+      "description": "리액트 프레임워크",
+      "tags": [
+        "리액트",
+        "프레임워크"
+      ],
+      "useCases": "컴포넌트, SPA",
+      "source": "tabler"
+    },
+    {
+      "filename": "github.svg",
+      "category": "03-programming",
+      "name": "깃허브",
+      "description": "코드 공유 플랫폼",
+      "tags": [
+        "코드",
+        "공유",
+        "플랫폼"
+      ],
+      "useCases": "버전관리, 협업",
+      "source": "tabler"
+    },
+    {
+      "filename": "vscode.svg",
+      "category": "03-programming",
+      "name": "VS코드",
+      "description": "코드 에디터",
+      "tags": [
+        "코드",
+        "에디터"
+      ],
+      "useCases": "IDE, 개발환경",
+      "source": "tabler"
     },
     {
       "filename": "flowchart.svg",
@@ -2397,6 +3323,558 @@
       "source": "lucide"
     },
     {
+      "filename": "scale-balance.svg",
+      "category": "04-algorithm",
+      "name": "저울",
+      "description": "균형 비교",
+      "tags": [
+        "균형",
+        "비교"
+      ],
+      "useCases": "값 비교, 가중치",
+      "source": "lucide"
+    },
+    {
+      "filename": "decomposition.svg",
+      "category": "04-algorithm",
+      "name": "분해",
+      "description": "문제 분해",
+      "tags": [
+        "문제",
+        "분해"
+      ],
+      "useCases": "분해 사고, 서브문제",
+      "source": "lucide"
+    },
+    {
+      "filename": "combine-algo.svg",
+      "category": "04-algorithm",
+      "name": "합성",
+      "description": "문제 합성",
+      "tags": [
+        "문제",
+        "합성"
+      ],
+      "useCases": "부분 결합, 통합",
+      "source": "lucide"
+    },
+    {
+      "filename": "infinity-algo.svg",
+      "category": "04-algorithm",
+      "name": "무한",
+      "description": "무한 개념",
+      "tags": [
+        "무한",
+        "개념"
+      ],
+      "useCases": "수학적 무한, 극한",
+      "source": "lucide"
+    },
+    {
+      "filename": "summation.svg",
+      "category": "04-algorithm",
+      "name": "합계",
+      "description": "시그마 합산",
+      "tags": [
+        "시그마",
+        "합산"
+      ],
+      "useCases": "누적 합, 수열의 합",
+      "source": "lucide"
+    },
+    {
+      "filename": "binary-num.svg",
+      "category": "04-algorithm",
+      "name": "이진수",
+      "description": "2진법 숫자",
+      "tags": [
+        "2진법",
+        "숫자"
+      ],
+      "useCases": "진법 변환, 디지털",
+      "source": "lucide"
+    },
+    {
+      "filename": "hierarchy.svg",
+      "category": "04-algorithm",
+      "name": "계층구조",
+      "description": "계층적 구조",
+      "tags": [
+        "계층적",
+        "구조"
+      ],
+      "useCases": "트리 구조, 조직도",
+      "source": "tabler"
+    },
+    {
+      "filename": "hierarchy-2.svg",
+      "category": "04-algorithm",
+      "name": "계층도2",
+      "description": "다단계 계층",
+      "tags": [
+        "다단계",
+        "계층"
+      ],
+      "useCases": "다단계 분류, 상속",
+      "source": "tabler"
+    },
+    {
+      "filename": "topology-bus.svg",
+      "category": "04-algorithm",
+      "name": "버스토폴로지",
+      "description": "일렬 연결 구조",
+      "tags": [
+        "일렬",
+        "연결",
+        "구조"
+      ],
+      "useCases": "네트워크 구조, 버스형",
+      "source": "tabler"
+    },
+    {
+      "filename": "topology-ring.svg",
+      "category": "04-algorithm",
+      "name": "링토폴로지",
+      "description": "원형 연결 구조",
+      "tags": [
+        "원형",
+        "연결",
+        "구조"
+      ],
+      "useCases": "네트워크 구조, 링형",
+      "source": "tabler"
+    },
+    {
+      "filename": "topology-star.svg",
+      "category": "04-algorithm",
+      "name": "스타토폴로지",
+      "description": "별형 연결 구조",
+      "tags": [
+        "별형",
+        "연결",
+        "구조"
+      ],
+      "useCases": "네트워크 구조, 스타형",
+      "source": "tabler"
+    },
+    {
+      "filename": "topology-full.svg",
+      "category": "04-algorithm",
+      "name": "메시토폴로지",
+      "description": "완전 연결 구조",
+      "tags": [
+        "완전",
+        "연결",
+        "구조"
+      ],
+      "useCases": "네트워크 구조, 메시형",
+      "source": "tabler"
+    },
+    {
+      "filename": "math-symbols.svg",
+      "category": "04-algorithm",
+      "name": "수학기호",
+      "description": "수학 연산 기호",
+      "tags": [
+        "수학",
+        "연산",
+        "기호"
+      ],
+      "useCases": "수학, 연산자",
+      "source": "tabler"
+    },
+    {
+      "filename": "math-function.svg",
+      "category": "04-algorithm",
+      "name": "수학함수",
+      "description": "수학 함수 표현",
+      "tags": [
+        "수학",
+        "함수",
+        "표현"
+      ],
+      "useCases": "함수, 입출력 관계",
+      "source": "tabler"
+    },
+    {
+      "filename": "math-integral.svg",
+      "category": "04-algorithm",
+      "name": "적분",
+      "description": "적분 기호",
+      "tags": [
+        "적분",
+        "기호"
+      ],
+      "useCases": "미적분, 면적 계산",
+      "source": "tabler"
+    },
+    {
+      "filename": "math-avg.svg",
+      "category": "04-algorithm",
+      "name": "평균",
+      "description": "산술 평균",
+      "tags": [
+        "산술",
+        "평균"
+      ],
+      "useCases": "통계, 중심경향",
+      "source": "tabler"
+    },
+    {
+      "filename": "math-fraction.svg",
+      "category": "04-algorithm",
+      "name": "분수",
+      "description": "분수 표현",
+      "tags": [
+        "분수",
+        "표현"
+      ],
+      "useCases": "분수, 나눗셈",
+      "source": "tabler"
+    },
+    {
+      "filename": "bezier-curve.svg",
+      "category": "04-algorithm",
+      "name": "베지어곡선",
+      "description": "곡선 보간",
+      "tags": [
+        "곡선",
+        "보간"
+      ],
+      "useCases": "그래픽, 곡선 표현",
+      "source": "tabler"
+    },
+    {
+      "filename": "abacus.svg",
+      "category": "04-algorithm",
+      "name": "주판",
+      "description": "수 계산 도구",
+      "tags": [
+        "수",
+        "계산",
+        "도구"
+      ],
+      "useCases": "고대 계산기, 수 세기",
+      "source": "tabler"
+    },
+    {
+      "filename": "comparison-gt.svg",
+      "category": "04-algorithm",
+      "name": "크다비교",
+      "description": "크다 비교연산",
+      "tags": [
+        "크다",
+        "비교연산"
+      ],
+      "useCases": "비교 연산, 부등호",
+      "source": "tabler"
+    },
+    {
+      "filename": "comparison-lt.svg",
+      "category": "04-algorithm",
+      "name": "작다비교",
+      "description": "작다 비교연산",
+      "tags": [
+        "작다",
+        "비교연산"
+      ],
+      "useCases": "비교 연산, 부등호",
+      "source": "tabler"
+    },
+    {
+      "filename": "math-add.svg",
+      "category": "04-algorithm",
+      "name": "수식덧셈",
+      "description": "변수 덧셈",
+      "tags": [
+        "변수",
+        "덧셈"
+      ],
+      "useCases": "수식, 변수 연산",
+      "source": "tabler"
+    },
+    {
+      "filename": "math-sub.svg",
+      "category": "04-algorithm",
+      "name": "수식뺄셈",
+      "description": "변수 뺄셈",
+      "tags": [
+        "변수",
+        "뺄셈"
+      ],
+      "useCases": "수식, 변수 연산",
+      "source": "tabler"
+    },
+    {
+      "filename": "math-div.svg",
+      "category": "04-algorithm",
+      "name": "수식나눗셈",
+      "description": "변수 나눗셈",
+      "tags": [
+        "변수",
+        "나눗셈"
+      ],
+      "useCases": "수식, 변수 연산",
+      "source": "tabler"
+    },
+    {
+      "filename": "topological-sort.svg",
+      "category": "04-algorithm",
+      "name": "위상정렬",
+      "description": "선행 관계 정렬",
+      "tags": [
+        "선행",
+        "관계",
+        "정렬"
+      ],
+      "useCases": "DAG, 작업 순서",
+      "source": "lucide"
+    },
+    {
+      "filename": "dijkstra.svg",
+      "category": "04-algorithm",
+      "name": "다익스트라",
+      "description": "최단 경로 알고리즘",
+      "tags": [
+        "최단",
+        "경로",
+        "알고리즘"
+      ],
+      "useCases": "가중 그래프, 최단 거리",
+      "source": "lucide"
+    },
+    {
+      "filename": "bellman-ford.svg",
+      "category": "04-algorithm",
+      "name": "벨만포드",
+      "description": "음수 간선 최단경로",
+      "tags": [
+        "음수",
+        "간선",
+        "최단경로"
+      ],
+      "useCases": "음수 가중치, 사이클 감지",
+      "source": "lucide"
+    },
+    {
+      "filename": "matrix-algo.svg",
+      "category": "04-algorithm",
+      "name": "행렬",
+      "description": "2차원 배열 구조",
+      "tags": [
+        "2차원",
+        "배열",
+        "구조"
+      ],
+      "useCases": "행렬 연산, 인접 행렬",
+      "source": "lucide"
+    },
+    {
+      "filename": "spanning-tree.svg",
+      "category": "04-algorithm",
+      "name": "신장트리",
+      "description": "최소 비용 연결",
+      "tags": [
+        "최소",
+        "비용",
+        "연결"
+      ],
+      "useCases": "프림, 크루스칼 알고리즘",
+      "source": "lucide"
+    },
+    {
+      "filename": "set-structure.svg",
+      "category": "04-algorithm",
+      "name": "집합",
+      "description": "집합 자료구조",
+      "tags": [
+        "집합",
+        "자료구조"
+      ],
+      "useCases": "합집합, 교집합, 중복 제거",
+      "source": "lucide"
+    },
+    {
+      "filename": "sliding-window.svg",
+      "category": "04-algorithm",
+      "name": "슬라이딩윈도우",
+      "description": "구간 탐색 기법",
+      "tags": [
+        "구간",
+        "탐색",
+        "기법"
+      ],
+      "useCases": "부분 배열, 최적 구간",
+      "source": "lucide"
+    },
+    {
+      "filename": "two-pointers.svg",
+      "category": "04-algorithm",
+      "name": "투포인터",
+      "description": "양쪽 포인터 탐색",
+      "tags": [
+        "양쪽",
+        "포인터",
+        "탐색"
+      ],
+      "useCases": "정렬 배열, 합 문제",
+      "source": "lucide"
+    },
+    {
+      "filename": "memoization.svg",
+      "category": "04-algorithm",
+      "name": "메모이제이션",
+      "description": "결과 저장 기법",
+      "tags": [
+        "결과",
+        "저장",
+        "기법"
+      ],
+      "useCases": "중복 계산 방지, DP 최적화",
+      "source": "lucide"
+    },
+    {
+      "filename": "pruning.svg",
+      "category": "04-algorithm",
+      "name": "가지치기",
+      "description": "불필요 탐색 제거",
+      "tags": [
+        "불필요",
+        "탐색",
+        "제거"
+      ],
+      "useCases": "탐색 최적화, 알파베타",
+      "source": "lucide"
+    },
+    {
+      "filename": "counting-sort.svg",
+      "category": "04-algorithm",
+      "name": "카운팅정렬",
+      "description": "빈도 기반 정렬",
+      "tags": [
+        "빈도",
+        "기반",
+        "정렬"
+      ],
+      "useCases": "비교 없는 정렬, 정수 정렬",
+      "source": "lucide"
+    },
+    {
+      "filename": "heap-sort.svg",
+      "category": "04-algorithm",
+      "name": "힙정렬",
+      "description": "힙 기반 정렬",
+      "tags": [
+        "힙",
+        "기반",
+        "정렬"
+      ],
+      "useCases": "효율적 정렬, 우선순위",
+      "source": "lucide"
+    },
+    {
+      "filename": "trie.svg",
+      "category": "04-algorithm",
+      "name": "트라이",
+      "description": "문자열 검색 트리",
+      "tags": [
+        "문자열",
+        "검색",
+        "트리"
+      ],
+      "useCases": "문자열 탐색, 자동완성",
+      "source": "lucide"
+    },
+    {
+      "filename": "mutex.svg",
+      "category": "04-algorithm",
+      "name": "뮤텍스",
+      "description": "상호배제 잠금",
+      "tags": [
+        "상호배제",
+        "잠금"
+      ],
+      "useCases": "동시성, 병렬 처리",
+      "source": "lucide"
+    },
+    {
+      "filename": "iteration-algo.svg",
+      "category": "04-algorithm",
+      "name": "반복순회",
+      "description": "순회 반복 처리",
+      "tags": [
+        "순회",
+        "반복",
+        "처리"
+      ],
+      "useCases": "이터레이션, 반복 접근",
+      "source": "lucide"
+    },
+    {
+      "filename": "probability-algo.svg",
+      "category": "04-algorithm",
+      "name": "확률알고리즘",
+      "description": "확률적 접근법",
+      "tags": [
+        "확률적",
+        "접근법"
+      ],
+      "useCases": "몬테카를로, 라빈카프",
+      "source": "lucide"
+    },
+    {
+      "filename": "double-linked.svg",
+      "category": "04-algorithm",
+      "name": "이중연결리스트",
+      "description": "양방향 노드 연결",
+      "tags": [
+        "양방향",
+        "노드",
+        "연결"
+      ],
+      "useCases": "양방향 탐색, 삽입/삭제",
+      "source": "lucide"
+    },
+    {
+      "filename": "lru-cache.svg",
+      "category": "04-algorithm",
+      "name": "LRU캐시",
+      "description": "최근 사용 캐시",
+      "tags": [
+        "최근",
+        "사용",
+        "캐시"
+      ],
+      "useCases": "캐시 교체, 페이지 교체",
+      "source": "lucide"
+    },
+    {
+      "filename": "kruskal.svg",
+      "category": "04-algorithm",
+      "name": "크루스칼",
+      "description": "최소 신장 트리",
+      "tags": [
+        "최소",
+        "신장",
+        "트리"
+      ],
+      "useCases": "MST, 간선 기반",
+      "source": "lucide"
+    },
+    {
+      "filename": "sort-visualization.svg",
+      "category": "04-algorithm",
+      "name": "정렬시각화",
+      "description": "정렬 과정 표현",
+      "tags": [
+        "정렬",
+        "과정",
+        "표현"
+      ],
+      "useCases": "정렬 비교, 단계 시각화",
+      "source": "lucide"
+    },
+    {
       "filename": "internet.svg",
       "category": "05-network-security",
       "name": "인터넷",
@@ -2885,6 +4363,298 @@
         "토폴로지"
       ],
       "useCases": "네트워크 설계, 구조",
+      "source": "lucide"
+    },
+    {
+      "filename": "global-network.svg",
+      "category": "05-network-security",
+      "name": "글로벌네트워크",
+      "description": "세계 네트워크",
+      "tags": [
+        "세계",
+        "네트워크"
+      ],
+      "useCases": "국제 통신, 인터넷 백본",
+      "source": "lucide"
+    },
+    {
+      "filename": "secure-web.svg",
+      "category": "05-network-security",
+      "name": "보안웹",
+      "description": "보안 웹 접속",
+      "tags": [
+        "보안",
+        "웹",
+        "접속"
+      ],
+      "useCases": "HTTPS, 안전한 브라우징",
+      "source": "lucide"
+    },
+    {
+      "filename": "earth-net.svg",
+      "category": "05-network-security",
+      "name": "지구본",
+      "description": "지구 네트워크",
+      "tags": [
+        "지구",
+        "네트워크"
+      ],
+      "useCases": "글로벌 인터넷, WWW",
+      "source": "lucide"
+    },
+    {
+      "filename": "earth-secure.svg",
+      "category": "05-network-security",
+      "name": "지구보안",
+      "description": "지구 보안 연결",
+      "tags": [
+        "지구",
+        "보안",
+        "연결"
+      ],
+      "useCases": "글로벌 보안, VPN",
+      "source": "lucide"
+    },
+    {
+      "filename": "cloud-download.svg",
+      "category": "05-network-security",
+      "name": "클라우드다운",
+      "description": "클라우드 다운로드",
+      "tags": [
+        "클라우드",
+        "다운로드"
+      ],
+      "useCases": "파일 내려받기, 동기화",
+      "source": "lucide"
+    },
+    {
+      "filename": "cloud-upload.svg",
+      "category": "05-network-security",
+      "name": "클라우드업로드",
+      "description": "클라우드 업로드",
+      "tags": [
+        "클라우드",
+        "업로드"
+      ],
+      "useCases": "파일 올리기, 백업",
+      "source": "lucide"
+    },
+    {
+      "filename": "cloud-off.svg",
+      "category": "05-network-security",
+      "name": "클라우드오프",
+      "description": "클라우드 해제",
+      "tags": [
+        "클라우드",
+        "해제"
+      ],
+      "useCases": "오프라인, 로컬 모드",
+      "source": "lucide"
+    },
+    {
+      "filename": "cloud-edge.svg",
+      "category": "05-network-security",
+      "name": "엣지컴퓨팅",
+      "description": "클라우드 엣지",
+      "tags": [
+        "클라우드",
+        "엣지"
+      ],
+      "useCases": "에지 서버, 분산 처리",
+      "source": "lucide"
+    },
+    {
+      "filename": "server-config.svg",
+      "category": "05-network-security",
+      "name": "서버설정",
+      "description": "서버 구성",
+      "tags": [
+        "서버",
+        "구성"
+      ],
+      "useCases": "서버 관리, 시스템 설정",
+      "source": "lucide"
+    },
+    {
+      "filename": "server-error.svg",
+      "category": "05-network-security",
+      "name": "서버오류",
+      "description": "서버 장애",
+      "tags": [
+        "서버",
+        "장애"
+      ],
+      "useCases": "장애 대응, 복구",
+      "source": "lucide"
+    },
+    {
+      "filename": "db-backup.svg",
+      "category": "05-network-security",
+      "name": "DB백업",
+      "description": "데이터베이스 백업",
+      "tags": [
+        "데이터베이스",
+        "백업"
+      ],
+      "useCases": "데이터 보호, 재해 복구",
+      "source": "lucide"
+    },
+    {
+      "filename": "db-realtime.svg",
+      "category": "05-network-security",
+      "name": "실시간DB",
+      "description": "실시간 데이터베이스",
+      "tags": [
+        "실시간",
+        "데이터베이스"
+      ],
+      "useCases": "실시간 동기화, Firebase",
+      "source": "lucide"
+    },
+    {
+      "filename": "rss-feed.svg",
+      "category": "05-network-security",
+      "name": "RSS피드",
+      "description": "뉴스 피드",
+      "tags": [
+        "뉴스",
+        "피드"
+      ],
+      "useCases": "정보 구독, 콘텐츠 배포",
+      "source": "lucide"
+    },
+    {
+      "filename": "podcast.svg",
+      "category": "05-network-security",
+      "name": "팟캐스트",
+      "description": "음성 방송",
+      "tags": [
+        "음성",
+        "방송"
+      ],
+      "useCases": "미디어, 오디오 콘텐츠",
+      "source": "lucide"
+    },
+    {
+      "filename": "inbox.svg",
+      "category": "05-network-security",
+      "name": "받은편지함",
+      "description": "메일 수신함",
+      "tags": [
+        "메일",
+        "수신함"
+      ],
+      "useCases": "이메일 관리, 메시지",
+      "source": "lucide"
+    },
+    {
+      "filename": "mail-verified.svg",
+      "category": "05-network-security",
+      "name": "인증메일",
+      "description": "확인된 이메일",
+      "tags": [
+        "확인된",
+        "이메일"
+      ],
+      "useCases": "이메일 인증, 검증",
+      "source": "lucide"
+    },
+    {
+      "filename": "mail-read.svg",
+      "category": "05-network-security",
+      "name": "읽은메일",
+      "description": "열린 이메일",
+      "tags": [
+        "열린",
+        "이메일"
+      ],
+      "useCases": "메일 확인, 알림",
+      "source": "lucide"
+    },
+    {
+      "filename": "half-shield.svg",
+      "category": "05-network-security",
+      "name": "하프실드",
+      "description": "절반 보호",
+      "tags": [
+        "절반",
+        "보호"
+      ],
+      "useCases": "부분 보안, 방어 수준",
+      "source": "lucide"
+    },
+    {
+      "filename": "shield-unknown.svg",
+      "category": "05-network-security",
+      "name": "보안질문",
+      "description": "보안 확인 질문",
+      "tags": [
+        "보안",
+        "확인",
+        "질문"
+      ],
+      "useCases": "보안 인증, 본인 확인",
+      "source": "lucide"
+    },
+    {
+      "filename": "shield-add.svg",
+      "category": "05-network-security",
+      "name": "보안추가",
+      "description": "보안 강화",
+      "tags": [
+        "보안",
+        "강화"
+      ],
+      "useCases": "추가 보안, 계층 방어",
+      "source": "lucide"
+    },
+    {
+      "filename": "text-scan.svg",
+      "category": "05-network-security",
+      "name": "텍스트스캔",
+      "description": "문자 인식",
+      "tags": [
+        "문자",
+        "인식"
+      ],
+      "useCases": "OCR, 텍스트 추출",
+      "source": "lucide"
+    },
+    {
+      "filename": "hand-trust.svg",
+      "category": "05-network-security",
+      "name": "신뢰손",
+      "description": "신뢰 기반 연결",
+      "tags": [
+        "신뢰",
+        "기반",
+        "연결"
+      ],
+      "useCases": "디지털 신뢰, 웹 오브 트러스트",
+      "source": "lucide"
+    },
+    {
+      "filename": "handshake-net.svg",
+      "category": "05-network-security",
+      "name": "핸드셰이크",
+      "description": "통신 협상",
+      "tags": [
+        "통신",
+        "협상"
+      ],
+      "useCases": "프로토콜, TCP 핸드셰이크",
+      "source": "lucide"
+    },
+    {
+      "filename": "location.svg",
+      "category": "05-network-security",
+      "name": "위치표시",
+      "description": "위치 핀",
+      "tags": [
+        "위치",
+        "핀"
+      ],
+      "useCases": "위치 기반 서비스, GPS",
       "source": "lucide"
     },
     {
@@ -3626,6 +5396,233 @@
       "source": "lucide"
     },
     {
+      "filename": "data-report.svg",
+      "category": "06-data-ai",
+      "name": "데이터리포트",
+      "description": "데이터 보고서",
+      "tags": [
+        "데이터",
+        "보고서"
+      ],
+      "useCases": "리포트, 분석 결과",
+      "source": "lucide"
+    },
+    {
+      "filename": "analytics.svg",
+      "category": "06-data-ai",
+      "name": "분석리포트",
+      "description": "분석 프레젠테이션",
+      "tags": [
+        "분석",
+        "프레젠테이션"
+      ],
+      "useCases": "데이터 발표, 인사이트",
+      "source": "tabler"
+    },
+    {
+      "filename": "data-funnel.svg",
+      "category": "06-data-ai",
+      "name": "데이터퍼널",
+      "description": "단계별 필터",
+      "tags": [
+        "단계별",
+        "필터"
+      ],
+      "useCases": "전환율, 깔때기 분석",
+      "source": "lucide"
+    },
+    {
+      "filename": "file-chart.svg",
+      "category": "06-data-ai",
+      "name": "차트파일",
+      "description": "차트 문서",
+      "tags": [
+        "차트",
+        "문서"
+      ],
+      "useCases": "데이터 시각화 파일",
+      "source": "tabler"
+    },
+    {
+      "filename": "image-dataset.svg",
+      "category": "06-data-ai",
+      "name": "이미지데이터",
+      "description": "이미지 데이터셋",
+      "tags": [
+        "이미지",
+        "데이터셋"
+      ],
+      "useCases": "컴퓨터비전, 학습 데이터",
+      "source": "lucide"
+    },
+    {
+      "filename": "audio-data.svg",
+      "category": "06-data-ai",
+      "name": "오디오데이터",
+      "description": "음성 데이터",
+      "tags": [
+        "음성",
+        "데이터"
+      ],
+      "useCases": "음성 데이터셋, 오디오 AI",
+      "source": "lucide"
+    },
+    {
+      "filename": "waveform.svg",
+      "category": "06-data-ai",
+      "name": "파형",
+      "description": "음파 파형",
+      "tags": [
+        "음파",
+        "파형"
+      ],
+      "useCases": "음성 분석, 신호 처리",
+      "source": "lucide"
+    },
+    {
+      "filename": "data-discovery.svg",
+      "category": "06-data-ai",
+      "name": "데이터탐색",
+      "description": "데이터 발견",
+      "tags": [
+        "데이터",
+        "발견"
+      ],
+      "useCases": "탐색적 분석, EDA",
+      "source": "lucide"
+    },
+    {
+      "filename": "db-search.svg",
+      "category": "06-data-ai",
+      "name": "DB검색",
+      "description": "데이터베이스 검색",
+      "tags": [
+        "데이터베이스",
+        "검색"
+      ],
+      "useCases": "SQL 쿼리, 데이터 조회",
+      "source": "lucide"
+    },
+    {
+      "filename": "db-backup-ai.svg",
+      "category": "06-data-ai",
+      "name": "DB백업",
+      "description": "데이터 백업",
+      "tags": [
+        "데이터",
+        "백업"
+      ],
+      "useCases": "데이터 보관, 아카이브",
+      "source": "lucide"
+    },
+    {
+      "filename": "data-table.svg",
+      "category": "06-data-ai",
+      "name": "데이터테이블",
+      "description": "데이터 테이블",
+      "tags": [
+        "데이터",
+        "테이블"
+      ],
+      "useCases": "구조화 데이터, 행열",
+      "source": "lucide"
+    },
+    {
+      "filename": "feature-matrix.svg",
+      "category": "06-data-ai",
+      "name": "피처행렬",
+      "description": "특성 행렬",
+      "tags": [
+        "특성",
+        "행렬"
+      ],
+      "useCases": "특성 공학, 데이터 변환",
+      "source": "lucide"
+    },
+    {
+      "filename": "flower-data.svg",
+      "category": "06-data-ai",
+      "name": "꽃데이터",
+      "description": "아이리스 데이터",
+      "tags": [
+        "아이리스",
+        "데이터"
+      ],
+      "useCases": "붓꽃 데이터셋, 예제 데이터",
+      "source": "lucide"
+    },
+    {
+      "filename": "model-orbit.svg",
+      "category": "06-data-ai",
+      "name": "모델궤도",
+      "description": "학습 사이클",
+      "tags": [
+        "학습",
+        "사이클"
+      ],
+      "useCases": "학습 루프, 에포크",
+      "source": "lucide"
+    },
+    {
+      "filename": "data-ratio.svg",
+      "category": "06-data-ai",
+      "name": "데이터비율",
+      "description": "데이터 비율",
+      "tags": [
+        "데이터",
+        "비율"
+      ],
+      "useCases": "비율 분석, 파이",
+      "source": "lucide"
+    },
+    {
+      "filename": "data-badge.svg",
+      "category": "06-data-ai",
+      "name": "데이터뱃지",
+      "description": "데이터 인증",
+      "tags": [
+        "데이터",
+        "인증"
+      ],
+      "useCases": "데이터 품질, 검증",
+      "source": "lucide"
+    },
+    {
+      "filename": "sigma-stat.svg",
+      "category": "06-data-ai",
+      "name": "시그마통계",
+      "description": "합계 통계",
+      "tags": [
+        "합계",
+        "통계"
+      ],
+      "useCases": "통계 합산, 시그마",
+      "source": "lucide"
+    },
+    {
+      "filename": "infinite-data.svg",
+      "category": "06-data-ai",
+      "name": "무한데이터",
+      "description": "빅데이터",
+      "tags": [
+        "빅데이터"
+      ],
+      "useCases": "대용량 데이터, 스트리밍",
+      "source": "lucide"
+    },
+    {
+      "filename": "top-result.svg",
+      "category": "06-data-ai",
+      "name": "최고결과",
+      "description": "최상위 결과",
+      "tags": [
+        "최상위",
+        "결과"
+      ],
+      "useCases": "순위, 최적 모델",
+      "source": "lucide"
+    },
+    {
       "filename": "empathize.svg",
       "category": "07-design-thinking",
       "name": "공감",
@@ -4111,6 +6108,233 @@
         "발상"
       ],
       "useCases": "창의성, 혁신",
+      "source": "lucide"
+    },
+    {
+      "filename": "hand-helping.svg",
+      "category": "07-design-thinking",
+      "name": "도움",
+      "description": "상호 도움",
+      "tags": [
+        "상호",
+        "도움"
+      ],
+      "useCases": "공감 행동, 협력",
+      "source": "lucide"
+    },
+    {
+      "filename": "handshake.svg",
+      "category": "07-design-thinking",
+      "name": "악수",
+      "description": "합의 표시",
+      "tags": [
+        "합의",
+        "표시"
+      ],
+      "useCases": "협업, 파트너십",
+      "source": "lucide"
+    },
+    {
+      "filename": "empathy-eye.svg",
+      "category": "07-design-thinking",
+      "name": "공감눈",
+      "description": "관찰의 눈",
+      "tags": [
+        "관찰의",
+        "눈"
+      ],
+      "useCases": "사용자 관찰, 공감",
+      "source": "lucide"
+    },
+    {
+      "filename": "empathy-ear.svg",
+      "category": "07-design-thinking",
+      "name": "경청",
+      "description": "듣기",
+      "tags": [
+        "듣기"
+      ],
+      "useCases": "사용자 인터뷰, 경청",
+      "source": "lucide"
+    },
+    {
+      "filename": "puzzle-solve.svg",
+      "category": "07-design-thinking",
+      "name": "퍼즐",
+      "description": "문제 조각",
+      "tags": [
+        "문제",
+        "조각"
+      ],
+      "useCases": "문제 분해, 솔루션 조합",
+      "source": "lucide"
+    },
+    {
+      "filename": "shapes-dt.svg",
+      "category": "07-design-thinking",
+      "name": "도형모음",
+      "description": "다양한 형태",
+      "tags": [
+        "다양한",
+        "형태"
+      ],
+      "useCases": "프로토타입 형태, 다양성",
+      "source": "lucide"
+    },
+    {
+      "filename": "frame.svg",
+      "category": "07-design-thinking",
+      "name": "프레임",
+      "description": "작업 프레임",
+      "tags": [
+        "작업",
+        "프레임"
+      ],
+      "useCases": "프레임워크, 구조화",
+      "source": "lucide"
+    },
+    {
+      "filename": "gallery.svg",
+      "category": "07-design-thinking",
+      "name": "갤러리",
+      "description": "작품 전시",
+      "tags": [
+        "작품",
+        "전시"
+      ],
+      "useCases": "포트폴리오, 결과물 전시",
+      "source": "lucide"
+    },
+    {
+      "filename": "ribbon.svg",
+      "category": "07-design-thinking",
+      "name": "리본",
+      "description": "우수 표시",
+      "tags": [
+        "우수",
+        "표시"
+      ],
+      "useCases": "수상, 우수 디자인",
+      "source": "lucide"
+    },
+    {
+      "filename": "crown.svg",
+      "category": "07-design-thinking",
+      "name": "왕관",
+      "description": "최고 표시",
+      "tags": [
+        "최고",
+        "표시"
+      ],
+      "useCases": "베스트 아이디어, 선정",
+      "source": "lucide"
+    },
+    {
+      "filename": "stamp.svg",
+      "category": "07-design-thinking",
+      "name": "도장",
+      "description": "승인 표시",
+      "tags": [
+        "승인",
+        "표시"
+      ],
+      "useCases": "승인, 검증 완료",
+      "source": "lucide"
+    },
+    {
+      "filename": "user-test.svg",
+      "category": "07-design-thinking",
+      "name": "사용자테스트",
+      "description": "사용성 검증",
+      "tags": [
+        "사용성",
+        "검증"
+      ],
+      "useCases": "유저빌리티, 테스트",
+      "source": "lucide"
+    },
+    {
+      "filename": "validation.svg",
+      "category": "07-design-thinking",
+      "name": "검증",
+      "description": "가설 검증",
+      "tags": [
+        "가설",
+        "검증"
+      ],
+      "useCases": "아이디어 검증, 실험",
+      "source": "lucide"
+    },
+    {
+      "filename": "negative.svg",
+      "category": "07-design-thinking",
+      "name": "부정",
+      "description": "부정적 피드백",
+      "tags": [
+        "부정적",
+        "피드백"
+      ],
+      "useCases": "개선점, 비판적 사고",
+      "source": "lucide"
+    },
+    {
+      "filename": "empathy-connect.svg",
+      "category": "07-design-thinking",
+      "name": "공감연결",
+      "description": "감정 연결",
+      "tags": [
+        "감정",
+        "연결"
+      ],
+      "useCases": "라포, 신뢰 구축",
+      "source": "lucide"
+    },
+    {
+      "filename": "blend-idea.svg",
+      "category": "07-design-thinking",
+      "name": "아이디어융합",
+      "description": "아이디어 결합",
+      "tags": [
+        "아이디어",
+        "결합"
+      ],
+      "useCases": "융합, 하이브리드",
+      "source": "lucide"
+    },
+    {
+      "filename": "design-brush.svg",
+      "category": "07-design-thinking",
+      "name": "디자인붓",
+      "description": "디자인 도구",
+      "tags": [
+        "디자인",
+        "도구"
+      ],
+      "useCases": "시각 디자인, 표현",
+      "source": "lucide"
+    },
+    {
+      "filename": "design-palette.svg",
+      "category": "07-design-thinking",
+      "name": "디자인팔레트",
+      "description": "색상 선택",
+      "tags": [
+        "색상",
+        "선택"
+      ],
+      "useCases": "컬러 디자인, 무드보드",
+      "source": "lucide"
+    },
+    {
+      "filename": "done.svg",
+      "category": "07-design-thinking",
+      "name": "완료",
+      "description": "완료 표시",
+      "tags": [
+        "완료",
+        "표시"
+      ],
+      "useCases": "과정 완료, 체크",
       "source": "lucide"
     },
     {
@@ -4840,6 +7064,586 @@
       "source": "lucide"
     },
     {
+      "filename": "flask-round.svg",
+      "category": "08-steam",
+      "name": "둥근플라스크",
+      "description": "둥근바닥 플라스크",
+      "tags": [
+        "둥근바닥",
+        "플라스크"
+      ],
+      "useCases": "화학 실험, 증류",
+      "source": "lucide"
+    },
+    {
+      "filename": "test-tube-2.svg",
+      "category": "08-steam",
+      "name": "시험관2",
+      "description": "시험관 세트",
+      "tags": [
+        "시험관",
+        "세트"
+      ],
+      "useCases": "비교 실험, 대조군",
+      "source": "lucide"
+    },
+    {
+      "filename": "test-tube-diag.svg",
+      "category": "08-steam",
+      "name": "기울인시험관",
+      "description": "기울어진 시험관",
+      "tags": [
+        "기울어진",
+        "시험관"
+      ],
+      "useCases": "반응 관찰, 실험",
+      "source": "lucide"
+    },
+    {
+      "filename": "pipette.svg",
+      "category": "08-steam",
+      "name": "피펫",
+      "description": "소량 측정 도구",
+      "tags": [
+        "소량",
+        "측정",
+        "도구"
+      ],
+      "useCases": "정밀 측정, 화학",
+      "source": "lucide"
+    },
+    {
+      "filename": "orbit-steam.svg",
+      "category": "08-steam",
+      "name": "궤도",
+      "description": "행성 궤도",
+      "tags": [
+        "행성",
+        "궤도"
+      ],
+      "useCases": "천문학, 태양계",
+      "source": "lucide"
+    },
+    {
+      "filename": "satellite.svg",
+      "category": "08-steam",
+      "name": "인공위성",
+      "description": "궤도 위성",
+      "tags": [
+        "궤도",
+        "위성"
+      ],
+      "useCases": "우주 탐사, 통신",
+      "source": "lucide"
+    },
+    {
+      "filename": "clover.svg",
+      "category": "08-steam",
+      "name": "클로버",
+      "description": "네잎클로버",
+      "tags": [
+        "네잎클로버"
+      ],
+      "useCases": "식물, 생물 분류",
+      "source": "lucide"
+    },
+    {
+      "filename": "flower.svg",
+      "category": "08-steam",
+      "name": "꽃",
+      "description": "꽃 식물",
+      "tags": [
+        "꽃",
+        "식물"
+      ],
+      "useCases": "식물 구조, 생물",
+      "source": "lucide"
+    },
+    {
+      "filename": "flower-2.svg",
+      "category": "08-steam",
+      "name": "꽃2",
+      "description": "다른 꽃 형태",
+      "tags": [
+        "다른",
+        "꽃",
+        "형태"
+      ],
+      "useCases": "꽃 종류, 식물 다양성",
+      "source": "lucide"
+    },
+    {
+      "filename": "apple.svg",
+      "category": "08-steam",
+      "name": "사과",
+      "description": "과일",
+      "tags": [
+        "과일"
+      ],
+      "useCases": "식물 열매, 만유인력",
+      "source": "lucide"
+    },
+    {
+      "filename": "egg.svg",
+      "category": "08-steam",
+      "name": "달걀",
+      "description": "동물 알",
+      "tags": [
+        "동물",
+        "알"
+      ],
+      "useCases": "생물, 발생학",
+      "source": "lucide"
+    },
+    {
+      "filename": "fish.svg",
+      "category": "08-steam",
+      "name": "물고기",
+      "description": "어류",
+      "tags": [
+        "어류"
+      ],
+      "useCases": "생물 분류, 수생 생물",
+      "source": "lucide"
+    },
+    {
+      "filename": "mountain.svg",
+      "category": "08-steam",
+      "name": "산",
+      "description": "산 지형",
+      "tags": [
+        "산",
+        "지형"
+      ],
+      "useCases": "지구과학, 지형",
+      "source": "lucide"
+    },
+    {
+      "filename": "rainbow.svg",
+      "category": "08-steam",
+      "name": "무지개",
+      "description": "빛의 스펙트럼",
+      "tags": [
+        "빛의",
+        "스펙트럼"
+      ],
+      "useCases": "물리, 빛의 분산",
+      "source": "lucide"
+    },
+    {
+      "filename": "sunrise.svg",
+      "category": "08-steam",
+      "name": "일출",
+      "description": "해 뜨기",
+      "tags": [
+        "해",
+        "뜨기"
+      ],
+      "useCases": "천문, 자전",
+      "source": "lucide"
+    },
+    {
+      "filename": "sunset.svg",
+      "category": "08-steam",
+      "name": "일몰",
+      "description": "해 지기",
+      "tags": [
+        "해",
+        "지기"
+      ],
+      "useCases": "천문, 자전",
+      "source": "lucide"
+    },
+    {
+      "filename": "moon-star.svg",
+      "category": "08-steam",
+      "name": "달별",
+      "description": "달과 별",
+      "tags": [
+        "달과",
+        "별"
+      ],
+      "useCases": "천문학, 야간 관찰",
+      "source": "lucide"
+    },
+    {
+      "filename": "wind-steam.svg",
+      "category": "08-steam",
+      "name": "바람",
+      "description": "대기 흐름",
+      "tags": [
+        "대기",
+        "흐름"
+      ],
+      "useCases": "기상, 바람의 방향",
+      "source": "lucide"
+    },
+    {
+      "filename": "tornado.svg",
+      "category": "08-steam",
+      "name": "토네이도",
+      "description": "회오리바람",
+      "tags": [
+        "회오리바람"
+      ],
+      "useCases": "기상 현상, 자연재해",
+      "source": "lucide"
+    },
+    {
+      "filename": "cloud-sun.svg",
+      "category": "08-steam",
+      "name": "구름해",
+      "description": "구름과 태양",
+      "tags": [
+        "구름과",
+        "태양"
+      ],
+      "useCases": "기상, 날씨 변화",
+      "source": "lucide"
+    },
+    {
+      "filename": "diamond-shape.svg",
+      "category": "08-steam",
+      "name": "다이아몬드",
+      "description": "마름모 도형",
+      "tags": [
+        "마름모",
+        "도형"
+      ],
+      "useCases": "수학, 도형",
+      "source": "lucide"
+    },
+    {
+      "filename": "pentagon.svg",
+      "category": "08-steam",
+      "name": "오각형",
+      "description": "5각형 도형",
+      "tags": [
+        "5각형",
+        "도형"
+      ],
+      "useCases": "수학, 정다각형",
+      "source": "lucide"
+    },
+    {
+      "filename": "octagon.svg",
+      "category": "08-steam",
+      "name": "팔각형",
+      "description": "8각형 도형",
+      "tags": [
+        "8각형",
+        "도형"
+      ],
+      "useCases": "수학, 정다각형",
+      "source": "lucide"
+    },
+    {
+      "filename": "shapes-steam.svg",
+      "category": "08-steam",
+      "name": "도형모음",
+      "description": "여러 도형",
+      "tags": [
+        "여러",
+        "도형"
+      ],
+      "useCases": "수학, 기하학",
+      "source": "lucide"
+    },
+    {
+      "filename": "cone-shape.svg",
+      "category": "08-steam",
+      "name": "원뿔",
+      "description": "원뿔 도형",
+      "tags": [
+        "원뿔",
+        "도형"
+      ],
+      "useCases": "수학, 입체도형",
+      "source": "lucide"
+    },
+    {
+      "filename": "cylinder-shape.svg",
+      "category": "08-steam",
+      "name": "원기둥",
+      "description": "원기둥 도형",
+      "tags": [
+        "원기둥",
+        "도형"
+      ],
+      "useCases": "수학, 입체도형",
+      "source": "lucide"
+    },
+    {
+      "filename": "cube-shape.svg",
+      "category": "08-steam",
+      "name": "정육면체",
+      "description": "큐브 도형",
+      "tags": [
+        "큐브",
+        "도형"
+      ],
+      "useCases": "수학, 입체도형",
+      "source": "tabler"
+    },
+    {
+      "filename": "sphere-shape.svg",
+      "category": "08-steam",
+      "name": "구",
+      "description": "구 도형",
+      "tags": [
+        "구",
+        "도형"
+      ],
+      "useCases": "수학, 입체도형",
+      "source": "tabler"
+    },
+    {
+      "filename": "prism-shape.svg",
+      "category": "08-steam",
+      "name": "프리즘",
+      "description": "삼각기둥",
+      "tags": [
+        "삼각기둥"
+      ],
+      "useCases": "수학, 입체도형/빛의 굴절",
+      "source": "tabler"
+    },
+    {
+      "filename": "prism-light.svg",
+      "category": "08-steam",
+      "name": "프리즘빛",
+      "description": "빛의 분산",
+      "tags": [
+        "빛의",
+        "분산"
+      ],
+      "useCases": "물리, 스펙트럼",
+      "source": "tabler"
+    },
+    {
+      "filename": "hex-prism.svg",
+      "category": "08-steam",
+      "name": "육각기둥",
+      "description": "6각 기둥",
+      "tags": [
+        "6각",
+        "기둥"
+      ],
+      "useCases": "수학, 입체도형",
+      "source": "tabler"
+    },
+    {
+      "filename": "pyramid-shape.svg",
+      "category": "08-steam",
+      "name": "사각뿔",
+      "description": "피라미드 도형",
+      "tags": [
+        "피라미드",
+        "도형"
+      ],
+      "useCases": "수학, 입체도형",
+      "source": "lucide"
+    },
+    {
+      "filename": "cuboid.svg",
+      "category": "08-steam",
+      "name": "직육면체",
+      "description": "직육면체 도형",
+      "tags": [
+        "직육면체",
+        "도형"
+      ],
+      "useCases": "수학, 입체도형",
+      "source": "lucide"
+    },
+    {
+      "filename": "torus.svg",
+      "category": "08-steam",
+      "name": "원환체",
+      "description": "도넛 형태",
+      "tags": [
+        "도넛",
+        "형태"
+      ],
+      "useCases": "수학, 고급 입체도형",
+      "source": "lucide"
+    },
+    {
+      "filename": "hemisphere.svg",
+      "category": "08-steam",
+      "name": "반구",
+      "description": "반구 도형",
+      "tags": [
+        "반구",
+        "도형"
+      ],
+      "useCases": "수학, 입체도형",
+      "source": "tabler"
+    },
+    {
+      "filename": "cube-sphere.svg",
+      "category": "08-steam",
+      "name": "구와정육면체",
+      "description": "외접/내접 도형",
+      "tags": [
+        "외접/내접",
+        "도형"
+      ],
+      "useCases": "수학, 기하학 관계",
+      "source": "tabler"
+    },
+    {
+      "filename": "guitar.svg",
+      "category": "08-steam",
+      "name": "기타",
+      "description": "현악기",
+      "tags": [
+        "현악기"
+      ],
+      "useCases": "음악, 악기",
+      "source": "lucide"
+    },
+    {
+      "filename": "piano.svg",
+      "category": "08-steam",
+      "name": "피아노",
+      "description": "건반악기",
+      "tags": [
+        "건반악기"
+      ],
+      "useCases": "음악, 악기",
+      "source": "lucide"
+    },
+    {
+      "filename": "music-2.svg",
+      "category": "08-steam",
+      "name": "음악2",
+      "description": "음악 기호",
+      "tags": [
+        "음악",
+        "기호"
+      ],
+      "useCases": "음악, 리듬",
+      "source": "lucide"
+    },
+    {
+      "filename": "audio-lines.svg",
+      "category": "08-steam",
+      "name": "오디오선",
+      "description": "음파 시각화",
+      "tags": [
+        "음파",
+        "시각화"
+      ],
+      "useCases": "음악, 소리 분석",
+      "source": "lucide"
+    },
+    {
+      "filename": "art-frame.svg",
+      "category": "08-steam",
+      "name": "액자",
+      "description": "그림 액자",
+      "tags": [
+        "그림",
+        "액자"
+      ],
+      "useCases": "미술, 전시",
+      "source": "lucide"
+    },
+    {
+      "filename": "spray.svg",
+      "category": "08-steam",
+      "name": "스프레이",
+      "description": "스프레이 도구",
+      "tags": [
+        "스프레이",
+        "도구"
+      ],
+      "useCases": "미술, 그래피티",
+      "source": "lucide"
+    },
+    {
+      "filename": "paint-bucket.svg",
+      "category": "08-steam",
+      "name": "페인트통",
+      "description": "채색 도구",
+      "tags": [
+        "채색",
+        "도구"
+      ],
+      "useCases": "미술, 채색",
+      "source": "lucide"
+    },
+    {
+      "filename": "paint-roller.svg",
+      "category": "08-steam",
+      "name": "롤러",
+      "description": "페인트 롤러",
+      "tags": [
+        "페인트",
+        "롤러"
+      ],
+      "useCases": "미술, 넓은 면 채색",
+      "source": "lucide"
+    },
+    {
+      "filename": "brush.svg",
+      "category": "08-steam",
+      "name": "솔",
+      "description": "붓 도구",
+      "tags": [
+        "붓",
+        "도구"
+      ],
+      "useCases": "미술, 수채화",
+      "source": "lucide"
+    },
+    {
+      "filename": "stamp-art.svg",
+      "category": "08-steam",
+      "name": "도장",
+      "description": "판화 도구",
+      "tags": [
+        "판화",
+        "도구"
+      ],
+      "useCases": "미술, 판화",
+      "source": "lucide"
+    },
+    {
+      "filename": "wheat.svg",
+      "category": "08-steam",
+      "name": "밀",
+      "description": "곡물",
+      "tags": [
+        "곡물"
+      ],
+      "useCases": "농업, 식물",
+      "source": "lucide"
+    },
+    {
+      "filename": "grape.svg",
+      "category": "08-steam",
+      "name": "포도",
+      "description": "과일",
+      "tags": [
+        "과일"
+      ],
+      "useCases": "식물, 포도원",
+      "source": "lucide"
+    },
+    {
+      "filename": "citrus.svg",
+      "category": "08-steam",
+      "name": "감귤",
+      "description": "감귤류",
+      "tags": [
+        "감귤류"
+      ],
+      "useCases": "식물, 비타민",
+      "source": "lucide"
+    },
+    {
       "filename": "textbook.svg",
       "category": "09-teaching",
       "name": "교과서",
@@ -5318,6 +8122,297 @@
         "완료"
       ],
       "useCases": "졸업, 성장",
+      "source": "lucide"
+    },
+    {
+      "filename": "school-2.svg",
+      "category": "09-teaching",
+      "name": "학교2",
+      "description": "교육 건물",
+      "tags": [
+        "교육",
+        "건물"
+      ],
+      "useCases": "학교, 캠퍼스",
+      "source": "lucide"
+    },
+    {
+      "filename": "university.svg",
+      "category": "09-teaching",
+      "name": "대학교",
+      "description": "고등 교육 기관",
+      "tags": [
+        "고등",
+        "교육",
+        "기관"
+      ],
+      "useCases": "대학, 진학",
+      "source": "lucide"
+    },
+    {
+      "filename": "backpack.svg",
+      "category": "09-teaching",
+      "name": "책가방",
+      "description": "학생 가방",
+      "tags": [
+        "학생",
+        "가방"
+      ],
+      "useCases": "등교, 학용품",
+      "source": "lucide"
+    },
+    {
+      "filename": "briefcase.svg",
+      "category": "09-teaching",
+      "name": "서류가방",
+      "description": "교사 가방",
+      "tags": [
+        "교사",
+        "가방"
+      ],
+      "useCases": "교사, 업무 자료",
+      "source": "lucide"
+    },
+    {
+      "filename": "book-check.svg",
+      "category": "09-teaching",
+      "name": "교재확인",
+      "description": "학습 완료 교재",
+      "tags": [
+        "학습",
+        "완료",
+        "교재"
+      ],
+      "useCases": "학습 완료, 체크",
+      "source": "lucide"
+    },
+    {
+      "filename": "book-copy.svg",
+      "category": "09-teaching",
+      "name": "교재복사",
+      "description": "교재 복제",
+      "tags": [
+        "교재",
+        "복제"
+      ],
+      "useCases": "유인물, 자료 배포",
+      "source": "lucide"
+    },
+    {
+      "filename": "book-text.svg",
+      "category": "09-teaching",
+      "name": "교재내용",
+      "description": "교재 텍스트",
+      "tags": [
+        "교재",
+        "텍스트"
+      ],
+      "useCases": "읽기, 교재 학습",
+      "source": "lucide"
+    },
+    {
+      "filename": "book-type.svg",
+      "category": "09-teaching",
+      "name": "교재유형",
+      "description": "교재 종류",
+      "tags": [
+        "교재",
+        "종류"
+      ],
+      "useCases": "교재 분류, 유형별",
+      "source": "lucide"
+    },
+    {
+      "filename": "book-student.svg",
+      "category": "09-teaching",
+      "name": "학생교재",
+      "description": "학생용 교재",
+      "tags": [
+        "학생용",
+        "교재"
+      ],
+      "useCases": "학생 자료, 개별 학습",
+      "source": "lucide"
+    },
+    {
+      "filename": "notebook-tabs.svg",
+      "category": "09-teaching",
+      "name": "탭노트",
+      "description": "색인 노트",
+      "tags": [
+        "색인",
+        "노트"
+      ],
+      "useCases": "정리, 과목별 분류",
+      "source": "lucide"
+    },
+    {
+      "filename": "pen.svg",
+      "category": "09-teaching",
+      "name": "펜",
+      "description": "필기용 펜",
+      "tags": [
+        "필기용",
+        "펜"
+      ],
+      "useCases": "학습, 기록",
+      "source": "lucide"
+    },
+    {
+      "filename": "highlighter.svg",
+      "category": "09-teaching",
+      "name": "형광펜",
+      "description": "강조 펜",
+      "tags": [
+        "강조",
+        "펜"
+      ],
+      "useCases": "핵심 표시, 밑줄",
+      "source": "lucide"
+    },
+    {
+      "filename": "eraser.svg",
+      "category": "09-teaching",
+      "name": "지우개",
+      "description": "수정 도구",
+      "tags": [
+        "수정",
+        "도구"
+      ],
+      "useCases": "수정, 오답 수정",
+      "source": "lucide"
+    },
+    {
+      "filename": "ruler-teach.svg",
+      "category": "09-teaching",
+      "name": "자",
+      "description": "측정 도구",
+      "tags": [
+        "측정",
+        "도구"
+      ],
+      "useCases": "수학, 기하 작도",
+      "source": "lucide"
+    },
+    {
+      "filename": "reading-done.svg",
+      "category": "09-teaching",
+      "name": "읽기완료",
+      "description": "독서 완료",
+      "tags": [
+        "독서",
+        "완료"
+      ],
+      "useCases": "읽기 학습, 독서록",
+      "source": "lucide"
+    },
+    {
+      "filename": "library.svg",
+      "category": "09-teaching",
+      "name": "도서관",
+      "description": "학교 도서관",
+      "tags": [
+        "학교",
+        "도서관"
+      ],
+      "useCases": "자료 검색, 독서",
+      "source": "lucide"
+    },
+    {
+      "filename": "speaking.svg",
+      "category": "09-teaching",
+      "name": "말하기",
+      "description": "구두 발표",
+      "tags": [
+        "구두",
+        "발표"
+      ],
+      "useCases": "의사소통, 스피치",
+      "source": "lucide"
+    },
+    {
+      "filename": "edu-podcast.svg",
+      "category": "09-teaching",
+      "name": "교육팟캐스트",
+      "description": "교육 방송",
+      "tags": [
+        "교육",
+        "방송"
+      ],
+      "useCases": "오디오 학습, 콘텐츠",
+      "source": "lucide"
+    },
+    {
+      "filename": "open-edu.svg",
+      "category": "09-teaching",
+      "name": "오픈교육",
+      "description": "공개 교육 자원",
+      "tags": [
+        "공개",
+        "교육",
+        "자원"
+      ],
+      "useCases": "OER, 무료 교육자료",
+      "source": "lucide"
+    },
+    {
+      "filename": "timer-teach.svg",
+      "category": "09-teaching",
+      "name": "수업타이머",
+      "description": "시간 관리",
+      "tags": [
+        "시간",
+        "관리"
+      ],
+      "useCases": "수업 시간, 타이머",
+      "source": "lucide"
+    },
+    {
+      "filename": "learning-board.svg",
+      "category": "09-teaching",
+      "name": "학습보드",
+      "description": "학습 현황판",
+      "tags": [
+        "학습",
+        "현황판"
+      ],
+      "useCases": "학습 관리, 진도",
+      "source": "lucide"
+    },
+    {
+      "filename": "passion.svg",
+      "category": "09-teaching",
+      "name": "열정",
+      "description": "학습 열정",
+      "tags": [
+        "학습",
+        "열정"
+      ],
+      "useCases": "동기부여, 도전",
+      "source": "lucide"
+    },
+    {
+      "filename": "praise.svg",
+      "category": "09-teaching",
+      "name": "칭찬",
+      "description": "긍정 평가",
+      "tags": [
+        "긍정",
+        "평가"
+      ],
+      "useCases": "격려, 칭찬",
+      "source": "lucide"
+    },
+    {
+      "filename": "support.svg",
+      "category": "09-teaching",
+      "name": "지원",
+      "description": "학습 도움",
+      "tags": [
+        "학습",
+        "도움"
+      ],
+      "useCases": "도움, 보조",
       "source": "lucide"
     },
     {
@@ -6273,7 +9368,1513 @@
       ],
       "useCases": "감소, 주의",
       "source": "lucide"
+    },
+    {
+      "filename": "circle-check.svg",
+      "category": "10-visual-symbols",
+      "name": "원체크",
+      "description": "원형 확인",
+      "tags": [
+        "원형",
+        "확인"
+      ],
+      "useCases": "확인, 올바름",
+      "source": "lucide"
+    },
+    {
+      "filename": "circle-x.svg",
+      "category": "10-visual-symbols",
+      "name": "원엑스",
+      "description": "원형 취소",
+      "tags": [
+        "원형",
+        "취소"
+      ],
+      "useCases": "취소, 틀림",
+      "source": "lucide"
+    },
+    {
+      "filename": "circle-plus.svg",
+      "category": "10-visual-symbols",
+      "name": "원더하기",
+      "description": "원형 추가",
+      "tags": [
+        "원형",
+        "추가"
+      ],
+      "useCases": "추가, 새 항목",
+      "source": "lucide"
+    },
+    {
+      "filename": "circle-minus.svg",
+      "category": "10-visual-symbols",
+      "name": "원빼기",
+      "description": "원형 제거",
+      "tags": [
+        "원형",
+        "제거"
+      ],
+      "useCases": "제거, 감소",
+      "source": "lucide"
+    },
+    {
+      "filename": "circle-pause.svg",
+      "category": "10-visual-symbols",
+      "name": "원일시정지",
+      "description": "원형 멈춤",
+      "tags": [
+        "원형",
+        "멈춤"
+      ],
+      "useCases": "일시정지, 대기",
+      "source": "lucide"
+    },
+    {
+      "filename": "circle-play.svg",
+      "category": "10-visual-symbols",
+      "name": "원재생",
+      "description": "원형 재생",
+      "tags": [
+        "원형",
+        "재생"
+      ],
+      "useCases": "재생, 시작",
+      "source": "lucide"
+    },
+    {
+      "filename": "circle-stop.svg",
+      "category": "10-visual-symbols",
+      "name": "원정지",
+      "description": "원형 중지",
+      "tags": [
+        "원형",
+        "중지"
+      ],
+      "useCases": "정지, 종료",
+      "source": "lucide"
+    },
+    {
+      "filename": "circle-user.svg",
+      "category": "10-visual-symbols",
+      "name": "원사용자",
+      "description": "원형 프로필",
+      "tags": [
+        "원형",
+        "프로필"
+      ],
+      "useCases": "프로필, 사용자",
+      "source": "lucide"
+    },
+    {
+      "filename": "circle-percent.svg",
+      "category": "10-visual-symbols",
+      "name": "원퍼센트",
+      "description": "원형 비율",
+      "tags": [
+        "원형",
+        "비율"
+      ],
+      "useCases": "비율, 할인",
+      "source": "lucide"
+    },
+    {
+      "filename": "circle-gauge.svg",
+      "category": "10-visual-symbols",
+      "name": "원게이지",
+      "description": "원형 측정",
+      "tags": [
+        "원형",
+        "측정"
+      ],
+      "useCases": "진행도, 측정",
+      "source": "lucide"
+    },
+    {
+      "filename": "square-check.svg",
+      "category": "10-visual-symbols",
+      "name": "사각체크",
+      "description": "사각 확인",
+      "tags": [
+        "사각",
+        "확인"
+      ],
+      "useCases": "체크박스, 완료",
+      "source": "lucide"
+    },
+    {
+      "filename": "square-x.svg",
+      "category": "10-visual-symbols",
+      "name": "사각엑스",
+      "description": "사각 취소",
+      "tags": [
+        "사각",
+        "취소"
+      ],
+      "useCases": "체크박스 해제, 취소",
+      "source": "lucide"
+    },
+    {
+      "filename": "square-plus.svg",
+      "category": "10-visual-symbols",
+      "name": "사각더하기",
+      "description": "사각 추가",
+      "tags": [
+        "사각",
+        "추가"
+      ],
+      "useCases": "새로 만들기, 추가",
+      "source": "lucide"
+    },
+    {
+      "filename": "square-minus.svg",
+      "category": "10-visual-symbols",
+      "name": "사각빼기",
+      "description": "사각 제거",
+      "tags": [
+        "사각",
+        "제거"
+      ],
+      "useCases": "제거, 축소",
+      "source": "lucide"
+    },
+    {
+      "filename": "square-pen.svg",
+      "category": "10-visual-symbols",
+      "name": "사각편집",
+      "description": "사각 수정",
+      "tags": [
+        "사각",
+        "수정"
+      ],
+      "useCases": "편집, 수정",
+      "source": "lucide"
+    },
+    {
+      "filename": "square-user.svg",
+      "category": "10-visual-symbols",
+      "name": "사각사용자",
+      "description": "사각 프로필",
+      "tags": [
+        "사각",
+        "프로필"
+      ],
+      "useCases": "프로필, 계정",
+      "source": "lucide"
+    },
+    {
+      "filename": "octagon-sym.svg",
+      "category": "10-visual-symbols",
+      "name": "팔각형",
+      "description": "정지 기호",
+      "tags": [
+        "정지",
+        "기호"
+      ],
+      "useCases": "정지, 금지",
+      "source": "lucide"
+    },
+    {
+      "filename": "octagon-alert.svg",
+      "category": "10-visual-symbols",
+      "name": "팔각경고",
+      "description": "팔각 경고",
+      "tags": [
+        "팔각",
+        "경고"
+      ],
+      "useCases": "위험 경고, 주의",
+      "source": "lucide"
+    },
+    {
+      "filename": "triangle-warn.svg",
+      "category": "10-visual-symbols",
+      "name": "삼각경고",
+      "description": "삼각 주의",
+      "tags": [
+        "삼각",
+        "주의"
+      ],
+      "useCases": "경고, 위험",
+      "source": "lucide"
+    },
+    {
+      "filename": "diamond-sym.svg",
+      "category": "10-visual-symbols",
+      "name": "다이아",
+      "description": "마름모 기호",
+      "tags": [
+        "마름모",
+        "기호"
+      ],
+      "useCases": "특별, 프리미엄",
+      "source": "lucide"
+    },
+    {
+      "filename": "diamond-plus.svg",
+      "category": "10-visual-symbols",
+      "name": "다이아추가",
+      "description": "마름모 추가",
+      "tags": [
+        "마름모",
+        "추가"
+      ],
+      "useCases": "특별 추가, 프리미엄",
+      "source": "lucide"
+    },
+    {
+      "filename": "heart-break.svg",
+      "category": "10-visual-symbols",
+      "name": "깨진하트",
+      "description": "상실/아쉬움",
+      "tags": [
+        "상실/아쉬움"
+      ],
+      "useCases": "아쉬움, 실패",
+      "source": "lucide"
+    },
+    {
+      "filename": "heart-pulse.svg",
+      "category": "10-visual-symbols",
+      "name": "하트박동",
+      "description": "생동감",
+      "tags": [
+        "생동감"
+      ],
+      "useCases": "활력, 건강",
+      "source": "lucide"
+    },
+    {
+      "filename": "hand-cheer.svg",
+      "category": "10-visual-symbols",
+      "name": "환호",
+      "description": "응원 손짓",
+      "tags": [
+        "응원",
+        "손짓"
+      ],
+      "useCases": "응원, 축하",
+      "source": "lucide"
+    },
+    {
+      "filename": "thumbs-up.svg",
+      "category": "10-visual-symbols",
+      "name": "엄지위",
+      "description": "좋아요 표시",
+      "tags": [
+        "좋아요",
+        "표시"
+      ],
+      "useCases": "좋아요, 긍정",
+      "source": "lucide"
+    },
+    {
+      "filename": "thumbs-down.svg",
+      "category": "10-visual-symbols",
+      "name": "엄지아래",
+      "description": "싫어요 표시",
+      "tags": [
+        "싫어요",
+        "표시"
+      ],
+      "useCases": "싫어요, 부정",
+      "source": "lucide"
+    },
+    {
+      "filename": "undo.svg",
+      "category": "10-visual-symbols",
+      "name": "되돌리기",
+      "description": "이전으로",
+      "tags": [
+        "이전으로"
+      ],
+      "useCases": "취소, 실행 취소",
+      "source": "lucide"
+    },
+    {
+      "filename": "redo.svg",
+      "category": "10-visual-symbols",
+      "name": "다시하기",
+      "description": "다음으로",
+      "tags": [
+        "다음으로"
+      ],
+      "useCases": "재실행, 앞으로",
+      "source": "lucide"
+    },
+    {
+      "filename": "rotate-left.svg",
+      "category": "10-visual-symbols",
+      "name": "왼회전",
+      "description": "반시계 회전",
+      "tags": [
+        "반시계",
+        "회전"
+      ],
+      "useCases": "회전, 복원",
+      "source": "lucide"
+    },
+    {
+      "filename": "rotate-right.svg",
+      "category": "10-visual-symbols",
+      "name": "오른회전",
+      "description": "시계 회전",
+      "tags": [
+        "시계",
+        "회전"
+      ],
+      "useCases": "회전, 진행",
+      "source": "lucide"
+    },
+    {
+      "filename": "flip-h.svg",
+      "category": "10-visual-symbols",
+      "name": "좌우반전",
+      "description": "수평 뒤집기",
+      "tags": [
+        "수평",
+        "뒤집기"
+      ],
+      "useCases": "반전, 대칭",
+      "source": "lucide"
+    },
+    {
+      "filename": "flip-v.svg",
+      "category": "10-visual-symbols",
+      "name": "상하반전",
+      "description": "수직 뒤집기",
+      "tags": [
+        "수직",
+        "뒤집기"
+      ],
+      "useCases": "반전, 대칭",
+      "source": "lucide"
+    },
+    {
+      "filename": "zoom-in.svg",
+      "category": "10-visual-symbols",
+      "name": "확대",
+      "description": "크게 보기",
+      "tags": [
+        "크게",
+        "보기"
+      ],
+      "useCases": "확대, 상세",
+      "source": "lucide"
+    },
+    {
+      "filename": "zoom-out.svg",
+      "category": "10-visual-symbols",
+      "name": "축소",
+      "description": "작게 보기",
+      "tags": [
+        "작게",
+        "보기"
+      ],
+      "useCases": "축소, 전체",
+      "source": "lucide"
+    },
+    {
+      "filename": "drag-h.svg",
+      "category": "10-visual-symbols",
+      "name": "가로드래그",
+      "description": "가로 이동",
+      "tags": [
+        "가로",
+        "이동"
+      ],
+      "useCases": "정렬, 이동",
+      "source": "lucide"
+    },
+    {
+      "filename": "drag-v.svg",
+      "category": "10-visual-symbols",
+      "name": "세로드래그",
+      "description": "세로 이동",
+      "tags": [
+        "세로",
+        "이동"
+      ],
+      "useCases": "정렬, 이동",
+      "source": "lucide"
+    },
+    {
+      "filename": "move-sym.svg",
+      "category": "10-visual-symbols",
+      "name": "이동",
+      "description": "위치 이동",
+      "tags": [
+        "위치",
+        "이동"
+      ],
+      "useCases": "이동, 드래그",
+      "source": "lucide"
+    },
+    {
+      "filename": "move-diag.svg",
+      "category": "10-visual-symbols",
+      "name": "대각이동",
+      "description": "대각선 이동",
+      "tags": [
+        "대각선",
+        "이동"
+      ],
+      "useCases": "크기 조절, 리사이즈",
+      "source": "lucide"
+    },
+    {
+      "filename": "to-front.svg",
+      "category": "10-visual-symbols",
+      "name": "앞으로",
+      "description": "맨 앞으로",
+      "tags": [
+        "맨",
+        "앞으로"
+      ],
+      "useCases": "레이어, 앞으로 가져오기",
+      "source": "lucide"
+    },
+    {
+      "filename": "to-back.svg",
+      "category": "10-visual-symbols",
+      "name": "뒤로",
+      "description": "맨 뒤로",
+      "tags": [
+        "맨",
+        "뒤로"
+      ],
+      "useCases": "레이어, 뒤로 보내기",
+      "source": "lucide"
+    },
+    {
+      "filename": "num-0.svg",
+      "category": "11-numbers",
+      "name": "숫자0",
+      "description": "숫자 영",
+      "tags": [
+        "숫자",
+        "영"
+      ],
+      "useCases": "수 세기, 영의 개념",
+      "source": "tabler"
+    },
+    {
+      "filename": "num-1.svg",
+      "category": "11-numbers",
+      "name": "숫자1",
+      "description": "숫자 일",
+      "tags": [
+        "숫자",
+        "일"
+      ],
+      "useCases": "수 세기, 첫 번째",
+      "source": "tabler"
+    },
+    {
+      "filename": "num-2.svg",
+      "category": "11-numbers",
+      "name": "숫자2",
+      "description": "숫자 이",
+      "tags": [
+        "숫자",
+        "이"
+      ],
+      "useCases": "수 세기, 두 번째",
+      "source": "tabler"
+    },
+    {
+      "filename": "num-3.svg",
+      "category": "11-numbers",
+      "name": "숫자3",
+      "description": "숫자 삼",
+      "tags": [
+        "숫자",
+        "삼"
+      ],
+      "useCases": "수 세기, 세 번째",
+      "source": "tabler"
+    },
+    {
+      "filename": "num-4.svg",
+      "category": "11-numbers",
+      "name": "숫자4",
+      "description": "숫자 사",
+      "tags": [
+        "숫자",
+        "사"
+      ],
+      "useCases": "수 세기, 네 번째",
+      "source": "tabler"
+    },
+    {
+      "filename": "num-5.svg",
+      "category": "11-numbers",
+      "name": "숫자5",
+      "description": "숫자 오",
+      "tags": [
+        "숫자",
+        "오"
+      ],
+      "useCases": "수 세기, 다섯 번째",
+      "source": "tabler"
+    },
+    {
+      "filename": "num-6.svg",
+      "category": "11-numbers",
+      "name": "숫자6",
+      "description": "숫자 육",
+      "tags": [
+        "숫자",
+        "육"
+      ],
+      "useCases": "수 세기, 여섯 번째",
+      "source": "tabler"
+    },
+    {
+      "filename": "num-7.svg",
+      "category": "11-numbers",
+      "name": "숫자7",
+      "description": "숫자 칠",
+      "tags": [
+        "숫자",
+        "칠"
+      ],
+      "useCases": "수 세기, 일곱 번째",
+      "source": "tabler"
+    },
+    {
+      "filename": "num-8.svg",
+      "category": "11-numbers",
+      "name": "숫자8",
+      "description": "숫자 팔",
+      "tags": [
+        "숫자",
+        "팔"
+      ],
+      "useCases": "수 세기, 여덟 번째",
+      "source": "tabler"
+    },
+    {
+      "filename": "num-9.svg",
+      "category": "11-numbers",
+      "name": "숫자9",
+      "description": "숫자 구",
+      "tags": [
+        "숫자",
+        "구"
+      ],
+      "useCases": "수 세기, 아홉 번째",
+      "source": "tabler"
+    },
+    {
+      "filename": "num-10.svg",
+      "category": "11-numbers",
+      "name": "숫자10",
+      "description": "숫자 십",
+      "tags": [
+        "숫자",
+        "십"
+      ],
+      "useCases": "수 세기, 열 번째",
+      "source": "tabler"
+    },
+    {
+      "filename": "num-11.svg",
+      "category": "11-numbers",
+      "name": "숫자11",
+      "description": "숫자 십일",
+      "tags": [
+        "숫자",
+        "십일"
+      ],
+      "useCases": "수 세기, 열한 번째",
+      "source": "tabler"
+    },
+    {
+      "filename": "num-12.svg",
+      "category": "11-numbers",
+      "name": "숫자12",
+      "description": "숫자 십이",
+      "tags": [
+        "숫자",
+        "십이"
+      ],
+      "useCases": "수 세기, 시계 숫자",
+      "source": "custom"
+    },
+    {
+      "filename": "num-13.svg",
+      "category": "11-numbers",
+      "name": "숫자13",
+      "description": "숫자 십삼",
+      "tags": [
+        "숫자",
+        "십삼"
+      ],
+      "useCases": "수 세기, 열세 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-14.svg",
+      "category": "11-numbers",
+      "name": "숫자14",
+      "description": "숫자 십사",
+      "tags": [
+        "숫자",
+        "십사"
+      ],
+      "useCases": "수 세기, 열네 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-15.svg",
+      "category": "11-numbers",
+      "name": "숫자15",
+      "description": "숫자 십오",
+      "tags": [
+        "숫자",
+        "십오"
+      ],
+      "useCases": "수 세기, 열다섯 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-16.svg",
+      "category": "11-numbers",
+      "name": "숫자16",
+      "description": "숫자 십육",
+      "tags": [
+        "숫자",
+        "십육"
+      ],
+      "useCases": "16진법, 비트 단위",
+      "source": "custom"
+    },
+    {
+      "filename": "num-17.svg",
+      "category": "11-numbers",
+      "name": "숫자17",
+      "description": "숫자 십칠",
+      "tags": [
+        "숫자",
+        "십칠"
+      ],
+      "useCases": "수 세기, 열일곱 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-18.svg",
+      "category": "11-numbers",
+      "name": "숫자18",
+      "description": "숫자 십팔",
+      "tags": [
+        "숫자",
+        "십팔"
+      ],
+      "useCases": "수 세기, 열여덟 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-19.svg",
+      "category": "11-numbers",
+      "name": "숫자19",
+      "description": "숫자 십구",
+      "tags": [
+        "숫자",
+        "십구"
+      ],
+      "useCases": "수 세기, 열아홉 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-20.svg",
+      "category": "11-numbers",
+      "name": "숫자20",
+      "description": "숫자 이십",
+      "tags": [
+        "숫자",
+        "이십"
+      ],
+      "useCases": "수 세기, 스무 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-21.svg",
+      "category": "11-numbers",
+      "name": "숫자21",
+      "description": "숫자 이십일",
+      "tags": [
+        "숫자",
+        "이십일"
+      ],
+      "useCases": "수 세기, 스물한 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-22.svg",
+      "category": "11-numbers",
+      "name": "숫자22",
+      "description": "숫자 이십이",
+      "tags": [
+        "숫자",
+        "이십이"
+      ],
+      "useCases": "수 세기, 스물두 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-23.svg",
+      "category": "11-numbers",
+      "name": "숫자23",
+      "description": "숫자 이십삼",
+      "tags": [
+        "숫자",
+        "이십삼"
+      ],
+      "useCases": "수 세기, 스물세 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-24.svg",
+      "category": "11-numbers",
+      "name": "숫자24",
+      "description": "숫자 이십사",
+      "tags": [
+        "숫자",
+        "이십사"
+      ],
+      "useCases": "수 세기, 24시간",
+      "source": "custom"
+    },
+    {
+      "filename": "num-25.svg",
+      "category": "11-numbers",
+      "name": "숫자25",
+      "description": "숫자 이십오",
+      "tags": [
+        "숫자",
+        "이십오"
+      ],
+      "useCases": "수 세기, 스물다섯 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-26.svg",
+      "category": "11-numbers",
+      "name": "숫자26",
+      "description": "숫자 이십육",
+      "tags": [
+        "숫자",
+        "이십육"
+      ],
+      "useCases": "알파벳 개수, 26자",
+      "source": "custom"
+    },
+    {
+      "filename": "num-27.svg",
+      "category": "11-numbers",
+      "name": "숫자27",
+      "description": "숫자 이십칠",
+      "tags": [
+        "숫자",
+        "이십칠"
+      ],
+      "useCases": "수 세기, 3의 세제곱",
+      "source": "custom"
+    },
+    {
+      "filename": "num-28.svg",
+      "category": "11-numbers",
+      "name": "숫자28",
+      "description": "숫자 이십팔",
+      "tags": [
+        "숫자",
+        "이십팔"
+      ],
+      "useCases": "수 세기, 완전수",
+      "source": "custom"
+    },
+    {
+      "filename": "num-29.svg",
+      "category": "11-numbers",
+      "name": "숫자29",
+      "description": "숫자 이십구",
+      "tags": [
+        "숫자",
+        "이십구"
+      ],
+      "useCases": "수 세기, 소수",
+      "source": "custom"
+    },
+    {
+      "filename": "num-30.svg",
+      "category": "11-numbers",
+      "name": "숫자30",
+      "description": "숫자 삼십",
+      "tags": [
+        "숫자",
+        "삼십"
+      ],
+      "useCases": "수 세기, 서른 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-31.svg",
+      "category": "11-numbers",
+      "name": "숫자31",
+      "description": "숫자 삼십일",
+      "tags": [
+        "숫자",
+        "삼십일"
+      ],
+      "useCases": "수 세기, 한 달 일수",
+      "source": "custom"
+    },
+    {
+      "filename": "num-32.svg",
+      "category": "11-numbers",
+      "name": "숫자32",
+      "description": "숫자 삼십이",
+      "tags": [
+        "숫자",
+        "삼십이"
+      ],
+      "useCases": "32비트, 컴퓨터 구조",
+      "source": "custom"
+    },
+    {
+      "filename": "num-33.svg",
+      "category": "11-numbers",
+      "name": "숫자33",
+      "description": "숫자 삼십삼",
+      "tags": [
+        "숫자",
+        "삼십삼"
+      ],
+      "useCases": "수 세기, 서른세 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-34.svg",
+      "category": "11-numbers",
+      "name": "숫자34",
+      "description": "숫자 삼십사",
+      "tags": [
+        "숫자",
+        "삼십사"
+      ],
+      "useCases": "수 세기, 서른네 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-35.svg",
+      "category": "11-numbers",
+      "name": "숫자35",
+      "description": "숫자 삼십오",
+      "tags": [
+        "숫자",
+        "삼십오"
+      ],
+      "useCases": "수 세기, 서른다섯 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-36.svg",
+      "category": "11-numbers",
+      "name": "숫자36",
+      "description": "숫자 삼십육",
+      "tags": [
+        "숫자",
+        "삼십육"
+      ],
+      "useCases": "수 세기, 36진법",
+      "source": "custom"
+    },
+    {
+      "filename": "num-37.svg",
+      "category": "11-numbers",
+      "name": "숫자37",
+      "description": "숫자 삼십칠",
+      "tags": [
+        "숫자",
+        "삼십칠"
+      ],
+      "useCases": "수 세기, 소수",
+      "source": "custom"
+    },
+    {
+      "filename": "num-38.svg",
+      "category": "11-numbers",
+      "name": "숫자38",
+      "description": "숫자 삼십팔",
+      "tags": [
+        "숫자",
+        "삼십팔"
+      ],
+      "useCases": "수 세기, 서른여덟 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-39.svg",
+      "category": "11-numbers",
+      "name": "숫자39",
+      "description": "숫자 삼십구",
+      "tags": [
+        "숫자",
+        "삼십구"
+      ],
+      "useCases": "수 세기, 서른아홉 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "num-40.svg",
+      "category": "11-numbers",
+      "name": "숫자40",
+      "description": "숫자 사십",
+      "tags": [
+        "숫자",
+        "사십"
+      ],
+      "useCases": "수 세기, 마흔 번째",
+      "source": "custom"
+    },
+    {
+      "filename": "circle-num-0.svg",
+      "category": "11-numbers",
+      "name": "원숫자0",
+      "description": "원 안의 0",
+      "tags": [
+        "원",
+        "안의",
+        "0"
+      ],
+      "useCases": "번호 표시, 순서",
+      "source": "tabler"
+    },
+    {
+      "filename": "circle-num-1.svg",
+      "category": "11-numbers",
+      "name": "원숫자1",
+      "description": "원 안의 1",
+      "tags": [
+        "원",
+        "안의",
+        "1"
+      ],
+      "useCases": "번호 표시, 1단계",
+      "source": "tabler"
+    },
+    {
+      "filename": "circle-num-2.svg",
+      "category": "11-numbers",
+      "name": "원숫자2",
+      "description": "원 안의 2",
+      "tags": [
+        "원",
+        "안의",
+        "2"
+      ],
+      "useCases": "번호 표시, 2단계",
+      "source": "tabler"
+    },
+    {
+      "filename": "circle-num-3.svg",
+      "category": "11-numbers",
+      "name": "원숫자3",
+      "description": "원 안의 3",
+      "tags": [
+        "원",
+        "안의",
+        "3"
+      ],
+      "useCases": "번호 표시, 3단계",
+      "source": "tabler"
+    },
+    {
+      "filename": "circle-num-4.svg",
+      "category": "11-numbers",
+      "name": "원숫자4",
+      "description": "원 안의 4",
+      "tags": [
+        "원",
+        "안의",
+        "4"
+      ],
+      "useCases": "번호 표시, 4단계",
+      "source": "tabler"
+    },
+    {
+      "filename": "circle-num-5.svg",
+      "category": "11-numbers",
+      "name": "원숫자5",
+      "description": "원 안의 5",
+      "tags": [
+        "원",
+        "안의",
+        "5"
+      ],
+      "useCases": "번호 표시, 5단계",
+      "source": "tabler"
+    },
+    {
+      "filename": "circle-num-6.svg",
+      "category": "11-numbers",
+      "name": "원숫자6",
+      "description": "원 안의 6",
+      "tags": [
+        "원",
+        "안의",
+        "6"
+      ],
+      "useCases": "번호 표시, 6단계",
+      "source": "tabler"
+    },
+    {
+      "filename": "circle-num-7.svg",
+      "category": "11-numbers",
+      "name": "원숫자7",
+      "description": "원 안의 7",
+      "tags": [
+        "원",
+        "안의",
+        "7"
+      ],
+      "useCases": "번호 표시, 7단계",
+      "source": "tabler"
+    },
+    {
+      "filename": "circle-num-8.svg",
+      "category": "11-numbers",
+      "name": "원숫자8",
+      "description": "원 안의 8",
+      "tags": [
+        "원",
+        "안의",
+        "8"
+      ],
+      "useCases": "번호 표시, 8단계",
+      "source": "tabler"
+    },
+    {
+      "filename": "circle-num-9.svg",
+      "category": "11-numbers",
+      "name": "원숫자9",
+      "description": "원 안의 9",
+      "tags": [
+        "원",
+        "안의",
+        "9"
+      ],
+      "useCases": "번호 표시, 9단계",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-circle.svg",
+      "category": "12-shapes",
+      "name": "원",
+      "description": "원형",
+      "tags": [
+        "원형"
+      ],
+      "useCases": "2D 도형, 기본 도형",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-square.svg",
+      "category": "12-shapes",
+      "name": "정사각형",
+      "description": "정사각형 도형",
+      "tags": [
+        "정사각형",
+        "도형"
+      ],
+      "useCases": "2D 도형, 기본 도형",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-triangle.svg",
+      "category": "12-shapes",
+      "name": "삼각형",
+      "description": "삼각형 도형",
+      "tags": [
+        "삼각형",
+        "도형"
+      ],
+      "useCases": "2D 도형, 기본 도형",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-rectangle.svg",
+      "category": "12-shapes",
+      "name": "직사각형",
+      "description": "직사각형 도형",
+      "tags": [
+        "직사각형",
+        "도형"
+      ],
+      "useCases": "2D 도형, 사각형",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-diamond.svg",
+      "category": "12-shapes",
+      "name": "마름모",
+      "description": "마름모 도형",
+      "tags": [
+        "마름모",
+        "도형"
+      ],
+      "useCases": "2D 도형, 사각형",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-pentagon.svg",
+      "category": "12-shapes",
+      "name": "오각형",
+      "description": "정오각형 도형",
+      "tags": [
+        "정오각형",
+        "도형"
+      ],
+      "useCases": "2D 도형, 정다각형",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-hexagon.svg",
+      "category": "12-shapes",
+      "name": "육각형",
+      "description": "정육각형 도형",
+      "tags": [
+        "정육각형",
+        "도형"
+      ],
+      "useCases": "2D 도형, 벌집 구조",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-octagon.svg",
+      "category": "12-shapes",
+      "name": "팔각형",
+      "description": "정팔각형 도형",
+      "tags": [
+        "정팔각형",
+        "도형"
+      ],
+      "useCases": "2D 도형, 정지 표지",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-oval.svg",
+      "category": "12-shapes",
+      "name": "타원",
+      "description": "타원형 도형",
+      "tags": [
+        "타원형",
+        "도형"
+      ],
+      "useCases": "2D 도형, 행성 궤도",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-star.svg",
+      "category": "12-shapes",
+      "name": "별",
+      "description": "별 모양 도형",
+      "tags": [
+        "별",
+        "모양",
+        "도형"
+      ],
+      "useCases": "2D 도형, 꼭짓점",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-heart.svg",
+      "category": "12-shapes",
+      "name": "하트",
+      "description": "하트 모양",
+      "tags": [
+        "하트",
+        "모양"
+      ],
+      "useCases": "2D 도형, 대칭 곡선",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-polygon.svg",
+      "category": "12-shapes",
+      "name": "다각형",
+      "description": "일반 다각형",
+      "tags": [
+        "일반",
+        "다각형"
+      ],
+      "useCases": "2D 도형, n각형",
+      "source": "tabler"
+    },
+    {
+      "filename": "shapes-all.svg",
+      "category": "12-shapes",
+      "name": "도형모음",
+      "description": "여러 도형 모음",
+      "tags": [
+        "여러",
+        "도형",
+        "모음"
+      ],
+      "useCases": "도형 분류, 기하학",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-basic.svg",
+      "category": "12-shapes",
+      "name": "기본도형",
+      "description": "원삼각사각",
+      "tags": [
+        "원삼각사각"
+      ],
+      "useCases": "기본 3도형, 분류",
+      "source": "tabler"
+    },
+    {
+      "filename": "circle-triangle.svg",
+      "category": "12-shapes",
+      "name": "원삼각",
+      "description": "원과 삼각형",
+      "tags": [
+        "원과",
+        "삼각형"
+      ],
+      "useCases": "도형 관계, 내접/외접",
+      "source": "tabler"
+    },
+    {
+      "filename": "circle-square.svg",
+      "category": "12-shapes",
+      "name": "원사각",
+      "description": "원과 사각형",
+      "tags": [
+        "원과",
+        "사각형"
+      ],
+      "useCases": "도형 관계, 내접/외접",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-line.svg",
+      "category": "12-shapes",
+      "name": "직선",
+      "description": "선분",
+      "tags": [
+        "선분"
+      ],
+      "useCases": "기본 요소, 1차원",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-dashed.svg",
+      "category": "12-shapes",
+      "name": "점선",
+      "description": "점선 형태",
+      "tags": [
+        "점선",
+        "형태"
+      ],
+      "useCases": "보조선, 대칭축",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-cube.svg",
+      "category": "12-shapes",
+      "name": "정육면체",
+      "description": "큐브",
+      "tags": [
+        "큐브"
+      ],
+      "useCases": "3D 도형, 정다면체",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-cuboid.svg",
+      "category": "12-shapes",
+      "name": "직육면체",
+      "description": "박스 형태",
+      "tags": [
+        "박스",
+        "형태"
+      ],
+      "useCases": "3D 도형, 상자",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-sphere.svg",
+      "category": "12-shapes",
+      "name": "구",
+      "description": "구체",
+      "tags": [
+        "구체"
+      ],
+      "useCases": "3D 도형, 공",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-hemisphere.svg",
+      "category": "12-shapes",
+      "name": "반구",
+      "description": "반구 형태",
+      "tags": [
+        "반구",
+        "형태"
+      ],
+      "useCases": "3D 도형, 돔",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-cylinder.svg",
+      "category": "12-shapes",
+      "name": "원기둥",
+      "description": "원기둥 형태",
+      "tags": [
+        "원기둥",
+        "형태"
+      ],
+      "useCases": "3D 도형, 기둥",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-cone.svg",
+      "category": "12-shapes",
+      "name": "원뿔",
+      "description": "원뿔 형태",
+      "tags": [
+        "원뿔",
+        "형태"
+      ],
+      "useCases": "3D 도형, 뿔",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-pyramid.svg",
+      "category": "12-shapes",
+      "name": "사각뿔",
+      "description": "피라미드 형태",
+      "tags": [
+        "피라미드",
+        "형태"
+      ],
+      "useCases": "3D 도형, 뿔",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-prism.svg",
+      "category": "12-shapes",
+      "name": "삼각기둥",
+      "description": "프리즘 형태",
+      "tags": [
+        "프리즘",
+        "형태"
+      ],
+      "useCases": "3D 도형, 기둥",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-hex-prism.svg",
+      "category": "12-shapes",
+      "name": "육각기둥",
+      "description": "육각 기둥 형태",
+      "tags": [
+        "육각",
+        "기둥",
+        "형태"
+      ],
+      "useCases": "3D 도형, 기둥",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-torus.svg",
+      "category": "12-shapes",
+      "name": "원환체",
+      "description": "도넛 형태",
+      "tags": [
+        "도넛",
+        "형태"
+      ],
+      "useCases": "3D 도형, 고급",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-inscribed.svg",
+      "category": "12-shapes",
+      "name": "내접외접",
+      "description": "구와 정육면체 관계",
+      "tags": [
+        "구와",
+        "정육면체",
+        "관계"
+      ],
+      "useCases": "3D 도형 관계, 기하",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-prism-light.svg",
+      "category": "12-shapes",
+      "name": "프리즘빛",
+      "description": "빛의 굴절 프리즘",
+      "tags": [
+        "빛의",
+        "굴절",
+        "프리즘"
+      ],
+      "useCases": "3D 도형, 광학",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-3d-rotate.svg",
+      "category": "12-shapes",
+      "name": "3D회전",
+      "description": "입체 회전",
+      "tags": [
+        "입체",
+        "회전"
+      ],
+      "useCases": "3D 변환, 회전",
+      "source": "lucide"
+    },
+    {
+      "filename": "shape-box-model.svg",
+      "category": "12-shapes",
+      "name": "박스모델",
+      "description": "상자 모델",
+      "tags": [
+        "상자",
+        "모델"
+      ],
+      "useCases": "CSS 박스모델, 3D 분해",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-dimensions.svg",
+      "category": "12-shapes",
+      "name": "치수",
+      "description": "크기 표시",
+      "tags": [
+        "크기",
+        "표시"
+      ],
+      "useCases": "측정, 길이/너비/높이",
+      "source": "tabler"
+    },
+    {
+      "filename": "shape-ratio.svg",
+      "category": "12-shapes",
+      "name": "가로세로비",
+      "description": "비율 표시",
+      "tags": [
+        "비율",
+        "표시"
+      ],
+      "useCases": "비율, 화면 비율",
+      "source": "tabler"
     }
   ],
-  "totalCount": 509
+  "totalCount": 887
 }
